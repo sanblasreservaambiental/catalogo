@@ -1,0 +1,311 @@
+{
+  "_nota": "Ajustes a mano que actualizar_inat.py aplica sobre los datos de iNaturalist. Nombres en español de Canarias; estatus con las claves de ESTATUS (datos.js).",
+  "zona": {
+    "lat": 28.0385,
+    "lng": -16.6035,
+    "radio_km": 1.5
+  },
+  "excluir": {
+    "Fringilla teydea": "Ave del pinar de cumbre; las dos observaciones tienen la ubicación oculta y no son de San Blas.",
+    "Bencomia caudata": "Planta de medianías y cumbre; observación con ubicación oculta, no es de San Blas."
+  },
+  "alias": {
+    "Lanius excubitor": "Lanius meridionalis koenigi"
+  },
+  "nombres_es": {
+    "Octopus vulgaris": "Pulpo",
+    "Typha domingensis": "Enea",
+    "Schinus molle": "Falso pimentero",
+    "Leucaena leucocephala": "Leucaena",
+    "Opuntia stricta": "Tunera india",
+    "Cenchrus setaceus": "Rabo de gato",
+    "Cenchrus ciliaris": "Panasco",
+    "Mesembryanthemum nodiflorum": "Cosco",
+    "Aizoon canariense": "Pata de gallo",
+    "Limonium pectinatum": "Siempreviva",
+    "Lavandula canariensis": "Matorrisco",
+    "Reseda scoparia": "Gualdón",
+    "Bosea yervamora": "Hediondo",
+    "Cneorum pulverulentum": "Leña buena",
+    "Sonchus capillaris": "Cerrajilla",
+    "Forsskaolea angustifolia": "Ratonera",
+    "Drusa glandulosa": "Pegamoscas",
+    "Autonoe haemorrhoidalis": "Cebollín estrellado",
+    "Lotus sessilifolius": "Corazoncillo",
+    "Bituminaria bituminosa": "Tedera",
+    "Salvia aegyptiaca": "Conservilla",
+    "Sparisoma cretense": "Vieja",
+    "Motacilla cinerea": "Alpispa",
+    "Euphorbia canariensis": "Cardón",
+    "Plocama pendula": "Balo",
+    "Mesembryanthemum crystallinum": "Barrilla",
+    "Columba livia": "Paloma bravía",
+    "Lanius excubitor": "Alcaudón real",
+    "Fagonia cretica": "Abrojo",
+    "Gallotia galloti": "Lagarto tizón",
+    "Chelonia mydas": "Tortuga verde"
+  },
+  "estatus": {
+    "Gallotia galloti": [
+      "endemica-canaria"
+    ],
+    "Chelonia mydas": [
+      "protegida"
+    ],
+    "Passer hispaniolensis": [
+      "nativa"
+    ],
+    "Curruca conspicillata": [
+      "subespecie-endemica"
+    ],
+    "Leucaena leucocephala": [
+      "introducida",
+      "invasora"
+    ],
+    "Opuntia stricta": [
+      "introducida",
+      "invasora"
+    ],
+    "Cenchrus setaceus": [
+      "introducida",
+      "invasora"
+    ],
+    "Schinus molle": [
+      "introducida"
+    ],
+    "Typha domingensis": [
+      "nativa"
+    ],
+    "Mesembryanthemum nodiflorum": [
+      "nativa"
+    ],
+    "Bituminaria bituminosa": [
+      "nativa"
+    ],
+    "Cyperus laevigatus": [
+      "nativa"
+    ],
+    "Frankenia pulverulenta": [
+      "nativa"
+    ],
+    "Frankenia capitata": [
+      "nativa"
+    ],
+    "Aizoon canariense": [
+      "nativa"
+    ],
+    "Fagonia cretica": [
+      "nativa"
+    ],
+    "Patellifolia procumbens": [
+      "nativa"
+    ],
+    "Astydamia latifolia": [
+      "nativa"
+    ],
+    "Cneorum pulverulentum": [
+      "nativa"
+    ],
+    "Polycarpaea nivea": [
+      "nativa"
+    ],
+    "Cosentinia vellea": [
+      "nativa"
+    ],
+    "Salvia aegyptiaca": [
+      "nativa"
+    ],
+    "Drusa glandulosa": [
+      "nativa"
+    ],
+    "Limonium pectinatum": [
+      "endemica-macaro"
+    ],
+    "Lavandula canariensis": [
+      "endemica-canaria"
+    ],
+    "Marcetella moquiniana": [
+      "endemica-canaria"
+    ],
+    "Campylanthus salsoloides": [
+      "endemica-canaria"
+    ],
+    "Reseda scoparia": [
+      "endemica-canaria"
+    ],
+    "Sonchus capillaris": [
+      "endemica-canaria"
+    ],
+    "Bosea yervamora": [
+      "endemica-canaria"
+    ],
+    "Argyranthemum gracile": [
+      "endemica-canaria"
+    ],
+    "Allagopappus canariensis": [
+      "endemica-canaria"
+    ],
+    "Monanthes pallens": [
+      "endemica-canaria"
+    ],
+    "Lotus sessilifolius": [
+      "endemica-canaria"
+    ],
+    "Autonoe haemorrhoidalis": [
+      "endemica-canaria"
+    ],
+    "Forsskaolea angustifolia": [
+      "nativa"
+    ],
+    "Colletes dimidiatus": [
+      "endemica-canaria"
+    ],
+    "Pimelia canariensis": [
+      "endemica-canaria"
+    ],
+    "Ischnura senegalensis": [
+      "nativa"
+    ],
+    "Crocothemis erythraea": [
+      "nativa"
+    ],
+    "Sympetrum fonscolombii": [
+      "nativa"
+    ],
+    "Anax parthenope": [
+      "nativa"
+    ],
+    "Anax ephippiger": [
+      "nativa"
+    ],
+    "Orthetrum chrysostigma": [
+      "nativa"
+    ],
+    "Pontia daplidice": [
+      "nativa"
+    ]
+  },
+  "nombres_rangos": {
+    "_nota": "Nombre en español de reinos, clases, órdenes y familias (se muestra junto al científico en la web, niveles ESO y Bachillerato).",
+    "Plantae": "plantas",
+    "Animalia": "animales",
+    "Fungi": "hongos",
+    "Magnoliopsida": "dicotiledóneas",
+    "Liliopsida": "monocotiledóneas",
+    "Polypodiopsida": "helechos",
+    "Aves": "aves",
+    "Reptilia": "reptiles",
+    "Insecta": "insectos",
+    "Arachnida": "arácnidos",
+    "Gastropoda": "gasterópodos",
+    "Cephalopoda": "cefalópodos",
+    "Actinopterygii": "peces óseos",
+    "Agaricomycetes": "setas",
+    "Squamata": "lagartos y serpientes",
+    "Odonata": "libélulas y caballitos del diablo",
+    "Anseriformes": "patos y afines",
+    "Galliformes": "perdices, codornices y afines",
+    "Passeriformes": "pájaros",
+    "Lepidoptera": "mariposas y polillas",
+    "Bucerotiformes": "abubillas y cálaos",
+    "Pelecaniformes": "garzas, ibis y pelícanos",
+    "Orthoptera": "saltamontes y grillos",
+    "Araneae": "arañas",
+    "Testudines": "tortugas",
+    "Agaricales": "setas de láminas",
+    "Hymenoptera": "abejas, avispas y hormigas",
+    "Columbiformes": "palomas y tórtolas",
+    "Perciformes": "percas y afines",
+    "Diptera": "moscas y mosquitos",
+    "Charadriiformes": "gaviotas, limícolas y afines",
+    "Coleoptera": "escarabajos",
+    "Octopoda": "pulpos",
+    "Falconiformes": "halcones",
+    "Gruiformes": "gallinetas, fochas y grullas",
+    "Apodiformes": "vencejos y colibríes",
+    "Strigiformes": "búhos y lechuzas",
+    "Procellariiformes": "pardelas, petreles y albatros",
+    "Poales": "gramíneas, juncos y afines",
+    "Caryophyllales": "cactus, claveles y afines",
+    "Asterales": "margaritas y afines",
+    "Fabales": "leguminosas",
+    "Lamiales": "labiadas y afines",
+    "Rosales": "rosas, ortigas y afines",
+    "Apiales": "umbelíferas y afines",
+    "Asparagales": "espárragos, cebollas y orquídeas",
+    "Solanales": "tomateras y afines",
+    "Sapindales": "cítricos, lentiscos y afines",
+    "Brassicales": "coles, resedas y afines",
+    "Malpighiales": "euforbias, sauces y afines",
+    "Gentianales": "cafetos, adelfas y afines",
+    "Zygophyllales": "abrojos y afines",
+    "Saxifragales": "bejeques y afines",
+    "Polypodiales": "helechos",
+    "Littorinimorpha": "caracoles marinos",
+    "Labriformes": "viejas, doncellas y afines",
+    "Lacertidae": "lacértidos",
+    "Rubiaceae": "rubiáceas",
+    "Euphorbiaceae": "euforbiáceas",
+    "Asteraceae": "compuestas",
+    "Coenagrionidae": "caballitos del diablo",
+    "Aizoaceae": "aizoáceas",
+    "Cactaceae": "cactáceas",
+    "Resedaceae": "resedáceas",
+    "Libellulidae": "libélulas",
+    "Anatidae": "patos, gansos y cisnes",
+    "Phasianidae": "perdices y faisanes",
+    "Motacillidae": "bisbitas y lavanderas",
+    "Poaceae": "gramíneas",
+    "Apocynaceae": "apocináceas",
+    "Plumbaginaceae": "plumbagináceas",
+    "Pieridae": "piéridos (blanquitas)",
+    "Upupidae": "abubillas",
+    "Ardeidae": "garzas",
+    "Zygophyllaceae": "zigofiláceas",
+    "Frankeniaceae": "frankeniáceas",
+    "Laniidae": "alcaudones",
+    "Lamiaceae": "labiadas",
+    "Acrididae": "saltamontes",
+    "Typhaceae": "eneas",
+    "Aeshnidae": "libélulas emperador",
+    "Araneidae": "arañas de tela orbicular",
+    "Apiaceae": "umbelíferas",
+    "Asparagaceae": "asparagáceas",
+    "Fabaceae": "leguminosas",
+    "Amaranthaceae": "amarantáceas",
+    "Plantaginaceae": "plantagináceas",
+    "Cheloniidae": "tortugas marinas",
+    "Agaricaceae": "agaricáceas",
+    "Rutaceae": "rutáceas",
+    "Colletidae": "abejas colétidas",
+    "Columbidae": "palomas y tórtolas",
+    "Pteridaceae": "pteridáceas",
+    "Sylviidae": "currucas",
+    "Cyperaceae": "juncias",
+    "Epinephelidae": "meros y abadejos",
+    "Urticaceae": "ortigas",
+    "Syrphidae": "sírfidos",
+    "Laridae": "gaviotas y charranes",
+    "Vespidae": "avispas",
+    "Solanaceae": "solanáceas",
+    "Rosaceae": "rosáceas",
+    "Crassulaceae": "crasuláceas",
+    "Cymatiidae": "caracolas tritón",
+    "Scolopacidae": "zarapitos y correlimos",
+    "Octopodidae": "pulpos",
+    "Passeridae": "gorriones",
+    "Crabronidae": "avispas cazadoras",
+    "Tenebrionidae": "tenebriónidos",
+    "Caryophyllaceae": "cariofiláceas",
+    "Anacardiaceae": "anacardiáceas",
+    "Scorpaenidae": "rascacios",
+    "Labridae": "lábridos (viejas, doncellas)",
+    "Trachinidae": "peces araña",
+    "Falconidae": "halcones y cernícalos",
+    "Rallidae": "gallinetas y fochas",
+    "Apodidae": "vencejos",
+    "Corvidae": "cuervos y afines",
+    "Strigidae": "búhos",
+    "Procellariidae": "pardelas y petreles"
+  }
+}
