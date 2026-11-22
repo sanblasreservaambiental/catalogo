@@ -215,7 +215,13 @@ window.INAT = {
     "introducida",
     "invasora"
    ],
-   "foto": null
+   "foto": {
+    "src": "img/inat/47898.jpg",
+    "tipo": "foto",
+    "credito": "(c) Tony Rodd, some rights reserved (CC BY-NC-SA)",
+    "licencia": "cc-by-nc-sa",
+    "url": "https://www.inaturalist.org/photos/60632"
+   }
   },
   {
    "taxon_id": 701232,
@@ -643,7 +649,13 @@ window.INAT = {
    "estatus": [
     "nativa"
    ],
-   "foto": null
+   "foto": {
+    "src": "img/inat/94041.jpg",
+    "tipo": "foto",
+    "credito": "(c) rmfelix, some rights reserved (CC BY-NC-ND)",
+    "licencia": "cc-by-nc-nd",
+    "url": "https://www.inaturalist.org/photos/1874657"
+   }
   },
   {
    "taxon_id": 94048,
@@ -746,7 +758,13 @@ window.INAT = {
    "estatus": [
     "nativa"
    ],
-   "foto": null
+   "foto": {
+    "src": "img/inat/558336.jpeg",
+    "tipo": "foto",
+    "credito": "(c) Christian Berg, some rights reserved (CC BY)",
+    "licencia": "cc-by",
+    "url": "https://www.inaturalist.org/photos/256727111"
+   }
   },
   {
    "taxon_id": 1584273,
@@ -763,7 +781,13 @@ window.INAT = {
    "estatus": [
     "endemica-canaria"
    ],
-   "foto": null
+   "foto": {
+    "src": "img/inat/1584273.jpeg",
+    "tipo": "foto",
+    "credito": "(c) Sébastien SANT, some rights reserved (CC BY-NC)",
+    "licencia": "cc-by-nc",
+    "url": "https://www.inaturalist.org/photos/76685170"
+   }
   },
   {
    "taxon_id": 75771,
@@ -826,7 +850,13 @@ window.INAT = {
    "estatus": [
     "endemica-canaria"
    ],
-   "foto": null
+   "foto": {
+    "src": "img/inat/700986.jpg",
+    "tipo": "foto",
+    "credito": "(c) Jorge Calvo Yuste, some rights reserved (CC BY-NC)",
+    "licencia": "cc-by-nc",
+    "url": "https://www.inaturalist.org/photos/541652380"
+   }
   },
   {
    "taxon_id": 199408,
@@ -1042,7 +1072,13 @@ window.INAT = {
    "estatus": [
     "nativa"
    ],
-   "foto": null
+   "foto": {
+    "src": "img/inat/76590.jpg",
+    "tipo": "foto",
+    "credito": "(c) FOSTER, some rights reserved (CC BY-NC)",
+    "licencia": "cc-by-nc",
+    "url": "https://www.inaturalist.org/photos/24357266"
+   }
   },
   {
    "taxon_id": 130082,
@@ -1169,7 +1205,13 @@ window.INAT = {
    "observadores": 1,
    "ultima": "2026-03-01",
    "estatus": [],
-   "foto": null
+   "foto": {
+    "src": "img/inat/564198.jpeg",
+    "tipo": "foto",
+    "credito": "(c) Jacobo Krauel, some rights reserved (CC BY-NC)",
+    "licencia": "cc-by-nc",
+    "url": "https://www.inaturalist.org/photos/324219431"
+   }
   },
   {
    "taxon_id": 4381,
@@ -1320,7 +1362,13 @@ window.INAT = {
    "estatus": [
     "endemica-canaria"
    ],
-   "foto": null
+   "foto": {
+    "src": "img/inat/830771.jpg",
+    "tipo": "foto",
+    "credito": "(c) Stefan Neuwirth, some rights reserved (CC BY-NC)",
+    "licencia": "cc-by-nc",
+    "url": "https://www.inaturalist.org/photos/38793292"
+   }
   },
   {
    "taxon_id": 331380,
@@ -1440,7 +1488,13 @@ window.INAT = {
    "estatus": [
     "nativa"
    ],
-   "foto": null
+   "foto": {
+    "src": "img/inat/13854.jpg",
+    "tipo": "foto",
+    "credito": "(c) Agustín Povedano, some rights reserved (CC BY-NC-SA)",
+    "licencia": "cc-by-nc-sa",
+    "url": "https://www.inaturalist.org/photos/620387040"
+   }
   },
   {
    "taxon_id": 557604,
@@ -1536,7 +1590,13 @@ window.INAT = {
    "estatus": [
     "nativa"
    ],
-   "foto": null
+   "foto": {
+    "src": "img/inat/623587.jpeg",
+    "tipo": "foto",
+    "credito": "(c) W. Larry Sward, some rights reserved (CC BY-NC)",
+    "licencia": "cc-by-nc",
+    "url": "https://www.inaturalist.org/photos/226872274"
+   }
   },
   {
    "taxon_id": 467538,

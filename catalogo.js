@@ -303,7 +303,7 @@
     const foto = $(".ficha-foto");
     foto.className = "ficha-foto" + (e.foto && e.foto.tipo === "lamina" ? " lamina" : "");
     const im = $("#ficha-img");
-    if (e.foto && e.foto.src) { im.src = e.foto.src; im.alt = nombre(e); im.hidden = false; } else { im.hidden = true; }
+    if (e.foto && e.foto.src) { im.src = e.foto.src; im.alt = nombre(e); im.hidden = false; } else { im.removeAttribute("src"); im.alt = ""; im.hidden = true; }
     $("#ficha-grupo").textContent = tr(GRUPOS[e.grupo]);
     $("#ficha-nombre").textContent = nombre(e);
     $("#ficha-cientifico").textContent = e.cientifico;
