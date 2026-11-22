@@ -1694,6 +1694,51 @@ window.INAT = {
     "licencia": "cc-by-nc",
     "url": "https://www.inaturalist.org/photos/108403403"
    }
+  },
+  {
+   "taxon_id": 1364040,
+   "cientifico": "Camponotus feae",
+   "nombre": {
+    "es": "Hormiga carpintera"
+   },
+   "grupo": "insectos",
+   "observaciones": 0,
+   "investigacion": 0,
+   "observadores": 0,
+   "ultima": "",
+   "estatus": [
+    "vista-reserva"
+   ],
+   "foto": {
+    "src": "img/inat/1364040.jpeg",
+    "tipo": "foto",
+    "credito": "(c) Mónica Pérez-Gil, some rights reserved (CC BY-NC)",
+    "licencia": "cc-by-nc",
+    "url": "https://www.inaturalist.org/photos/286315998"
+   }
+  },
+  {
+   "taxon_id": 557175,
+   "cientifico": "Hogna ferox",
+   "nombre": {
+    "es": "Tarántula"
+   },
+   "grupo": "aracnidos",
+   "observaciones": 0,
+   "investigacion": 0,
+   "observadores": 0,
+   "ultima": "",
+   "estatus": [
+    "nativa",
+    "vista-reserva"
+   ],
+   "foto": {
+    "src": "img/inat/557175.jpg",
+    "tipo": "foto",
+    "credito": "(c) Óscar Mendez, some rights reserved (CC BY-NC)",
+    "licencia": "cc-by-nc",
+    "url": "https://www.inaturalist.org/photos/166004187"
+   }
   }
  ]
 };

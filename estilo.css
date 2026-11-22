@@ -138,6 +138,7 @@ h1{font:650 clamp(2.3rem,6.5vw,4rem)/1.02 var(--serif);margin:0 0 16px;letter-sp
 .chip.introducida{background:color-mix(in srgb,var(--acento) 18%,transparent)}
 .chip.toxica{background:color-mix(in srgb,#c0392b 20%,transparent)}
 .chip.invasora{background:color-mix(in srgb,#c0392b 20%,transparent)}
+.chip.vista-reserva{background:color-mix(in srgb,var(--hoja) 18%,transparent)}
 .chip.aproximada{background:transparent;border:1px dashed var(--linea);color:var(--suave)}
 .vacio{color:var(--suave);text-align:center;padding:40px 0}
 

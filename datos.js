@@ -19,7 +19,8 @@ window.ESTATUS = {
   "protegida":          { es: "Protegida",                en: "Protected",                de: "Geschützt" },
   "toxica":             { es: "Látex tóxico",             en: "Toxic latex",              de: "Giftiger Milchsaft" },
   "invasora":           { es: "Invasora",                 en: "Invasive",                 de: "Invasiv" },
-  "aproximada":         { es: "Ubicación aproximada",     en: "Approximate location",     de: "Ungefährer Fundort" }
+  "aproximada":         { es: "Ubicación aproximada",     en: "Approximate location",     de: "Ungefährer Fundort" },
+  "vista-reserva":      { es: "Vista en la reserva",      en: "Seen in the reserve",      de: "Im Reservat gesehen" }
 };
 
 window.GRUPOS = {

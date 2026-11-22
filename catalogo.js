@@ -332,8 +332,13 @@
       const a = document.createElement("a");
       a.className = "boton"; a.target = "_blank"; a.rel = "noopener";
       const z = (window.INAT && window.INAT.zona) || { lat: 28.0385, lng: -16.6035, radio_km: 1.5 };
-      a.href = `https://www.inaturalist.org/observations?taxon_id=${e.inat.taxon_id}&lat=${z.lat}&lng=${z.lng}&radius=${z.radio_km}`;
-      a.textContent = `${T[lang].verInat} · ${T[lang].obs(e.inat.observaciones || 0)}`;
+      if (e.inat.observaciones) {
+        a.href = `https://www.inaturalist.org/observations?taxon_id=${e.inat.taxon_id}&lat=${z.lat}&lng=${z.lng}&radius=${z.radio_km}`;
+        a.textContent = `${T[lang].verInat} · ${T[lang].obs(e.inat.observaciones)}`;
+      } else {
+        a.href = `https://www.inaturalist.org/taxa/${e.inat.taxon_id}`;
+        a.textContent = T[lang].verInat;
+      }
       en.appendChild(a);
     }
     history.replaceState(null, "", "#" + e.id);
