@@ -348,6 +348,8 @@
     const isl = (window.ISLAS || {})[clave(e.cientifico)], pi = $("#ficha-islas");
     pi.hidden = !isl;
     if (isl) pi.textContent = `${T[lang].islasEt}: ${isl.length === 7 ? T[lang].islasTodas : [...isl].map(c => T[lang].islasN[c]).join(", ")}`;
+    const nota = (window.NOTAS || {})[clave(e.cientifico)], pn = $("#ficha-nota");
+    pn.hidden = !nota; pn.textContent = nota ? tr(nota) : "";
     const x = taxo(e), tx = $("#ficha-taxonomia");
     const pasos = ["reino", "clase", "orden", "familia"].filter(k => x[k]).map(k => `${T[lang].rangos[k]} <b></b>`);
     tx.innerHTML = pasos.join(" › "); tx.hidden = !pasos.length || nivel < 3;

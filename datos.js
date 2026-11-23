@@ -84,6 +84,15 @@ window.CONSERVACION = {
   "asio otus": { protegida: true }, "curruca conspicillata": { protegida: true }
 };
 
+/* Notas de distribución para especies con área muy pequeña (texto por idioma). */
+window.NOTAS = {
+  "pimelia canariensis": {
+    es: "Área muy reducida: solo vive en la costa sur y sureste de Tenerife. Las 21 observaciones de iNaturalist (nov. 2026) están en San Miguel de Abona (San Blas, Amarilla), Granadilla (El Médano, Montaña Roja), Arona y el Malpaís de Güímar.",
+    en: "Very small range: it only lives on the south and south-east coast of Tenerife. The 21 iNaturalist records (Nov 2026) are from San Miguel de Abona (San Blas, Amarilla), Granadilla (El Médano, Montaña Roja), Arona and the Malpaís de Güímar.",
+    de: "Sehr kleines Verbreitungsgebiet: nur an der Süd- und Südostküste Teneriffas. Die 21 iNaturalist-Beobachtungen (Nov. 2026) stammen aus San Miguel de Abona (San Blas, Amarilla), Granadilla (El Médano, Montaña Roja), Arona und dem Malpaís de Güímar."
+  }
+};
+
 window.GRUPOS = {
   plantas: { es: "Plantas", en: "Plants", de: "Pflanzen" },
   aves:    { es: "Aves",    en: "Birds",  de: "Vögel" }
