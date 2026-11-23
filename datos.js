@@ -46,7 +46,8 @@ window.ISLAS = {
   "campylanthus salsoloides": "PGTCFL",
   "autonoe haemorrhoidalis": "HPGTCFL",
   "forsskaolea angustifolia": "HPGTCFL",
-  "kleinia neriifolia": "HPGTCFL"
+  "kleinia neriifolia": "HPGTCFL",
+  "argyranthemum frutescens": "GTC"  /* Banco de Datos: presencia segura en G, T y C; en el resto, traslocada */
 };
 
 window.GRUPOS = {
