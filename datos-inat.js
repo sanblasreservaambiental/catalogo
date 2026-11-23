@@ -1,7 +1,7 @@
 /* Generado por herramientas/actualizar_inat.py — no editar a mano.
  * Observaciones de iNaturalist en un radio de 1.5 km alrededor de San Blas Reserva Ambiental. */
 window.INAT = {
- "actualizado": "2026-11-22",
+ "actualizado": "2026-11-23",
  "zona": {
   "lat": 28.0385,
   "lng": -16.6035,
@@ -1735,7 +1735,7 @@ window.INAT = {
    "taxon_id": 118652,
    "cientifico": "Trachinus draco",
    "nombre": {
-    "es": "Escorpión",
+    "es": "Pez araña",
     "en": "Greater Weever",
     "de": "Großes Petermännchen"
    },

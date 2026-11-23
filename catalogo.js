@@ -11,7 +11,7 @@
       sinFicha: "Especie observada en la reserva o en su entorno y registrada en iNaturalist. Estamos preparando su ficha.",
       verInat: "Ver en iNaturalist", mapaCanarias: "Mapa en todo Canarias", obs: n => `${n} ${n === 1 ? "observación" : "observaciones"} en San Blas y su entorno`,
       foto: "Imagen", cerrar: "Cerrar",
-      nivel: "Nivel del alumnado", sinClasificar: "Sin clasificar",
+      nivel: "Nivel del alumnado", sinClasificar: "Sin clasificar", litoralTit: "Litoral cercano", litoralTxt: "Especies del mar junto a San Blas. La reserva no llega hasta el mar: son especies vecinas, no de la reserva.",
       vistaTarjetas: "Tarjetas", vistaArbol: "Árbol", desplegar: "Desplegar todo", plegar: "Plegar todo", grupoEt: "Grupo",
       rangos: { reino: "Reino", clase: "Clase", orden: "Orden", familia: "Familia" },
       niveles: [
@@ -39,7 +39,7 @@
       sinFicha: "Species observed in or around the reserve and recorded on iNaturalist. Its profile is being prepared.",
       verInat: "View on iNaturalist", mapaCanarias: "Map across the Canary Islands", obs: n => `${n} ${n === 1 ? "observation" : "observations"} in and around San Blas`,
       foto: "Image", cerrar: "Close",
-      nivel: "Student level", sinClasificar: "Unclassified",
+      nivel: "Student level", sinClasificar: "Unclassified", litoralTit: "Nearby coast", litoralTxt: "Sea species next to San Blas. The reserve does not reach the sea: these are neighbouring species, not part of the reserve.",
       vistaTarjetas: "Cards", vistaArbol: "Tree", desplegar: "Expand all", plegar: "Collapse all", grupoEt: "Group",
       rangos: { reino: "Kingdom", clase: "Class", orden: "Order", familia: "Family" },
       niveles: [
@@ -67,7 +67,7 @@
       sinFicha: "Im Reservat oder in seiner Umgebung beobachtete und auf iNaturalist erfasste Art. Das Porträt ist in Vorbereitung.",
       verInat: "Auf iNaturalist ansehen", mapaCanarias: "Karte der Kanaren", obs: n => `${n} ${n === 1 ? "Beobachtung" : "Beobachtungen"} in und um San Blas`,
       foto: "Bild", cerrar: "Schließen",
-      nivel: "Lernstufe", sinClasificar: "Nicht zugeordnet",
+      nivel: "Lernstufe", sinClasificar: "Nicht zugeordnet", litoralTit: "Nahe Küste", litoralTxt: "Meeresarten neben San Blas. Das Reservat reicht nicht bis ans Meer: Es sind Nachbararten, nicht Arten des Reservats.",
       vistaTarjetas: "Karten", vistaArbol: "Baum", desplegar: "Alle aufklappen", plegar: "Alle zuklappen", grupoEt: "Gruppe",
       rangos: { reino: "Reich", clase: "Klasse", orden: "Ordnung", familia: "Familie" },
       niveles: [
@@ -108,6 +108,11 @@
     if (e) { e.inat = i; if (!e.foto && i.foto) e.foto = i.foto; }
     else especies.push({ id: "inat-" + i.taxon_id, grupo: i.grupo, cientifico: i.cientifico, nombre: i.nombre, estatus: i.estatus || [], foto: i.foto, inat: i });
   }
+
+  /* Especies del mar: la reserva no llega a la costa, van en un apartado aparte */
+  const MARINAS = new Set(["chelonia mydas"]);
+  const marina = e => e.grupo === "peces" || e.grupo === "moluscos" || MARINAS.has(clave(e.cientifico));
+  especies.forEach(e => { if (marina(e)) { e.estatus = (e.estatus || []).filter(k => k !== "litoral").concat("litoral"); e.marina = true; } });
 
   const $ = s => document.querySelector(s);
   let lang = "es", grupo = "todas", texto = "", nivel = 2, vista = "tarjetas";
@@ -228,7 +233,7 @@
     const r = x[k] || ["—", ""];
     return { id: r[0], et: T[lang].rangos[k], nom: r[0], sci: true, es: comun(r), c: COLOR[e.grupo] };
   }
-  function pintarArbol(lista, abierto) {
+  function pintarArbol(lista, abierto, ul) {
     const ramas = RAMAS[nivel], raiz = { hijos: new Map(), es: [] };
     lista.forEach(e => {
       let nodo = raiz;
@@ -240,7 +245,6 @@
       });
       nodo.es.push(e);
     });
-    const ul = $("#arbol"); ul.innerHTML = "";
     const hacer = (nodo, cont, prof) => {
       [...nodo.hijos.values()].sort((a, b) => b.n - a.n || a.r.nom.localeCompare(b.r.nom)).forEach(h => {
         const li = document.createElement("li"), d = document.createElement("details");
@@ -278,11 +282,28 @@
     document.querySelectorAll("#vista button").forEach(b => b.setAttribute("aria-pressed", b.dataset.vista === vista));
     $("#rejilla").hidden = vista === "arbol"; $("#arbol-cont").hidden = vista !== "arbol";
     $("#vacio").hidden = lista.length > 0;
-    if (vista === "arbol") { pintarArbol(lista, !!t || grupo !== "todas"); return; }
+    const tierra = lista.filter(e => !e.marina), mar = lista.filter(e => e.marina);
+    const cabeceraMar = (etiqueta) => {
+      const h = document.createElement(etiqueta); h.className = "seccion litoral";
+      h.innerHTML = "<span></span><small></small>";
+      h.firstChild.textContent = T[lang].litoralTit;
+      h.lastChild.textContent = T[lang].litoralTxt;
+      return h;
+    };
+    if (vista === "arbol") {
+      const ul = $("#arbol"); ul.innerHTML = "";
+      pintarArbol(tierra, !!t || grupo !== "todas", ul);
+      if (mar.length) {
+        const li = document.createElement("li"); li.className = "arbol-litoral"; li.appendChild(cabeceraMar("h3"));
+        const sub = document.createElement("ul"); sub.className = "arbol"; li.appendChild(sub); ul.appendChild(li);
+        pintarArbol(mar, !!t || grupo !== "todas", sub);
+      }
+      return;
+    }
     const rej = $("#rejilla"); rej.innerHTML = "";
     if (nivel >= 3) {
       const grupos = new Map();
-      lista.forEach(e => { const a = apartado(e) || { id: "~", titulo: T[lang].sinClasificar, nombre: null }; if (!grupos.has(a.id)) grupos.set(a.id, { a, es: [] }); grupos.get(a.id).es.push(e); });
+      tierra.forEach(e => { const a = apartado(e) || { id: "~", titulo: T[lang].sinClasificar, nombre: null }; if (!grupos.has(a.id)) grupos.set(a.id, { a, es: [] }); grupos.get(a.id).es.push(e); });
       [...grupos.values()].sort((x, y) => (x.a.id === "~") - (y.a.id === "~") || y.es.length - x.es.length || x.a.id.localeCompare(y.a.id)).forEach(({ a, es }) => {
         const h = document.createElement("h3"); h.className = "seccion";
         h.innerHTML = a.titulo + (a.sub ? "<small></small>" : "");
@@ -292,8 +313,9 @@
         es.forEach(e => rej.appendChild(tarjeta(e)));
       });
     } else {
-      lista.forEach(e => rej.appendChild(tarjeta(e)));
+      tierra.forEach(e => rej.appendChild(tarjeta(e)));
     }
+    if (mar.length) { rej.appendChild(cabeceraMar("h2")); mar.forEach(e => rej.appendChild(tarjeta(e))); }
     $("#vacio").hidden = lista.length > 0;
   }
 
