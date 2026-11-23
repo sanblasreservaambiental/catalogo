@@ -976,7 +976,7 @@ window.INAT = {
    "ultima": "2008-01-26",
    "proyecto": 0,
    "estatus": [
-    "nativa"
+    "endemica-macaro"
    ],
    "foto": {
     "src": "img/inat/700606.jpeg",
