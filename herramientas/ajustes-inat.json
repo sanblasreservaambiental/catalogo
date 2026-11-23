@@ -56,7 +56,8 @@
     "Monanthes pallens": "Pelotilla pálida",
     "Patellifolia procumbens": "Marmojaya",
     "Polycarpaea nivea": "Saladillo blanco",
-    "Passer hispaniolensis": "Gorrión moruno"
+    "Passer hispaniolensis": "Gorrión moruno",
+    "Tarentola delalandii": "Perenquén canario"
   },
   "estatus": {
     "Gallotia galloti": [
@@ -227,6 +228,9 @@
     ],
     "Sparisoma cretense": [
       "nativa"
+    ],
+    "Tarentola delalandii": [
+      "endemica-canaria"
     ]
   },
   "nombres_rangos": {
@@ -352,12 +356,14 @@
     "Strigidae": "búhos",
     "Procellariidae": "pardelas y petreles",
     "Formicidae": "hormigas",
-    "Lycosidae": "arañas lobo (tarántulas)"
+    "Lycosidae": "arañas lobo (tarántulas)",
+    "Phyllodactylidae": "Filodactílidos"
   },
   "anadir": {
     "_nota": "Especies vistas en San Blas por el equipo de la reserva aunque no tengan observaciones en iNaturalist dentro de la zona (taxon_id de iNaturalist).",
     "1364040": "Camponotus feae",
-    "557175": "Hogna ferox"
+    "557175": "Hogna ferox",
+    "73966": "Tarentola delalandii"
   },
   "_fuente_estatus": "Endemicidad, origen y nombres comunes revisados el 23 nov 2026 con el Banco de Datos de Biodiversidad de Canarias (biodiversidadcanarias.es); copia de su exportación en herramientas/bdbc-especies.csv (UTF-8, separada por «;»).",
   "_fuente_tenerife": "Endemismos exclusivos de Tenerife: listado de plantas vasculares de endemicascanarias.com que pasó el usuario el 23 nov 2026."
