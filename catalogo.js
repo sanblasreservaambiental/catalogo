@@ -11,7 +11,7 @@
       sinFicha: "Especie observada en la reserva o en su entorno y registrada en iNaturalist. Estamos preparando su ficha.",
       verInat: "Ver en iNaturalist", mapaCanarias: "Mapa en todo Canarias", obs: n => `${n} ${n === 1 ? "observación" : "observaciones"} en San Blas y su entorno`,
       foto: "Imagen", cerrar: "Cerrar",
-      nivel: "Nivel del alumnado", sinClasificar: "Sin clasificar", litoralTit: "En el entorno de la reserva", litoralTxt: "Especies observadas en iNaturalist a menos de 1,5 km de San Blas pero fuera de la reserva: en el mar, la costa y los alrededores. Son especies limítrofes, no de la reserva.",
+      nivel: "Nivel del alumnado", sinClasificar: "Sin clasificar", litoralTit: "En el entorno de la reserva", litoralTxt: "Especies observadas en iNaturalist a menos de 750 m de San Blas pero fuera de la reserva: en el mar, la costa y los alrededores. Son especies limítrofes, no de la reserva.",
       vistaTarjetas: "Tarjetas", vistaArbol: "Árbol", desplegar: "Desplegar todo", plegar: "Plegar todo", grupoEt: "Grupo",
       rangos: { reino: "Reino", clase: "Clase", orden: "Orden", familia: "Familia" },
       niveles: [
@@ -21,7 +21,7 @@
         { curso: "Bachillerato y FP", nombre: "Familias", ayuda: "Las especies se agrupan por familia, el escalón anterior al género y la especie. En la ficha está la clasificación completa." }
       ],
       inatAnte: "Catálogo vivo", inatTitulo: "Súmense en iNaturalist",
-      inatTexto: "Este catálogo crece con las observaciones del proyecto San Blas Reserva Ambiental en iNaturalist. Basta con una cuenta y subir fotos con ubicación GPS tomadas dentro de la reserva: se añaden al proyecto automáticamente. Las especies sin ficha propia proceden de observaciones de iNaturalist hechas a menos de 1,5 km de la reserva.",
+      inatTexto: "Este catálogo crece con las observaciones del proyecto San Blas Reserva Ambiental en iNaturalist. Basta con una cuenta y subir fotos con ubicación GPS tomadas dentro de la reserva: se añaden al proyecto automáticamente. Las especies sin ficha propia proceden de observaciones de iNaturalist hechas a menos de 750 m de la reserva.",
       inatBoton: "Abrir el proyecto en iNaturalist",
       invitaTitulo: "¿Conocen otro uso o un nombre tradicional?",
       invitaTexto: "Si en su familia o en su centro conocen otro nombre canario o un uso tradicional de alguna de estas especies, escríbannos a <a href=\"mailto:tenerife.ambiental-res@barcelo.com\">tenerife.ambiental-res@barcelo.com</a> y lo añadiremos citando la fuente.",
@@ -39,7 +39,7 @@
       sinFicha: "Species observed in or around the reserve and recorded on iNaturalist. Its profile is being prepared.",
       verInat: "View on iNaturalist", mapaCanarias: "Map across the Canary Islands", obs: n => `${n} ${n === 1 ? "observation" : "observations"} in and around San Blas`,
       foto: "Image", cerrar: "Close",
-      nivel: "Student level", sinClasificar: "Unclassified", litoralTit: "Around the reserve", litoralTxt: "Species recorded on iNaturalist within 1.5 km of San Blas but outside the reserve: at sea, on the coast and nearby. They are neighbouring species, not part of the reserve.",
+      nivel: "Student level", sinClasificar: "Unclassified", litoralTit: "Around the reserve", litoralTxt: "Species recorded on iNaturalist within 750 m of San Blas but outside the reserve: at sea, on the coast and nearby. They are neighbouring species, not part of the reserve.",
       vistaTarjetas: "Cards", vistaArbol: "Tree", desplegar: "Expand all", plegar: "Collapse all", grupoEt: "Group",
       rangos: { reino: "Kingdom", clase: "Class", orden: "Order", familia: "Family" },
       niveles: [
@@ -49,7 +49,7 @@
         { curso: "Upper secondary", nombre: "Families", ayuda: "Species are grouped by family, the step before genus and species. Each profile shows the full classification." }
       ],
       inatAnte: "Living catalogue", inatTitulo: "Join us on iNaturalist",
-      inatTexto: "This catalogue grows with the observations of the San Blas Reserva Ambiental project on iNaturalist. All you need is an account: upload GPS-tagged photos taken inside the reserve and they are added to the project automatically. Species without a full profile come from iNaturalist observations made within 1.5 km of the reserve.",
+      inatTexto: "This catalogue grows with the observations of the San Blas Reserva Ambiental project on iNaturalist. All you need is an account: upload GPS-tagged photos taken inside the reserve and they are added to the project automatically. Species without a full profile come from iNaturalist observations made within 750 m of the reserve.",
       inatBoton: "Open the project on iNaturalist",
       invitaTitulo: "Do you know another use or a traditional name?",
       invitaTexto: "If you know another Canarian name or a traditional use for any of these species, write to us at <a href=\"mailto:tenerife.ambiental-res@barcelo.com\">tenerife.ambiental-res@barcelo.com</a> and we will add it, citing the source.",
@@ -67,7 +67,7 @@
       sinFicha: "Im Reservat oder in seiner Umgebung beobachtete und auf iNaturalist erfasste Art. Das Porträt ist in Vorbereitung.",
       verInat: "Auf iNaturalist ansehen", mapaCanarias: "Karte der Kanaren", obs: n => `${n} ${n === 1 ? "Beobachtung" : "Beobachtungen"} in und um San Blas`,
       foto: "Bild", cerrar: "Schließen",
-      nivel: "Lernstufe", sinClasificar: "Nicht zugeordnet", litoralTit: "Rund um das Reservat", litoralTxt: "Auf iNaturalist im Umkreis von 1,5 km um San Blas, aber außerhalb des Reservats beobachtete Arten: im Meer, an der Küste und in der Umgebung. Es sind Nachbararten, nicht Arten des Reservats.",
+      nivel: "Lernstufe", sinClasificar: "Nicht zugeordnet", litoralTit: "Rund um das Reservat", litoralTxt: "Auf iNaturalist im Umkreis von 750 m um San Blas, aber außerhalb des Reservats beobachtete Arten: im Meer, an der Küste und in der Umgebung. Es sind Nachbararten, nicht Arten des Reservats.",
       vistaTarjetas: "Karten", vistaArbol: "Baum", desplegar: "Alle aufklappen", plegar: "Alle zuklappen", grupoEt: "Gruppe",
       rangos: { reino: "Reich", clase: "Klasse", orden: "Ordnung", familia: "Familie" },
       niveles: [
@@ -77,7 +77,7 @@
         { curso: "Sekundarstufe II", nombre: "Familien", ayuda: "Die Arten sind nach Familie gruppiert, der Stufe vor Gattung und Art. Im Porträt steht die vollständige Systematik." }
       ],
       inatAnte: "Lebendiger Katalog", inatTitulo: "Machen Sie mit bei iNaturalist",
-      inatTexto: "Dieser Katalog wächst mit den Beobachtungen des Projekts San Blas Reserva Ambiental auf iNaturalist. Sie brauchen nur ein Konto: Laden Sie Fotos mit GPS-Daten aus dem Reservat hoch, und sie werden automatisch dem Projekt zugeordnet. Arten ohne eigenes Porträt stammen aus iNaturalist-Beobachtungen im Umkreis von 1,5 km um das Reservat.",
+      inatTexto: "Dieser Katalog wächst mit den Beobachtungen des Projekts San Blas Reserva Ambiental auf iNaturalist. Sie brauchen nur ein Konto: Laden Sie Fotos mit GPS-Daten aus dem Reservat hoch, und sie werden automatisch dem Projekt zugeordnet. Arten ohne eigenes Porträt stammen aus iNaturalist-Beobachtungen im Umkreis von 750 m um das Reservat.",
       inatBoton: "Projekt auf iNaturalist öffnen",
       invitaTitulo: "Kennen Sie eine andere Nutzung oder einen traditionellen Namen?",
       invitaTexto: "Wenn Sie einen weiteren kanarischen Namen oder eine traditionelle Nutzung einer dieser Arten kennen, schreiben Sie uns an <a href=\"mailto:tenerife.ambiental-res@barcelo.com\">tenerife.ambiental-res@barcelo.com</a> – wir ergänzen sie mit Quellenangabe.",
@@ -111,7 +111,7 @@
 
   /* Especies de la reserva: las del proyecto de iNaturalist (observadas dentro de sus límites),
      las de las guías de la reserva (fichas propias) y las vistas por el equipo. El resto de
-     observaciones de la zona (radio de 1,5 km) son especies del entorno, limítrofes. */
+     observaciones de la zona (radio de 750 m) son especies del entorno, limítrofes. */
   const enReserva = e => !e.id.startsWith("inat-") || (e.inat && e.inat.proyecto > 0) || (e.estatus || []).includes("vista-reserva");
   especies.forEach(e => { if (!enReserva(e)) { e.estatus = (e.estatus || []).filter(k => k !== "entorno").concat("entorno"); e.entorno = true; } });
 
