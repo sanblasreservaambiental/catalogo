@@ -21,6 +21,7 @@ window.INAT = {
    "investigacion": 7,
    "observadores": 5,
    "ultima": "2026-09-08",
+   "proyecto": 4,
    "estatus": [
     "endemica-canaria"
    ],
@@ -44,6 +45,7 @@ window.INAT = {
    "investigacion": 11,
    "observadores": 5,
    "ultima": "2026-03-01",
+   "proyecto": 7,
    "estatus": [],
    "foto": null
   },
@@ -60,6 +62,7 @@ window.INAT = {
    "investigacion": 8,
    "observadores": 5,
    "ultima": "2026-02-11",
+   "proyecto": 5,
    "estatus": [],
    "foto": null
   },
@@ -76,6 +79,7 @@ window.INAT = {
    "investigacion": 8,
    "observadores": 6,
    "ultima": "2026-03-01",
+   "proyecto": 4,
    "estatus": [],
    "foto": null
   },
@@ -92,6 +96,7 @@ window.INAT = {
    "investigacion": 6,
    "observadores": 1,
    "ultima": "2026-03-01",
+   "proyecto": 1,
    "estatus": [
     "nativa"
    ],
@@ -116,6 +121,7 @@ window.INAT = {
    "investigacion": 6,
    "observadores": 4,
    "ultima": "2026-07-09",
+   "proyecto": 3,
    "estatus": [],
    "foto": null
   },
@@ -131,6 +137,7 @@ window.INAT = {
    "investigacion": 4,
    "observadores": 5,
    "ultima": "2026-03-01",
+   "proyecto": 3,
    "estatus": [],
    "foto": null
   },
@@ -147,6 +154,7 @@ window.INAT = {
    "investigacion": 4,
    "observadores": 3,
    "ultima": "2026-04-28",
+   "proyecto": 1,
    "estatus": [
     "nativa"
    ],
@@ -171,6 +179,7 @@ window.INAT = {
    "investigacion": 4,
    "observadores": 4,
    "ultima": "2026-03-01",
+   "proyecto": 2,
    "estatus": [],
    "foto": null
   },
@@ -187,6 +196,7 @@ window.INAT = {
    "investigacion": 4,
    "observadores": 3,
    "ultima": "2025-07-12",
+   "proyecto": 1,
    "estatus": [
     "nativa"
    ],
@@ -211,6 +221,7 @@ window.INAT = {
    "investigacion": 4,
    "observadores": 3,
    "ultima": "2026-03-01",
+   "proyecto": 3,
    "estatus": [
     "introducida",
     "invasora"
@@ -235,6 +246,7 @@ window.INAT = {
    "investigacion": 2,
    "observadores": 3,
    "ultima": "2026-03-01",
+   "proyecto": 3,
    "estatus": [
     "endemica-canaria"
    ],
@@ -259,6 +271,7 @@ window.INAT = {
    "investigacion": 4,
    "observadores": 2,
    "ultima": "2026-03-01",
+   "proyecto": 2,
    "estatus": [
     "nativa"
    ],
@@ -283,6 +296,7 @@ window.INAT = {
    "investigacion": 4,
    "observadores": 3,
    "ultima": "2026-05-06",
+   "proyecto": 0,
    "estatus": [
     "introducida"
    ],
@@ -301,6 +315,7 @@ window.INAT = {
    "investigacion": 3,
    "observadores": 2,
    "ultima": "2026-06-05",
+   "proyecto": 3,
    "estatus": [
     "introducida"
    ],
@@ -319,6 +334,7 @@ window.INAT = {
    "investigacion": 3,
    "observadores": 3,
    "ultima": "2026-05-06",
+   "proyecto": 1,
    "estatus": [],
    "foto": null
   },
@@ -335,6 +351,7 @@ window.INAT = {
    "investigacion": 3,
    "observadores": 3,
    "ultima": "2024-05-14",
+   "proyecto": 1,
    "estatus": [
     "introducida",
     "invasora"
@@ -358,6 +375,7 @@ window.INAT = {
    "investigacion": 3,
    "observadores": 2,
    "ultima": "2026-02-11",
+   "proyecto": 1,
    "estatus": [],
    "foto": null
   },
@@ -374,6 +392,7 @@ window.INAT = {
    "investigacion": 3,
    "observadores": 2,
    "ultima": "2026-03-01",
+   "proyecto": 2,
    "estatus": [
     "nativa"
    ],
@@ -397,6 +416,7 @@ window.INAT = {
    "investigacion": 3,
    "observadores": 3,
    "ultima": "2024-05-14",
+   "proyecto": 1,
    "estatus": [
     "endemica-macaro"
    ],
@@ -421,6 +441,7 @@ window.INAT = {
    "investigacion": 3,
    "observadores": 3,
    "ultima": "2016-03-01",
+   "proyecto": 0,
    "estatus": [],
    "foto": null
   },
@@ -437,6 +458,7 @@ window.INAT = {
    "investigacion": 3,
    "observadores": 2,
    "ultima": "2026-03-01",
+   "proyecto": 2,
    "estatus": [
     "nativa"
    ],
@@ -461,6 +483,7 @@ window.INAT = {
    "investigacion": 3,
    "observadores": 3,
    "ultima": "2014-07-27",
+   "proyecto": 0,
    "estatus": [],
    "foto": null
   },
@@ -477,6 +500,7 @@ window.INAT = {
    "investigacion": 2,
    "observadores": 2,
    "ultima": "2026-03-01",
+   "proyecto": 1,
    "estatus": [],
    "foto": null
   },
@@ -493,6 +517,7 @@ window.INAT = {
    "investigacion": 1,
    "observadores": 1,
    "ultima": "2026-04-22",
+   "proyecto": 1,
    "estatus": [
     "nativa"
    ],
@@ -516,6 +541,7 @@ window.INAT = {
    "investigacion": 1,
    "observadores": 2,
    "ultima": "2023-04-25",
+   "proyecto": 0,
    "estatus": [
     "nativa"
    ],
@@ -540,6 +566,7 @@ window.INAT = {
    "investigacion": 2,
    "observadores": 2,
    "ultima": "2022-10-28",
+   "proyecto": 0,
    "estatus": [],
    "foto": null
   },
@@ -556,6 +583,7 @@ window.INAT = {
    "investigacion": 2,
    "observadores": 2,
    "ultima": "2026-03-01",
+   "proyecto": 2,
    "estatus": [
     "endemica-canaria"
    ],
@@ -579,6 +607,7 @@ window.INAT = {
    "investigacion": 2,
    "observadores": 1,
    "ultima": "2026-03-01",
+   "proyecto": 2,
    "estatus": [],
    "foto": {
     "src": "img/inat/124590.jpg",
@@ -600,6 +629,7 @@ window.INAT = {
    "investigacion": 1,
    "observadores": 2,
    "ultima": "2026-03-01",
+   "proyecto": 2,
    "estatus": [
     "nativa"
    ],
@@ -622,6 +652,7 @@ window.INAT = {
    "investigacion": 1,
    "observadores": 1,
    "ultima": "2008-01-26",
+   "proyecto": 0,
    "estatus": [
     "endemica-canaria"
    ],
@@ -646,6 +677,7 @@ window.INAT = {
    "investigacion": 1,
    "observadores": 1,
    "ultima": "2024-12-30",
+   "proyecto": 0,
    "estatus": [
     "nativa"
    ],
@@ -670,6 +702,7 @@ window.INAT = {
    "investigacion": 1,
    "observadores": 1,
    "ultima": "2026-03-01",
+   "proyecto": 1,
    "estatus": [
     "nativa"
    ],
@@ -693,6 +726,7 @@ window.INAT = {
    "investigacion": 1,
    "observadores": 1,
    "ultima": "2024-03-19",
+   "proyecto": 0,
    "estatus": [
     "introducida"
    ],
@@ -717,6 +751,7 @@ window.INAT = {
    "investigacion": 1,
    "observadores": 1,
    "ultima": "2026-03-01",
+   "proyecto": 0,
    "estatus": [],
    "foto": null
   },
@@ -731,6 +766,7 @@ window.INAT = {
    "investigacion": 1,
    "observadores": 1,
    "ultima": "2008-01-26",
+   "proyecto": 0,
    "estatus": [
     "endemica-canaria"
    ],
@@ -755,6 +791,7 @@ window.INAT = {
    "investigacion": 1,
    "observadores": 1,
    "ultima": "2006-04-28",
+   "proyecto": 0,
    "estatus": [
     "nativa"
    ],
@@ -778,6 +815,7 @@ window.INAT = {
    "investigacion": 1,
    "observadores": 1,
    "ultima": "2008-01-26",
+   "proyecto": 0,
    "estatus": [
     "endemica-canaria"
    ],
@@ -802,6 +840,7 @@ window.INAT = {
    "investigacion": 1,
    "observadores": 1,
    "ultima": "2023-03-04",
+   "proyecto": 0,
    "estatus": [
     "nativa"
    ],
@@ -824,6 +863,7 @@ window.INAT = {
    "investigacion": 1,
    "observadores": 1,
    "ultima": "2024-06-06",
+   "proyecto": 1,
    "estatus": [
     "endemica-canaria"
    ],
@@ -847,6 +887,7 @@ window.INAT = {
    "investigacion": 1,
    "observadores": 1,
    "ultima": "2008-01-26",
+   "proyecto": 0,
    "estatus": [
     "endemica-canaria"
    ],
@@ -871,6 +912,7 @@ window.INAT = {
    "investigacion": 0,
    "observadores": 1,
    "ultima": "2026-03-01",
+   "proyecto": 1,
    "estatus": [],
    "foto": {
     "src": "img/inat/199408.jpeg",
@@ -893,6 +935,7 @@ window.INAT = {
    "investigacion": 1,
    "observadores": 1,
    "ultima": "2014-09-21",
+   "proyecto": 0,
    "estatus": [
     "protegida",
     "aproximada"
@@ -918,6 +961,7 @@ window.INAT = {
    "investigacion": 0,
    "observadores": 1,
    "ultima": "2022-10-25",
+   "proyecto": 0,
    "estatus": [],
    "foto": {
     "src": "img/inat/117308.jpeg",
@@ -939,6 +983,7 @@ window.INAT = {
    "investigacion": 1,
    "observadores": 1,
    "ultima": "2024-05-14",
+   "proyecto": 1,
    "estatus": [
     "nativa"
    ],
@@ -961,6 +1006,7 @@ window.INAT = {
    "investigacion": 1,
    "observadores": 1,
    "ultima": "2024-01-02",
+   "proyecto": 0,
    "estatus": [
     "endemica-canaria",
     "aproximada"
@@ -984,6 +1030,7 @@ window.INAT = {
    "investigacion": 1,
    "observadores": 1,
    "ultima": "2023-03-29",
+   "proyecto": 0,
    "estatus": [
     "aproximada"
    ],
@@ -1008,6 +1055,7 @@ window.INAT = {
    "investigacion": 1,
    "observadores": 1,
    "ultima": "2026-03-01",
+   "proyecto": 1,
    "estatus": [],
    "foto": null
   },
@@ -1023,6 +1071,7 @@ window.INAT = {
    "investigacion": 1,
    "observadores": 1,
    "ultima": "2008-01-26",
+   "proyecto": 0,
    "estatus": [
     "nativa"
    ],
@@ -1047,6 +1096,7 @@ window.INAT = {
    "investigacion": 1,
    "observadores": 1,
    "ultima": "2022-10-28",
+   "proyecto": 0,
    "estatus": [
     "subespecie-endemica"
    ],
@@ -1069,6 +1119,7 @@ window.INAT = {
    "investigacion": 0,
    "observadores": 1,
    "ultima": "2026-02-11",
+   "proyecto": 0,
    "estatus": [
     "nativa"
    ],
@@ -1093,6 +1144,7 @@ window.INAT = {
    "investigacion": 1,
    "observadores": 1,
    "ultima": "2026-09-09",
+   "proyecto": 0,
    "estatus": [],
    "foto": {
     "src": "img/inat/130082.jpg",
@@ -1113,6 +1165,7 @@ window.INAT = {
    "investigacion": 1,
    "observadores": 1,
    "ultima": "2008-01-26",
+   "proyecto": 0,
    "estatus": [
     "nativa"
    ],
@@ -1137,6 +1190,7 @@ window.INAT = {
    "investigacion": 1,
    "observadores": 1,
    "ultima": "2024-07-28",
+   "proyecto": 0,
    "estatus": [
     "aproximada"
    ],
@@ -1160,6 +1214,7 @@ window.INAT = {
    "investigacion": 1,
    "observadores": 1,
    "ultima": "2008-01-26",
+   "proyecto": 0,
    "estatus": [
     "nativa"
    ],
@@ -1182,6 +1237,7 @@ window.INAT = {
    "investigacion": 1,
    "observadores": 1,
    "ultima": "2026-03-01",
+   "proyecto": 1,
    "estatus": [
     "nativa"
    ],
@@ -1204,6 +1260,7 @@ window.INAT = {
    "investigacion": 1,
    "observadores": 1,
    "ultima": "2026-03-01",
+   "proyecto": 1,
    "estatus": [],
    "foto": {
     "src": "img/inat/564198.jpeg",
@@ -1226,6 +1283,7 @@ window.INAT = {
    "investigacion": 1,
    "observadores": 1,
    "ultima": "2022-09-10",
+   "proyecto": 0,
    "estatus": [],
    "foto": null
   },
@@ -1242,6 +1300,7 @@ window.INAT = {
    "investigacion": 1,
    "observadores": 1,
    "ultima": "2008-01-26",
+   "proyecto": 0,
    "estatus": [],
    "foto": null
   },
@@ -1254,6 +1313,7 @@ window.INAT = {
    "investigacion": 1,
    "observadores": 1,
    "ultima": "2026-03-01",
+   "proyecto": 1,
    "estatus": [],
    "foto": {
     "src": "img/inat/700604.jpg",
@@ -1276,6 +1336,7 @@ window.INAT = {
    "investigacion": 1,
    "observadores": 1,
    "ultima": "2022-10-25",
+   "proyecto": 0,
    "estatus": [
     "introducida",
     "invasora"
@@ -1300,6 +1361,7 @@ window.INAT = {
    "investigacion": 0,
    "observadores": 1,
    "ultima": "2026-03-01",
+   "proyecto": 1,
    "estatus": [
     "endemica-canaria"
    ],
@@ -1323,6 +1385,7 @@ window.INAT = {
    "investigacion": 1,
    "observadores": 1,
    "ultima": "2024-05-14",
+   "proyecto": 1,
    "estatus": [],
    "foto": null
   },
@@ -1338,6 +1401,7 @@ window.INAT = {
    "investigacion": 1,
    "observadores": 1,
    "ultima": "2024-03-08",
+   "proyecto": 0,
    "estatus": [
     "endemica-canaria",
     "aproximada"
@@ -1359,6 +1423,7 @@ window.INAT = {
    "investigacion": 1,
    "observadores": 1,
    "ultima": "2008-01-26",
+   "proyecto": 0,
    "estatus": [
     "endemica-canaria"
    ],
@@ -1381,6 +1446,7 @@ window.INAT = {
    "investigacion": 1,
    "observadores": 1,
    "ultima": "2024-07-25",
+   "proyecto": 0,
    "estatus": [
     "aproximada"
    ],
@@ -1405,6 +1471,7 @@ window.INAT = {
    "investigacion": 1,
    "observadores": 1,
    "ultima": "2022-10-28",
+   "proyecto": 0,
    "estatus": [],
    "foto": null
   },
@@ -1421,6 +1488,7 @@ window.INAT = {
    "investigacion": 1,
    "observadores": 1,
    "ultima": "2021-12-12",
+   "proyecto": 0,
    "estatus": [],
    "foto": null
   },
@@ -1437,6 +1505,7 @@ window.INAT = {
    "investigacion": 1,
    "observadores": 1,
    "ultima": "2024-07-25",
+   "proyecto": 0,
    "estatus": [
     "aproximada"
    ],
@@ -1461,6 +1530,7 @@ window.INAT = {
    "investigacion": 1,
    "observadores": 1,
    "ultima": "2026-03-01",
+   "proyecto": 1,
    "estatus": [
     "nativa"
    ],
@@ -1485,6 +1555,7 @@ window.INAT = {
    "investigacion": 1,
    "observadores": 1,
    "ultima": "2022-09-10",
+   "proyecto": 0,
    "estatus": [
     "nativa"
    ],
@@ -1507,6 +1578,7 @@ window.INAT = {
    "investigacion": 1,
    "observadores": 1,
    "ultima": "2025-09-23",
+   "proyecto": 1,
    "estatus": [
     "nativa"
    ],
@@ -1531,6 +1603,7 @@ window.INAT = {
    "investigacion": 1,
    "observadores": 1,
    "ultima": "2008-01-26",
+   "proyecto": 0,
    "estatus": [],
    "foto": null
   },
@@ -1547,6 +1620,7 @@ window.INAT = {
    "investigacion": 1,
    "observadores": 1,
    "ultima": "2024-12-29",
+   "proyecto": 0,
    "estatus": [],
    "foto": {
     "src": "img/inat/143529.jpeg",
@@ -1565,6 +1639,7 @@ window.INAT = {
    "investigacion": 1,
    "observadores": 1,
    "ultima": "2026-09-15",
+   "proyecto": 2,
    "estatus": [
     "endemica-canaria"
    ],
@@ -1587,6 +1662,7 @@ window.INAT = {
    "investigacion": 0,
    "observadores": 1,
    "ultima": "2026-03-01",
+   "proyecto": 1,
    "estatus": [
     "nativa"
    ],
@@ -1610,6 +1686,7 @@ window.INAT = {
    "investigacion": 1,
    "observadores": 1,
    "ultima": "2008-01-26",
+   "proyecto": 0,
    "estatus": [
     "nativa"
    ],
@@ -1634,6 +1711,7 @@ window.INAT = {
    "investigacion": 1,
    "observadores": 1,
    "ultima": "2024-03-19",
+   "proyecto": 0,
    "estatus": [
     "introducida"
    ],
@@ -1658,6 +1736,7 @@ window.INAT = {
    "investigacion": 1,
    "observadores": 1,
    "ultima": "2024-11-25",
+   "proyecto": 0,
    "estatus": [
     "aproximada"
    ],
@@ -1680,6 +1759,7 @@ window.INAT = {
    "investigacion": 0,
    "observadores": 1,
    "ultima": "2008-01-26",
+   "proyecto": 0,
    "estatus": [
     "endemica-canaria"
    ],
@@ -1704,6 +1784,7 @@ window.INAT = {
    "investigacion": 1,
    "observadores": 1,
    "ultima": "2024-10-28",
+   "proyecto": 0,
    "estatus": [
     "aproximada"
    ],
@@ -1728,6 +1809,7 @@ window.INAT = {
    "investigacion": 1,
    "observadores": 1,
    "ultima": "2022-09-10",
+   "proyecto": 0,
    "estatus": [],
    "foto": null
   },
@@ -1744,6 +1826,7 @@ window.INAT = {
    "investigacion": 1,
    "observadores": 1,
    "ultima": "2024-10-09",
+   "proyecto": 0,
    "estatus": [
     "aproximada"
    ],
@@ -1766,6 +1849,7 @@ window.INAT = {
    "investigacion": 0,
    "observadores": 0,
    "ultima": "",
+   "proyecto": 0,
    "estatus": [
     "vista-reserva"
    ],
@@ -1788,6 +1872,7 @@ window.INAT = {
    "investigacion": 0,
    "observadores": 0,
    "ultima": "",
+   "proyecto": 0,
    "estatus": [
     "nativa",
     "vista-reserva"

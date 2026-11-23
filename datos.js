@@ -21,7 +21,7 @@ window.ESTATUS = {
   "invasora":           { es: "Invasora",                 en: "Invasive",                 de: "Invasiv" },
   "aproximada":         { es: "Ubicación aproximada",     en: "Approximate location",     de: "Ungefährer Fundort" },
   "vista-reserva":      { es: "Vista en la reserva",      en: "Seen in the reserve",      de: "Im Reservat gesehen" },
-  "litoral":            { es: "Litoral cercano",          en: "Nearby coast",             de: "Nahe Küste" }
+  "entorno":            { es: "Entorno de la reserva",    en: "Around the reserve",       de: "Umgebung des Reservats" }
 };
 
 window.GRUPOS = {

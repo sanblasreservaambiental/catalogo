@@ -37,6 +37,8 @@ RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CACHE = os.path.join(RAIZ, "herramientas", "inat-cache.tsv")
 CACHE_TAX = os.path.join(RAIZ, "herramientas", "taxonomia-cache.tsv")
 CACHE_EXTRA = os.path.join(RAIZ, "herramientas", "extra-cache.tsv")
+CACHE_PROY = os.path.join(RAIZ, "herramientas", "proyecto-cache.tsv")
+PROYECTO = "san-blas-reserva-ambiental"
 AJUSTES = os.path.join(RAIZ, "herramientas", "ajustes-inat.json")
 AGENTE = "SanBlasCatalogo/1.0 (catalogo educativo)"
 COLUMNAS = ["taxon_id", "cientifico", "subtaxones", "grupo_inat", "nombre_es", "nombre_en", "nombre_de",
@@ -160,6 +162,26 @@ def generar_taxonomia(aj):
     print(f"{len(datos)} especies en taxonomia.js")
 
 
+def consultar_proyecto():
+    """Especies del proyecto de la reserva en iNaturalist (observaciones dentro de sus límites).
+    Son las «especies de la reserva»; el resto de la zona se muestra como entorno."""
+    d = pedir("/observations/species_counts", project_id=PROYECTO, per_page=500)
+    with open(CACHE_PROY, "w", encoding="utf-8", newline="") as f:
+        w = csv.writer(f, delimiter="\t")
+        w.writerow(["taxon_id", "cientifico", "observaciones"])
+        for r in d.get("results", []):
+            if r["taxon"].get("rank") in RANGOS:
+                w.writerow([r["taxon"]["id"], r["taxon"]["name"], r["count"]])
+    print(f"{len(d.get('results', []))} taxones en el proyecto {PROYECTO}")
+
+
+def leer_proyecto():
+    if not os.path.exists(CACHE_PROY):
+        return {}
+    with open(CACHE_PROY, encoding="utf-8") as f:
+        return {r["taxon_id"]: int(r["observaciones"]) for r in csv.DictReader(f, delimiter="\t")}
+
+
 def leer_cache(extra=True):
     """Especies de la zona y, además, las de «anadir» (vistas por el equipo)."""
     filas = []
@@ -219,6 +241,7 @@ def con_ficha():
 def generar(aj):
     os.makedirs(os.path.join(RAIZ, "img", "inat"), exist_ok=True)
     propias = con_ficha()
+    proyecto = leer_proyecto()
     salida, excluidas = [], []
     for f in leer_cache():
         cient = f["cientifico"]
@@ -255,6 +278,7 @@ def generar(aj):
                        "nombre": nombre, "grupo": GRUPO.get(f["grupo_inat"], "otros"),
                        "observaciones": int(f["observaciones"]), "investigacion": int(f["investigacion"]),
                        "observadores": int(f["observadores"]), "ultima": f["ultima"],
+                       "proyecto": proyecto.get(f["taxon_id"], 0),
                        "estatus": estatus, "foto": foto})
     salida.sort(key=lambda x: (-x["observaciones"], x["cientifico"]))
     datos = {"actualizado": time.strftime("%Y-%m-%d"), "zona": aj["zona"], "especies": salida}
@@ -272,6 +296,7 @@ def main():
         aj = json.load(f)
     if "--sin-red" not in sys.argv:
         consultar(aj["zona"])
+        consultar_proyecto()
         consultar_extra(aj)
         consultar_taxonomia(aj)
     generar(aj)

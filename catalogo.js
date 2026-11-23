@@ -11,7 +11,7 @@
       sinFicha: "Especie observada en la reserva o en su entorno y registrada en iNaturalist. Estamos preparando su ficha.",
       verInat: "Ver en iNaturalist", mapaCanarias: "Mapa en todo Canarias", obs: n => `${n} ${n === 1 ? "observación" : "observaciones"} en San Blas y su entorno`,
       foto: "Imagen", cerrar: "Cerrar",
-      nivel: "Nivel del alumnado", sinClasificar: "Sin clasificar", litoralTit: "Litoral cercano", litoralTxt: "Especies del mar junto a San Blas. La reserva no llega hasta el mar: son especies vecinas, no de la reserva.",
+      nivel: "Nivel del alumnado", sinClasificar: "Sin clasificar", litoralTit: "En el entorno de la reserva", litoralTxt: "Especies observadas en iNaturalist a menos de 1,5 km de San Blas pero fuera de la reserva: en el mar, la costa y los alrededores. Son especies limítrofes, no de la reserva.",
       vistaTarjetas: "Tarjetas", vistaArbol: "Árbol", desplegar: "Desplegar todo", plegar: "Plegar todo", grupoEt: "Grupo",
       rangos: { reino: "Reino", clase: "Clase", orden: "Orden", familia: "Familia" },
       niveles: [
@@ -39,7 +39,7 @@
       sinFicha: "Species observed in or around the reserve and recorded on iNaturalist. Its profile is being prepared.",
       verInat: "View on iNaturalist", mapaCanarias: "Map across the Canary Islands", obs: n => `${n} ${n === 1 ? "observation" : "observations"} in and around San Blas`,
       foto: "Image", cerrar: "Close",
-      nivel: "Student level", sinClasificar: "Unclassified", litoralTit: "Nearby coast", litoralTxt: "Sea species next to San Blas. The reserve does not reach the sea: these are neighbouring species, not part of the reserve.",
+      nivel: "Student level", sinClasificar: "Unclassified", litoralTit: "Around the reserve", litoralTxt: "Species recorded on iNaturalist within 1.5 km of San Blas but outside the reserve: at sea, on the coast and nearby. They are neighbouring species, not part of the reserve.",
       vistaTarjetas: "Cards", vistaArbol: "Tree", desplegar: "Expand all", plegar: "Collapse all", grupoEt: "Group",
       rangos: { reino: "Kingdom", clase: "Class", orden: "Order", familia: "Family" },
       niveles: [
@@ -67,7 +67,7 @@
       sinFicha: "Im Reservat oder in seiner Umgebung beobachtete und auf iNaturalist erfasste Art. Das Porträt ist in Vorbereitung.",
       verInat: "Auf iNaturalist ansehen", mapaCanarias: "Karte der Kanaren", obs: n => `${n} ${n === 1 ? "Beobachtung" : "Beobachtungen"} in und um San Blas`,
       foto: "Bild", cerrar: "Schließen",
-      nivel: "Lernstufe", sinClasificar: "Nicht zugeordnet", litoralTit: "Nahe Küste", litoralTxt: "Meeresarten neben San Blas. Das Reservat reicht nicht bis ans Meer: Es sind Nachbararten, nicht Arten des Reservats.",
+      nivel: "Lernstufe", sinClasificar: "Nicht zugeordnet", litoralTit: "Rund um das Reservat", litoralTxt: "Auf iNaturalist im Umkreis von 1,5 km um San Blas, aber außerhalb des Reservats beobachtete Arten: im Meer, an der Küste und in der Umgebung. Es sind Nachbararten, nicht Arten des Reservats.",
       vistaTarjetas: "Karten", vistaArbol: "Baum", desplegar: "Alle aufklappen", plegar: "Alle zuklappen", grupoEt: "Gruppe",
       rangos: { reino: "Reich", clase: "Klasse", orden: "Ordnung", familia: "Familie" },
       niveles: [
@@ -109,10 +109,11 @@
     else especies.push({ id: "inat-" + i.taxon_id, grupo: i.grupo, cientifico: i.cientifico, nombre: i.nombre, estatus: i.estatus || [], foto: i.foto, inat: i });
   }
 
-  /* Especies del mar: la reserva no llega a la costa, van en un apartado aparte */
-  const MARINAS = new Set(["chelonia mydas"]);
-  const marina = e => e.grupo === "peces" || e.grupo === "moluscos" || MARINAS.has(clave(e.cientifico));
-  especies.forEach(e => { if (marina(e)) { e.estatus = (e.estatus || []).filter(k => k !== "litoral").concat("litoral"); e.marina = true; } });
+  /* Especies de la reserva: las del proyecto de iNaturalist (observadas dentro de sus límites),
+     las de las guías de la reserva (fichas propias) y las vistas por el equipo. El resto de
+     observaciones de la zona (radio de 1,5 km) son especies del entorno, limítrofes. */
+  const enReserva = e => !e.id.startsWith("inat-") || (e.inat && e.inat.proyecto > 0) || (e.estatus || []).includes("vista-reserva");
+  especies.forEach(e => { if (!enReserva(e)) { e.estatus = (e.estatus || []).filter(k => k !== "entorno").concat("entorno"); e.entorno = true; } });
 
   const $ = s => document.querySelector(s);
   let lang = "es", grupo = "todas", texto = "", nivel = 2, vista = "tarjetas";
@@ -282,7 +283,7 @@
     document.querySelectorAll("#vista button").forEach(b => b.setAttribute("aria-pressed", b.dataset.vista === vista));
     $("#rejilla").hidden = vista === "arbol"; $("#arbol-cont").hidden = vista !== "arbol";
     $("#vacio").hidden = lista.length > 0;
-    const tierra = lista.filter(e => !e.marina), mar = lista.filter(e => e.marina);
+    const tierra = lista.filter(e => !e.entorno), mar = lista.filter(e => e.entorno);
     const cabeceraMar = (etiqueta) => {
       const h = document.createElement(etiqueta); h.className = "seccion litoral";
       h.innerHTML = "<span></span><small></small>";
