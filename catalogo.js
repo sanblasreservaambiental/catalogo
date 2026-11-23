@@ -22,7 +22,7 @@
       ],
       inatAnte: "Catálogo vivo", inatTitulo: "Súmense en iNaturalist",
       inatTexto: "Este catálogo crece con las observaciones del proyecto San Blas Reserva Ambiental en iNaturalist. Basta con una cuenta y subir fotos con ubicación GPS tomadas dentro de la reserva: se añaden al proyecto automáticamente. Las especies sin ficha propia proceden de observaciones de iNaturalist hechas a menos de 750 m de la reserva.",
-      inatBoton: "Abrir el proyecto en iNaturalist",
+      inatBoton: "Abrir el proyecto en iNaturalist", comprobarBoton: "Comprobar el proyecto ahora", comprobando: "Consultando iNaturalist…", comprobarError: "No se ha podido consultar iNaturalist. Prueben más tarde.", comprobarRes: (n, d) => `El proyecto tiene ahora ${n} especies. ${d ? `Va ${d} por delante de este catálogo:` : "Este catálogo está al día."}`, comprobarSubidas: n => `${n} ${n === 1 ? "especie del catálogo ya está" : "especies del catálogo ya están"} en el proyecto desde la última actualización:`, comprobarFaltan: n => `Quedan ${n} especies del catálogo sin observar dentro de la reserva. Llevan la etiqueta «Aún no está en el proyecto».`,
       invitaTitulo: "¿Conocen otro uso o un nombre tradicional?",
       invitaTexto: "Si en su familia o en su centro conocen otro nombre canario o un uso tradicional de alguna de estas especies, escríbannos a <a href=\"mailto:tenerife.ambiental-res@barcelo.com\">tenerife.ambiental-res@barcelo.com</a> y lo añadiremos citando la fuente.",
       pie1: "Más recursos para el aula en <a href=\"https://sanblasreservaambiental.org/materiales/\">Materiales de San Blas</a>.",
@@ -50,7 +50,7 @@
       ],
       inatAnte: "Living catalogue", inatTitulo: "Join us on iNaturalist",
       inatTexto: "This catalogue grows with the observations of the San Blas Reserva Ambiental project on iNaturalist. All you need is an account: upload GPS-tagged photos taken inside the reserve and they are added to the project automatically. Species without a full profile come from iNaturalist observations made within 750 m of the reserve.",
-      inatBoton: "Open the project on iNaturalist",
+      inatBoton: "Open the project on iNaturalist", comprobarBoton: "Check the project now", comprobando: "Asking iNaturalist…", comprobarError: "iNaturalist could not be reached. Please try later.", comprobarRes: (n, d) => `The project now has ${n} species. ${d ? `It is ${d} ahead of this catalogue:` : "This catalogue is up to date."}`, comprobarSubidas: n => `${n} catalogue ${n === 1 ? "species has" : "species have"} been added to the project since the last update:`, comprobarFaltan: n => `${n} catalogue species have not been recorded inside the reserve yet. They carry the label “Not in the project yet”.`,
       invitaTitulo: "Do you know another use or a traditional name?",
       invitaTexto: "If you know another Canarian name or a traditional use for any of these species, write to us at <a href=\"mailto:tenerife.ambiental-res@barcelo.com\">tenerife.ambiental-res@barcelo.com</a> and we will add it, citing the source.",
       pie1: "More classroom resources at <a href=\"https://sanblasreservaambiental.org/materiales/\">San Blas materials</a> (in Spanish).",
@@ -78,7 +78,7 @@
       ],
       inatAnte: "Lebendiger Katalog", inatTitulo: "Machen Sie mit bei iNaturalist",
       inatTexto: "Dieser Katalog wächst mit den Beobachtungen des Projekts San Blas Reserva Ambiental auf iNaturalist. Sie brauchen nur ein Konto: Laden Sie Fotos mit GPS-Daten aus dem Reservat hoch, und sie werden automatisch dem Projekt zugeordnet. Arten ohne eigenes Porträt stammen aus iNaturalist-Beobachtungen im Umkreis von 750 m um das Reservat.",
-      inatBoton: "Projekt auf iNaturalist öffnen",
+      inatBoton: "Projekt auf iNaturalist öffnen", comprobarBoton: "Projekt jetzt prüfen", comprobando: "iNaturalist wird abgefragt…", comprobarError: "iNaturalist ist nicht erreichbar. Bitte später erneut versuchen.", comprobarRes: (n, d) => `Das Projekt hat jetzt ${n} Arten. ${d ? `Es ist diesem Katalog ${d} voraus:` : "Der Katalog ist aktuell."}`, comprobarSubidas: n => `${n} Katalogarten sind seit der letzten Aktualisierung ins Projekt gekommen:`, comprobarFaltan: n => `${n} Katalogarten wurden im Reservat noch nicht beobachtet. Sie tragen das Etikett „Noch nicht im Projekt“.`,
       invitaTitulo: "Kennen Sie eine andere Nutzung oder einen traditionellen Namen?",
       invitaTexto: "Wenn Sie einen weiteren kanarischen Namen oder eine traditionelle Nutzung einer dieser Arten kennen, schreiben Sie uns an <a href=\"mailto:tenerife.ambiental-res@barcelo.com\">tenerife.ambiental-res@barcelo.com</a> – wir ergänzen sie mit Quellenangabe.",
       pie1: "Weitere Unterrichtsmaterialien unter <a href=\"https://sanblasreservaambiental.org/materiales/\">Materialien San Blas</a> (auf Spanisch).",
@@ -124,6 +124,13 @@
     e.estatus = est;
   });
   const enReserva = e => !e.id.startsWith("inat-") || (e.inat && e.inat.proyecto > 0) || (e.estatus || []).includes("vista-reserva");
+  /* Especies que aún no tienen observaciones dentro del proyecto de iNaturalist */
+  const enProyecto = e => !!(e.inat && e.inat.proyecto > 0) || e.proyectoVivo === true;
+  const marcarProyecto = () => especies.forEach(e => {
+    e.estatus = (e.estatus || []).filter(k => k !== "sin-proyecto");
+    if (!enProyecto(e)) e.estatus.push("sin-proyecto");
+  });
+  marcarProyecto();
   especies.forEach(e => { if (!enReserva(e)) { e.estatus = (e.estatus || []).filter(k => k !== "entorno").concat("entorno"); e.entorno = true; } });
 
   const $ = s => document.querySelector(s);
@@ -415,6 +422,35 @@
   $("#plegar").onclick = () => document.querySelectorAll("#arbol details").forEach(d => d.open = false);
 
   textos(); nivelUI(); filtros(); pintar();
+  /* Botón «Comprobar el proyecto ahora»: consulta en directo la API de iNaturalist */
+  $("#comprobar").onclick = async () => {
+    const res = $("#comprobar-res"), b = $("#comprobar");
+    res.hidden = false; res.textContent = T[lang].comprobando; b.disabled = true;
+    try {
+      const d = await fetch("https://api.inaturalist.org/v1/observations/species_counts?project_id=san-blas-reserva-ambiental&per_page=500").then(r => { if (!r.ok) throw r; return r.json(); });
+      const sp = d.results.filter(r => ["species", "subspecies", "variety"].includes(r.taxon.rank));
+      const enCat = new Map(especies.map(e => [clave(e.cientifico), e]));
+      const alias = { "lanius excubitor": "lanius meridionalis" };
+      const nuevas = [], subidas = [];
+      sp.forEach(r => {
+        const k = alias[clave(r.taxon.name)] || clave(r.taxon.name), e = enCat.get(k);
+        if (!e) nuevas.push(r);
+        else if (!enProyecto(e)) { e.proyectoVivo = true; subidas.push(e); }
+      });
+      marcarProyecto(); pintar();
+      const faltan = especies.filter(e => !enProyecto(e)).length;
+      res.innerHTML = "<p></p>";
+      res.firstChild.textContent = T[lang].comprobarRes(sp.length, nuevas.length);
+      const lista = (items, txt) => { const ul = document.createElement("ul"); items.forEach(t => { const li = document.createElement("li"); li.textContent = txt(t); ul.appendChild(li); }); res.appendChild(ul); };
+      if (nuevas.length) lista(nuevas, r => (r.taxon.preferred_common_name ? `${r.taxon.preferred_common_name} · ` : "") + r.taxon.name);
+      if (subidas.length) { const p = document.createElement("p"); p.textContent = T[lang].comprobarSubidas(subidas.length); res.appendChild(p); lista(subidas, e => nombre(e)); }
+      const pf = document.createElement("p"); pf.textContent = T[lang].comprobarFaltan(faltan); res.appendChild(pf);
+    } catch (err) {
+      res.textContent = T[lang].comprobarError;
+    }
+    b.disabled = false;
+  };
+
   const inicial = especies.find(x => "#" + x.id === location.hash);
   if (inicial) abrir(inicial);
 })();
