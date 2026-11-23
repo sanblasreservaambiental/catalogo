@@ -10,7 +10,8 @@
     "Bencomia caudata": "Planta de medianías y cumbre; observación con ubicación oculta, no es de San Blas."
   },
   "alias": {
-    "Lanius excubitor": "Lanius meridionalis koenigi"
+    "Lanius excubitor": "Lanius meridionalis koenigi",
+    "Lavandula canariensis": "Lavandula canariensis subsp. canariensis"
   },
   "nombres_es": {
     "Octopus vulgaris": "Pulpo",
@@ -135,7 +136,7 @@
       "endemica-macaro"
     ],
     "Lavandula canariensis": [
-      "endemica-canaria"
+      "endemica-tenerife"
     ],
     "Marcetella moquiniana": [
       "endemica-canaria"
@@ -153,7 +154,7 @@
       "endemica-canaria"
     ],
     "Argyranthemum gracile": [
-      "endemica-canaria"
+      "endemica-tenerife"
     ],
     "Allagopappus canariensis": [
       "endemica-canaria"
@@ -358,5 +359,6 @@
     "1364040": "Camponotus feae",
     "557175": "Hogna ferox"
   },
-  "_fuente_estatus": "Endemicidad, origen y nombres comunes revisados el 23 nov 2026 con el Banco de Datos de Biodiversidad de Canarias (biodiversidadcanarias.es); copia de su exportación en herramientas/bdbc-especies.csv (UTF-8, separada por «;»)."
+  "_fuente_estatus": "Endemicidad, origen y nombres comunes revisados el 23 nov 2026 con el Banco de Datos de Biodiversidad de Canarias (biodiversidadcanarias.es); copia de su exportación en herramientas/bdbc-especies.csv (UTF-8, separada por «;»).",
+  "_fuente_tenerife": "Endemismos exclusivos de Tenerife: listado de plantas vasculares de endemicascanarias.com que pasó el usuario el 23 nov 2026."
 }

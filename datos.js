@@ -8,6 +8,7 @@
  * Las especies que solo están en iNaturalist se cargan aparte desde datos-inat.js.
  */
 window.ESTATUS = {
+  "endemica-tenerife":  { es: "Endemismo tinerfeño",      en: "Tenerife endemic",         de: "Endemit Teneriffas" },
   "endemica-canaria":   { es: "Endemismo canario",        en: "Canary Islands endemic",   de: "Kanarischer Endemit" },
   "endemica-macaro":    { es: "Endemismo macaronésico",   en: "Macaronesian endemic",     de: "Makaronesischer Endemit" },
   "subespecie-endemica":{ es: "Subespecie endémica",      en: "Endemic subspecies",       de: "Endemische Unterart" },

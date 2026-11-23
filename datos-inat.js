@@ -605,7 +605,7 @@ window.INAT = {
    "ultima": "2008-01-26",
    "proyecto": 0,
    "estatus": [
-    "endemica-canaria"
+    "endemica-tenerife"
    ],
    "foto": {
     "src": "img/inat/712365.jpg",
@@ -1121,7 +1121,7 @@ window.INAT = {
   },
   {
    "taxon_id": 525546,
-   "cientifico": "Lavandula canariensis",
+   "cientifico": "Lavandula canariensis subsp. canariensis",
    "nombre": {
     "es": "Matorrisco",
     "en": "Canary Island Lavender",
@@ -1134,7 +1134,7 @@ window.INAT = {
    "ultima": "2026-03-01",
    "proyecto": 2,
    "estatus": [
-    "endemica-canaria"
+    "endemica-tenerife"
    ],
    "foto": {
     "src": "img/inat/525546.jpeg",
