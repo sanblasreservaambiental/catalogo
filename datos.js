@@ -25,6 +25,30 @@ window.ESTATUS = {
   "entorno":            { es: "Entorno de la reserva",    en: "Around the reserve",       de: "Umgebung des Reservats" }
 };
 
+/* Islas donde vive cada endemismo canario (plantas). Fuente: listados de
+   endemicascanarias.com por islas (23 nov 2026). H Hierro, P La Palma,
+   G La Gomera, T Tenerife, C Gran Canaria, F Fuerteventura, L Lanzarote. */
+window.ISLAS = {
+  "argyranthemum gracile": "T",
+  "lavandula canariensis": "T",
+  "monanthes pallens": "GT",
+  "ceropegia fusca": "TC",
+  "lotus sessilifolius": "GTC",
+  "marcetella moquiniana": "GTC",
+  "sonchus capillaris": "GTC",
+  "reseda scoparia": "PGTC",
+  "allagopappus canariensis": "HGTC",
+  "cneorum pulverulentum": "HGTC",
+  "euphorbia lamarckii": "HPGT",
+  "bosea yervamora": "HPGTCF",
+  "euphorbia canariensis": "HPGTCF",
+  "plocama pendula": "HPGTCF",
+  "campylanthus salsoloides": "PGTCFL",
+  "autonoe haemorrhoidalis": "HPGTCFL",
+  "forsskaolea angustifolia": "HPGTCFL",
+  "kleinia neriifolia": "HPGTCFL"
+};
+
 window.GRUPOS = {
   plantas: { es: "Plantas", en: "Plants", de: "Pflanzen" },
   aves:    { es: "Aves",    en: "Birds",  de: "Vögel" }

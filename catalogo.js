@@ -11,7 +11,7 @@
       sinFicha: "Especie observada en la reserva o en su entorno y registrada en iNaturalist. Estamos preparando su ficha.",
       verInat: "Ver en iNaturalist", mapaCanarias: "Mapa en todo Canarias", obs: n => `${n} ${n === 1 ? "observación" : "observaciones"} en San Blas y su entorno`,
       foto: "Imagen", cerrar: "Cerrar",
-      nivel: "Nivel del alumnado", sinClasificar: "Sin clasificar", litoralTit: "En el entorno de la reserva", litoralTxt: "Especies observadas en iNaturalist a menos de 750 m de San Blas pero fuera de la reserva: en el mar, la costa y los alrededores. Son especies limítrofes, no de la reserva.",
+      nivel: "Nivel del alumnado", sinClasificar: "Sin clasificar", islasEt: "Islas", islasTodas: "todas las islas Canarias", islasN: { H: "El Hierro", P: "La Palma", G: "La Gomera", T: "Tenerife", C: "Gran Canaria", F: "Fuerteventura", L: "Lanzarote" }, litoralTit: "En el entorno de la reserva", litoralTxt: "Especies observadas en iNaturalist a menos de 750 m de San Blas pero fuera de la reserva: en el mar, la costa y los alrededores. Son especies limítrofes, no de la reserva.",
       vistaTarjetas: "Tarjetas", vistaArbol: "Árbol", desplegar: "Desplegar todo", plegar: "Plegar todo", grupoEt: "Grupo",
       rangos: { reino: "Reino", clase: "Clase", orden: "Orden", familia: "Familia" },
       niveles: [
@@ -39,7 +39,7 @@
       sinFicha: "Species observed in or around the reserve and recorded on iNaturalist. Its profile is being prepared.",
       verInat: "View on iNaturalist", mapaCanarias: "Map across the Canary Islands", obs: n => `${n} ${n === 1 ? "observation" : "observations"} in and around San Blas`,
       foto: "Image", cerrar: "Close",
-      nivel: "Student level", sinClasificar: "Unclassified", litoralTit: "Around the reserve", litoralTxt: "Species recorded on iNaturalist within 750 m of San Blas but outside the reserve: at sea, on the coast and nearby. They are neighbouring species, not part of the reserve.",
+      nivel: "Student level", sinClasificar: "Unclassified", islasEt: "Islands", islasTodas: "all the Canary Islands", islasN: { H: "El Hierro", P: "La Palma", G: "La Gomera", T: "Tenerife", C: "Gran Canaria", F: "Fuerteventura", L: "Lanzarote" }, litoralTit: "Around the reserve", litoralTxt: "Species recorded on iNaturalist within 750 m of San Blas but outside the reserve: at sea, on the coast and nearby. They are neighbouring species, not part of the reserve.",
       vistaTarjetas: "Cards", vistaArbol: "Tree", desplegar: "Expand all", plegar: "Collapse all", grupoEt: "Group",
       rangos: { reino: "Kingdom", clase: "Class", orden: "Order", familia: "Family" },
       niveles: [
@@ -67,7 +67,7 @@
       sinFicha: "Im Reservat oder in seiner Umgebung beobachtete und auf iNaturalist erfasste Art. Das Porträt ist in Vorbereitung.",
       verInat: "Auf iNaturalist ansehen", mapaCanarias: "Karte der Kanaren", obs: n => `${n} ${n === 1 ? "Beobachtung" : "Beobachtungen"} in und um San Blas`,
       foto: "Bild", cerrar: "Schließen",
-      nivel: "Lernstufe", sinClasificar: "Nicht zugeordnet", litoralTit: "Rund um das Reservat", litoralTxt: "Auf iNaturalist im Umkreis von 750 m um San Blas, aber außerhalb des Reservats beobachtete Arten: im Meer, an der Küste und in der Umgebung. Es sind Nachbararten, nicht Arten des Reservats.",
+      nivel: "Lernstufe", sinClasificar: "Nicht zugeordnet", islasEt: "Inseln", islasTodas: "alle Kanarischen Inseln", islasN: { H: "El Hierro", P: "La Palma", G: "La Gomera", T: "Teneriffa", C: "Gran Canaria", F: "Fuerteventura", L: "Lanzarote" }, litoralTit: "Rund um das Reservat", litoralTxt: "Auf iNaturalist im Umkreis von 750 m um San Blas, aber außerhalb des Reservats beobachtete Arten: im Meer, an der Küste und in der Umgebung. Es sind Nachbararten, nicht Arten des Reservats.",
       vistaTarjetas: "Karten", vistaArbol: "Baum", desplegar: "Alle aufklappen", plegar: "Alle zuklappen", grupoEt: "Gruppe",
       rangos: { reino: "Reich", clase: "Klasse", orden: "Ordnung", familia: "Familie" },
       niveles: [
@@ -334,6 +334,9 @@
       .map(l => `${l.toUpperCase()}: ${e.nombre[l]}`);
     $("#ficha-otros").textContent = otros.join(" · ");
     $("#ficha-estatus").innerHTML = chips(e);
+    const isl = (window.ISLAS || {})[clave(e.cientifico)], pi = $("#ficha-islas");
+    pi.hidden = !isl;
+    if (isl) pi.textContent = `${T[lang].islasEt}: ${isl.length === 7 ? T[lang].islasTodas : [...isl].map(c => T[lang].islasN[c]).join(", ")}`;
     const x = taxo(e), tx = $("#ficha-taxonomia");
     const pasos = ["reino", "clase", "orden", "familia"].filter(k => x[k]).map(k => `${T[lang].rangos[k]} <b></b>`);
     tx.innerHTML = pasos.join(" › "); tx.hidden = !pasos.length || nivel < 3;
