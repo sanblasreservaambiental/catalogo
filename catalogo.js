@@ -9,7 +9,7 @@
       vacio: "No encontramos ninguna especie con ese nombre.",
       descripcion: "Cómo es", usos: "Usos y cultura",
       sinFicha: "Especie observada en la reserva o en su entorno y registrada en iNaturalist. Estamos preparando su ficha.",
-      verInat: "Ver en iNaturalist", obs: n => `${n} ${n === 1 ? "observación" : "observaciones"} en San Blas y su entorno`,
+      verInat: "Ver en iNaturalist", mapaCanarias: "Mapa en todo Canarias", obs: n => `${n} ${n === 1 ? "observación" : "observaciones"} en San Blas y su entorno`,
       foto: "Imagen", cerrar: "Cerrar",
       nivel: "Nivel del alumnado", sinClasificar: "Sin clasificar",
       vistaTarjetas: "Tarjetas", vistaArbol: "Árbol", desplegar: "Desplegar todo", plegar: "Plegar todo", grupoEt: "Grupo",
@@ -37,7 +37,7 @@
       vacio: "No species found with that name.",
       descripcion: "What it is like", usos: "Uses and culture",
       sinFicha: "Species observed in or around the reserve and recorded on iNaturalist. Its profile is being prepared.",
-      verInat: "View on iNaturalist", obs: n => `${n} ${n === 1 ? "observation" : "observations"} in and around San Blas`,
+      verInat: "View on iNaturalist", mapaCanarias: "Map across the Canary Islands", obs: n => `${n} ${n === 1 ? "observation" : "observations"} in and around San Blas`,
       foto: "Image", cerrar: "Close",
       nivel: "Student level", sinClasificar: "Unclassified",
       vistaTarjetas: "Cards", vistaArbol: "Tree", desplegar: "Expand all", plegar: "Collapse all", grupoEt: "Group",
@@ -65,7 +65,7 @@
       vacio: "Keine Art mit diesem Namen gefunden.",
       descripcion: "Merkmale", usos: "Nutzung und Kultur",
       sinFicha: "Im Reservat oder in seiner Umgebung beobachtete und auf iNaturalist erfasste Art. Das Porträt ist in Vorbereitung.",
-      verInat: "Auf iNaturalist ansehen", obs: n => `${n} ${n === 1 ? "Beobachtung" : "Beobachtungen"} in und um San Blas`,
+      verInat: "Auf iNaturalist ansehen", mapaCanarias: "Karte der Kanaren", obs: n => `${n} ${n === 1 ? "Beobachtung" : "Beobachtungen"} in und um San Blas`,
       foto: "Bild", cerrar: "Schließen",
       nivel: "Lernstufe", sinClasificar: "Nicht zugeordnet",
       vistaTarjetas: "Karten", vistaArbol: "Baum", desplegar: "Alle aufklappen", plegar: "Alle zuklappen", grupoEt: "Gruppe",
@@ -333,13 +333,18 @@
       a.className = "boton"; a.target = "_blank"; a.rel = "noopener";
       const z = (window.INAT && window.INAT.zona) || { lat: 28.0385, lng: -16.6035, radio_km: 1.5 };
       if (e.inat.observaciones) {
-        a.href = `https://www.inaturalist.org/observations?taxon_id=${e.inat.taxon_id}&lat=${z.lat}&lng=${z.lng}&radius=${z.radio_km}`;
+        a.href = `https://www.inaturalist.org/observations?taxon_id=${e.inat.taxon_id}&lat=${z.lat}&lng=${z.lng}&radius=${z.radio_km}&subview=map`;
         a.textContent = `${T[lang].verInat} · ${T[lang].obs(e.inat.observaciones)}`;
       } else {
         a.href = `https://www.inaturalist.org/taxa/${e.inat.taxon_id}`;
         a.textContent = T[lang].verInat;
       }
       en.appendChild(a);
+      const m = document.createElement("a");
+      m.className = "boton sec"; m.target = "_blank"; m.rel = "noopener";
+      m.href = `https://www.inaturalist.org/observations?taxon_id=${e.inat.taxon_id}&swlat=27.6&swlng=-18.2&nelat=29.5&nelng=-13.3&subview=map`;
+      m.textContent = T[lang].mapaCanarias;
+      en.appendChild(m);
     }
     history.replaceState(null, "", "#" + e.id);
     if (!d.open) d.showModal();
