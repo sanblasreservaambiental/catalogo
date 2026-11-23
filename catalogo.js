@@ -112,6 +112,17 @@
   /* Especies de la reserva: las del proyecto de iNaturalist (observadas dentro de sus límites),
      las de las guías de la reserva (fichas propias) y las vistas por el equipo. El resto de
      observaciones de la zona (radio de 750 m) son especies del entorno, limítrofes. */
+  /* Estado de conservación → etiquetas (ver CONSERVACION en datos.js) */
+  especies.forEach(e => {
+    const c = (window.CONSERVACION || {})[clave(e.cientifico)];
+    let est = (e.estatus || []).filter(k => k !== "protegida");
+    if (c) {
+      if (c.uicn) est.push("uicn-" + c.uicn);
+      if (c.ceea) est.push("ceea-" + c.ceea);
+      if (c.protegida) est.push("protegida");
+    }
+    e.estatus = est;
+  });
   const enReserva = e => !e.id.startsWith("inat-") || (e.inat && e.inat.proyecto > 0) || (e.estatus || []).includes("vista-reserva");
   especies.forEach(e => { if (!enReserva(e)) { e.estatus = (e.estatus || []).filter(k => k !== "entorno").concat("entorno"); e.entorno = true; } });
 

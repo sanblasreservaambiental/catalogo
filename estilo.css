@@ -142,6 +142,7 @@ h1{font:650 clamp(2.3rem,6.5vw,4rem)/1.02 var(--serif);margin:0 0 16px;letter-sp
 .chip.endemica-tenerife,.chip.endemica-canaria,.chip.endemica-macaro,.chip.subespecie-endemica{background:color-mix(in srgb,var(--oro) 30%,transparent)}
 .chip.introducida{background:color-mix(in srgb,var(--acento) 18%,transparent)}
 .chip.toxica{background:color-mix(in srgb,#c0392b 20%,transparent)}
+.chip.uicn-cr,.chip.uicn-en,.chip.uicn-vu,.chip.ceea-vu{background:color-mix(in srgb,#c0392b 14%,transparent);border:1px solid color-mix(in srgb,#c0392b 45%,transparent)}
 .chip.invasora{background:color-mix(in srgb,#c0392b 20%,transparent)}
 .chip.vista-reserva{background:color-mix(in srgb,var(--hoja) 18%,transparent)}
 .chip.aproximada{background:transparent;border:1px dashed var(--linea);color:var(--suave)}

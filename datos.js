@@ -18,6 +18,10 @@ window.ESTATUS = {
   "invernante":         { es: "Invernante y de paso",     en: "Winter visitor & migrant", de: "Wintergast & Durchzügler" },
   "estival":            { es: "Estival",                  en: "Summer visitor",           de: "Sommergast" },
   "protegida":          { es: "Protegida",                en: "Protected",                de: "Geschützt" },
+  "uicn-cr":            { es: "En peligro crítico (UICN)", en: "Critically endangered (IUCN)", de: "Vom Aussterben bedroht (IUCN)" },
+  "uicn-en":            { es: "En peligro (UICN)",        en: "Endangered (IUCN)",        de: "Stark gefährdet (IUCN)" },
+  "uicn-vu":            { es: "Vulnerable (UICN)",        en: "Vulnerable (IUCN)",        de: "Gefährdet (IUCN)" },
+  "ceea-vu":            { es: "Vulnerable (Catálogo Español de Especies Amenazadas)", en: "Vulnerable (Spanish catalogue of threatened species)", de: "Gefährdet (Spanischer Katalog bedrohter Arten)" },
   "toxica":             { es: "Látex tóxico",             en: "Toxic latex",              de: "Giftiger Milchsaft" },
   "invasora":           { es: "Invasora",                 en: "Invasive",                 de: "Invasiv" },
   "aproximada":         { es: "Ubicación aproximada",     en: "Approximate location",     de: "Ungefährer Fundort" },
@@ -48,6 +52,30 @@ window.ISLAS = {
   "forsskaolea angustifolia": "HPGTCFL",
   "kleinia neriifolia": "HPGTCFL",
   "argyranthemum frutescens": "GTC"  /* Banco de Datos: presencia segura en G, T y C; en el resto, traslocada */
+};
+
+/* Estado de conservación (solo lo que no es «preocupación menor»), revisado el
+   23 nov 2026. «uicn»: Lista Roja mundial de la UICN (vía iNaturalist).
+   «ceea»: Catálogo Español de Especies Amenazadas. «protegida»: el Banco de
+   Datos de Biodiversidad de Canarias la marca como especie protegida (la
+   categoría concreta está en CENTINELA). */
+window.CONSERVACION = {
+  "patellifolia procumbens": { uicn: "cr" },
+  "marcetella moquiniana":   { uicn: "en", protegida: true },
+  "colletes moricei":        { uicn: "vu" },
+  "puffinus puffinus":       { ceea: "vu", protegida: true },
+  "ceropegia fusca": { protegida: true }, "euphorbia canariensis": { protegida: true },
+  "argyranthemum frutescens": { protegida: true }, "reseda scoparia": { protegida: true },
+  "pimelia canariensis": { protegida: true }, "campylanthus salsoloides": { protegida: true },
+  "cneorum pulverulentum": { protegida: true }, "cosentinia vellea": { protegida: true },
+  "monanthes pallens": { protegida: true }, "chelonia mydas": { protegida: true },
+  "numenius phaeopus": { protegida: true }, "tadorna ferruginea": { protegida: true },
+  "egretta garzetta": { protegida: true }, "motacilla cinerea": { protegida: true },
+  "lanius meridionalis": { protegida: true }, "ardea cinerea": { protegida: true },
+  "anthus berthelotii": { protegida: true }, "falco tinnunculus": { protegida: true },
+  "gallinula chloropus": { protegida: true }, "apus unicolor": { protegida: true },
+  "upupa epops": { protegida: true }, "corvus corax": { protegida: true },
+  "asio otus": { protegida: true }, "curruca conspicillata": { protegida: true }
 };
 
 window.GRUPOS = {
