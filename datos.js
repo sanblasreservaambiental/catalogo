@@ -29,7 +29,8 @@ window.ESTATUS = {
   "entorno":            { es: "Entorno de la reserva",    en: "Around the reserve",       de: "Umgebung des Reservats" }
 };
 
-/* Islas donde vive cada endemismo canario (plantas). Fuente: listados de
+/* Islas donde vive cada endemismo canario. Animales: presencia segura según el
+   Banco de Datos de Biodiversidad de Canarias. Fuente: listados de
    endemicascanarias.com por islas (23 nov 2026). H Hierro, P La Palma,
    G La Gomera, T Tenerife, C Gran Canaria, F Fuerteventura, L Lanzarote. */
 window.ISLAS = {
@@ -51,6 +52,11 @@ window.ISLAS = {
   "autonoe haemorrhoidalis": "HPGTCFL",
   "forsskaolea angustifolia": "HPGTCFL",
   "kleinia neriifolia": "HPGTCFL",
+  "gallotia galloti": "T",
+  "pimelia canariensis": "T",
+  "leptochilus cruentatus": "GTC",
+  "colletes moricei": "PGTC",
+  "camponotus feae": "HGTCFL",
   "argyranthemum frutescens": "GTC"  /* Banco de Datos: presencia segura en G, T y C; en el resto, traslocada */
 };
 

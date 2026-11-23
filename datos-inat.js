@@ -39,7 +39,7 @@ window.INAT = {
    "ultima": "2026-09-08",
    "proyecto": 4,
    "estatus": [
-    "endemica-canaria"
+    "endemica-tenerife"
    ],
    "foto": {
     "src": "img/inat/35995.jpeg",
@@ -390,7 +390,7 @@ window.INAT = {
    "ultima": "2026-09-15",
    "proyecto": 2,
    "estatus": [
-    "endemica-canaria"
+    "endemica-tenerife"
    ],
    "foto": {
     "src": "img/inat/1167469.jpeg",
