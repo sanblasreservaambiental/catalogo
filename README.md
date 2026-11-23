@@ -42,6 +42,22 @@ Las especies que ya tienen ficha en `datos.js` reciben el número de observacion
 las nuevas aparecen como «ficha en preparación» hasta que se redacte su texto en `datos.js`. Las observaciones
 con ubicación oculta (especies protegidas o autores que la esconden) llevan la etiqueta «Ubicación aproximada».
 
+## Usar sin conexión (móvil)
+
+El botón «Descargar para usar sin conexión» guarda en el móvil la web entera,
+con todas las fotos y en los tres idiomas (unos 6 MB). Solo se descarga cuando se
+pulsa, para no gastar datos a quien no lo quiere. En Android aparece además
+«Añadir a la pantalla de inicio». En iPhone se explica cómo hacerlo desde Compartir.
+
+- `sw.js`: service worker. Sirve desde el móvil lo descargado y, cuando la web
+  cambia, renueva la copia sola.
+- `offline.js`: lista de archivos y versión. **Se genera**: al final de
+  `actualizar_inat.py`, o a mano con `python3 herramientas/generar_offline.py`
+  después de tocar `index.html`, `estilo.css`, un `.js` o `img/`.
+- `manifest.webmanifest` e `iconos/`: nombre e icono al instalarlo.
+
+Necesita HTTPS (o `localhost`). En la vista previa de Claude puede no funcionar.
+
 ## Nivel del alumnado
 
 Encima de los filtros hay un deslizador con cuatro niveles, los mismos de los cuadernos:

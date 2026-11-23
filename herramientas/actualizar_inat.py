@@ -301,6 +301,8 @@ def main():
         consultar_taxonomia(aj)
     generar(aj)
     generar_taxonomia(aj)
+    import generar_offline
+    generar_offline.main()
 
 
 if __name__ == "__main__":
