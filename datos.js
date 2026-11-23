@@ -17,6 +17,7 @@ window.ESTATUS = {
   "residente":          { es: "Residente",                en: "Resident",                 de: "Standvogel" },
   "invernante":         { es: "Invernante y de paso",     en: "Winter visitor & migrant", de: "Wintergast & Durchzügler" },
   "estival":            { es: "Estival",                  en: "Summer visitor",           de: "Sommergast" },
+  "sin-proyecto":       { es: "Aún no está en el proyecto", en: "Not in the project yet",  de: "Noch nicht im Projekt" },
   "protegida":          { es: "Protegida",                en: "Protected",                de: "Geschützt" },
   "uicn-cr":            { es: "En peligro crítico (UICN)", en: "Critically endangered (IUCN)", de: "Vom Aussterben bedroht (IUCN)" },
   "uicn-en":            { es: "En peligro (UICN)",        en: "Endangered (IUCN)",        de: "Stark gefährdet (IUCN)" },
