@@ -3,14 +3,15 @@
   "zona": {
     "lat": 28.0385,
     "lng": -16.6035,
-    "radio_km": 1.5
+    "radio_km": 0.75
   },
   "excluir": {
     "Fringilla teydea": "Ave del pinar de cumbre; las dos observaciones tienen la ubicación oculta y no son de San Blas.",
     "Bencomia caudata": "Planta de medianías y cumbre; observación con ubicación oculta, no es de San Blas."
   },
   "alias": {
-    "Lanius excubitor": "Lanius meridionalis koenigi"
+    "Lanius excubitor": "Lanius meridionalis koenigi",
+    "Lavandula canariensis": "Lavandula canariensis subsp. canariensis"
   },
   "nombres_es": {
     "Octopus vulgaris": "Pulpo",
@@ -43,20 +44,33 @@
     "Lanius excubitor": "Alcaudón real",
     "Fagonia cretica": "Abrojo",
     "Gallotia galloti": "Lagarto tizón",
-    "Chelonia mydas": "Tortuga verde"
+    "Chelonia mydas": "Tortuga verde",
+    "Camponotus feae": "Hormiga carpintera",
+    "Hogna ferox": "Tarántula",
+    "Trachinus draco": "Pez araña",
+    "Pimelia canariensis": "Pimelia tinerfeña costera",
+    "Allagopappus canariensis": "Madama de risco",
+    "Argyranthemum gracile": "Magarza grácil",
+    "Frankenia capitata": "Tomillo marino pardo",
+    "Frankenia pulverulenta": "Tomillo marino herbáceo",
+    "Monanthes pallens": "Pelotilla pálida",
+    "Patellifolia procumbens": "Marmojaya",
+    "Polycarpaea nivea": "Saladillo blanco",
+    "Passer hispaniolensis": "Gorrión moruno"
   },
   "estatus": {
     "Gallotia galloti": [
-      "endemica-canaria"
+      "endemica-tenerife"
     ],
     "Chelonia mydas": [
+      "nativa",
       "protegida"
     ],
     "Passer hispaniolensis": [
       "nativa"
     ],
     "Curruca conspicillata": [
-      "subespecie-endemica"
+      "nativa"
     ],
     "Leucaena leucocephala": [
       "introducida",
@@ -98,13 +112,13 @@
       "nativa"
     ],
     "Patellifolia procumbens": [
-      "nativa"
+      "endemica-macaro"
     ],
     "Astydamia latifolia": [
       "nativa"
     ],
     "Cneorum pulverulentum": [
-      "nativa"
+      "endemica-canaria"
     ],
     "Polycarpaea nivea": [
       "nativa"
@@ -122,7 +136,7 @@
       "endemica-macaro"
     ],
     "Lavandula canariensis": [
-      "endemica-canaria"
+      "endemica-tenerife"
     ],
     "Marcetella moquiniana": [
       "endemica-canaria"
@@ -140,7 +154,7 @@
       "endemica-canaria"
     ],
     "Argyranthemum gracile": [
-      "endemica-canaria"
+      "endemica-tenerife"
     ],
     "Allagopappus canariensis": [
       "endemica-canaria"
@@ -155,13 +169,13 @@
       "endemica-canaria"
     ],
     "Forsskaolea angustifolia": [
-      "nativa"
+      "endemica-canaria"
     ],
     "Colletes dimidiatus": [
       "endemica-canaria"
     ],
     "Pimelia canariensis": [
-      "endemica-canaria"
+      "endemica-tenerife"
     ],
     "Ischnura senegalensis": [
       "nativa"
@@ -182,6 +196,36 @@
       "nativa"
     ],
     "Pontia daplidice": [
+      "nativa"
+    ],
+    "Hogna ferox": [
+      "nativa"
+    ],
+    "Leptochilus cruentatus": [
+      "endemica-canaria"
+    ],
+    "Colletes moricei": [
+      "endemica-canaria"
+    ],
+    "Camponotus feae": [
+      "endemica-canaria"
+    ],
+    "Sphingonotus rubescens": [
+      "nativa"
+    ],
+    "Cenchrus ciliaris": [
+      "nativa"
+    ],
+    "Ischiodon aegyptius": [
+      "nativa"
+    ],
+    "Philanthus triangulum": [
+      "nativa"
+    ],
+    "Octopus vulgaris": [
+      "nativa"
+    ],
+    "Sparisoma cretense": [
       "nativa"
     ]
   },
@@ -306,6 +350,15 @@
     "Apodidae": "vencejos",
     "Corvidae": "cuervos y afines",
     "Strigidae": "búhos",
-    "Procellariidae": "pardelas y petreles"
-  }
+    "Procellariidae": "pardelas y petreles",
+    "Formicidae": "hormigas",
+    "Lycosidae": "arañas lobo (tarántulas)"
+  },
+  "anadir": {
+    "_nota": "Especies vistas en San Blas por el equipo de la reserva aunque no tengan observaciones en iNaturalist dentro de la zona (taxon_id de iNaturalist).",
+    "1364040": "Camponotus feae",
+    "557175": "Hogna ferox"
+  },
+  "_fuente_estatus": "Endemicidad, origen y nombres comunes revisados el 23 nov 2026 con el Banco de Datos de Biodiversidad de Canarias (biodiversidadcanarias.es); copia de su exportación en herramientas/bdbc-especies.csv (UTF-8, separada por «;»).",
+  "_fuente_tenerife": "Endemismos exclusivos de Tenerife: listado de plantas vasculares de endemicascanarias.com que pasó el usuario el 23 nov 2026."
 }

@@ -8,6 +8,7 @@
  * Las especies que solo están en iNaturalist se cargan aparte desde datos-inat.js.
  */
 window.ESTATUS = {
+  "endemica-tenerife":  { es: "Endemismo tinerfeño",      en: "Tenerife endemic",         de: "Endemit Teneriffas" },
   "endemica-canaria":   { es: "Endemismo canario",        en: "Canary Islands endemic",   de: "Kanarischer Endemit" },
   "endemica-macaro":    { es: "Endemismo macaronésico",   en: "Macaronesian endemic",     de: "Makaronesischer Endemit" },
   "subespecie-endemica":{ es: "Subespecie endémica",      en: "Endemic subspecies",       de: "Endemische Unterart" },
@@ -17,9 +18,79 @@ window.ESTATUS = {
   "invernante":         { es: "Invernante y de paso",     en: "Winter visitor & migrant", de: "Wintergast & Durchzügler" },
   "estival":            { es: "Estival",                  en: "Summer visitor",           de: "Sommergast" },
   "protegida":          { es: "Protegida",                en: "Protected",                de: "Geschützt" },
+  "uicn-cr":            { es: "En peligro crítico (UICN)", en: "Critically endangered (IUCN)", de: "Vom Aussterben bedroht (IUCN)" },
+  "uicn-en":            { es: "En peligro (UICN)",        en: "Endangered (IUCN)",        de: "Stark gefährdet (IUCN)" },
+  "uicn-vu":            { es: "Vulnerable (UICN)",        en: "Vulnerable (IUCN)",        de: "Gefährdet (IUCN)" },
+  "ceea-vu":            { es: "Vulnerable (Catálogo Español de Especies Amenazadas)", en: "Vulnerable (Spanish catalogue of threatened species)", de: "Gefährdet (Spanischer Katalog bedrohter Arten)" },
   "toxica":             { es: "Látex tóxico",             en: "Toxic latex",              de: "Giftiger Milchsaft" },
   "invasora":           { es: "Invasora",                 en: "Invasive",                 de: "Invasiv" },
-  "aproximada":         { es: "Ubicación aproximada",     en: "Approximate location",     de: "Ungefährer Fundort" }
+  "aproximada":         { es: "Ubicación aproximada",     en: "Approximate location",     de: "Ungefährer Fundort" },
+  "vista-reserva":      { es: "Vista en la reserva",      en: "Seen in the reserve",      de: "Im Reservat gesehen" },
+  "entorno":            { es: "Entorno de la reserva",    en: "Around the reserve",       de: "Umgebung des Reservats" }
+};
+
+/* Islas donde vive cada endemismo canario. Animales: presencia segura según el
+   Banco de Datos de Biodiversidad de Canarias. Fuente: listados de
+   endemicascanarias.com por islas (23 nov 2026). H Hierro, P La Palma,
+   G La Gomera, T Tenerife, C Gran Canaria, F Fuerteventura, L Lanzarote. */
+window.ISLAS = {
+  "argyranthemum gracile": "T",
+  "lavandula canariensis": "T",
+  "monanthes pallens": "GT",
+  "ceropegia fusca": "TC",
+  "lotus sessilifolius": "GTC",
+  "marcetella moquiniana": "GTC",
+  "sonchus capillaris": "GTC",
+  "reseda scoparia": "PGTC",
+  "allagopappus canariensis": "HGTC",
+  "cneorum pulverulentum": "HGTC",
+  "euphorbia lamarckii": "HPGT",
+  "bosea yervamora": "HPGTCF",
+  "euphorbia canariensis": "HPGTCF",
+  "plocama pendula": "HPGTCF",
+  "campylanthus salsoloides": "PGTCFL",
+  "autonoe haemorrhoidalis": "HPGTCFL",
+  "forsskaolea angustifolia": "HPGTCFL",
+  "kleinia neriifolia": "HPGTCFL",
+  "gallotia galloti": "T",
+  "pimelia canariensis": "T",
+  "leptochilus cruentatus": "GTC",
+  "colletes moricei": "PGTC",
+  "camponotus feae": "HGTCFL",
+  "argyranthemum frutescens": "GTC"  /* Banco de Datos: presencia segura en G, T y C; en el resto, traslocada */
+};
+
+/* Estado de conservación (solo lo que no es «preocupación menor»), revisado el
+   23 nov 2026. «uicn»: Lista Roja mundial de la UICN (vía iNaturalist).
+   «ceea»: Catálogo Español de Especies Amenazadas. «protegida»: el Banco de
+   Datos de Biodiversidad de Canarias la marca como especie protegida (la
+   categoría concreta está en CENTINELA). */
+window.CONSERVACION = {
+  "patellifolia procumbens": { uicn: "cr" },
+  "marcetella moquiniana":   { uicn: "en", protegida: true },
+  "colletes moricei":        { uicn: "vu" },
+  "puffinus puffinus":       { ceea: "vu", protegida: true },
+  "ceropegia fusca": { protegida: true }, "euphorbia canariensis": { protegida: true },
+  "argyranthemum frutescens": { protegida: true }, "reseda scoparia": { protegida: true },
+  "pimelia canariensis": { protegida: true }, "campylanthus salsoloides": { protegida: true },
+  "cneorum pulverulentum": { protegida: true }, "cosentinia vellea": { protegida: true },
+  "monanthes pallens": { protegida: true }, "chelonia mydas": { protegida: true },
+  "numenius phaeopus": { protegida: true }, "tadorna ferruginea": { protegida: true },
+  "egretta garzetta": { protegida: true }, "motacilla cinerea": { protegida: true },
+  "lanius meridionalis": { protegida: true }, "ardea cinerea": { protegida: true },
+  "anthus berthelotii": { protegida: true }, "falco tinnunculus": { protegida: true },
+  "gallinula chloropus": { protegida: true }, "apus unicolor": { protegida: true },
+  "upupa epops": { protegida: true }, "corvus corax": { protegida: true },
+  "asio otus": { protegida: true }, "curruca conspicillata": { protegida: true }
+};
+
+/* Notas de distribución para especies con área muy pequeña (texto por idioma). */
+window.NOTAS = {
+  "pimelia canariensis": {
+    es: "Área muy reducida: solo vive en la costa sur y sureste de Tenerife. Las 21 observaciones de iNaturalist (nov. 2026) están en San Miguel de Abona (San Blas, Amarilla), Granadilla (El Médano, Montaña Roja), Arona y el Malpaís de Güímar.",
+    en: "Very small range: it only lives on the south and south-east coast of Tenerife. The 21 iNaturalist records (Nov 2026) are from San Miguel de Abona (San Blas, Amarilla), Granadilla (El Médano, Montaña Roja), Arona and the Malpaís de Güímar.",
+    de: "Sehr kleines Verbreitungsgebiet: nur an der Süd- und Südostküste Teneriffas. Die 21 iNaturalist-Beobachtungen (Nov. 2026) stammen aus San Miguel de Abona (San Blas, Amarilla), Granadilla (El Médano, Montaña Roja), Arona und dem Malpaís de Güímar."
+  }
 };
 
 window.GRUPOS = {

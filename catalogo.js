@@ -9,9 +9,9 @@
       vacio: "No encontramos ninguna especie con ese nombre.",
       descripcion: "Cómo es", usos: "Usos y cultura",
       sinFicha: "Especie observada en la reserva o en su entorno y registrada en iNaturalist. Estamos preparando su ficha.",
-      verInat: "Ver en iNaturalist", obs: n => `${n} ${n === 1 ? "observación" : "observaciones"} en San Blas y su entorno`,
+      verInat: "Ver en iNaturalist", mapaCanarias: "Mapa en todo Canarias", obs: n => `${n} ${n === 1 ? "observación" : "observaciones"} en San Blas y su entorno`,
       foto: "Imagen", cerrar: "Cerrar",
-      nivel: "Nivel del alumnado", sinClasificar: "Sin clasificar",
+      nivel: "Nivel del alumnado", sinClasificar: "Sin clasificar", islasEt: "Islas", islasTodas: "todas las islas Canarias", islasN: { H: "El Hierro", P: "La Palma", G: "La Gomera", T: "Tenerife", C: "Gran Canaria", F: "Fuerteventura", L: "Lanzarote" }, litoralTit: "En el entorno de la reserva", litoralTxt: "Especies observadas en iNaturalist a menos de 750 m de San Blas pero fuera de la reserva: en el mar, la costa y los alrededores. Son especies limítrofes, no de la reserva.",
       vistaTarjetas: "Tarjetas", vistaArbol: "Árbol", desplegar: "Desplegar todo", plegar: "Plegar todo", grupoEt: "Grupo",
       rangos: { reino: "Reino", clase: "Clase", orden: "Orden", familia: "Familia" },
       niveles: [
@@ -21,7 +21,7 @@
         { curso: "Bachillerato y FP", nombre: "Familias", ayuda: "Las especies se agrupan por familia, el escalón anterior al género y la especie. En la ficha está la clasificación completa." }
       ],
       inatAnte: "Catálogo vivo", inatTitulo: "Súmense en iNaturalist",
-      inatTexto: "Este catálogo crece con las observaciones del proyecto San Blas Reserva Ambiental en iNaturalist. Basta con una cuenta y subir fotos con ubicación GPS tomadas dentro de la reserva: se añaden al proyecto automáticamente. Las especies sin ficha propia proceden de observaciones de iNaturalist hechas a menos de 1,5 km de la reserva.",
+      inatTexto: "Este catálogo crece con las observaciones del proyecto San Blas Reserva Ambiental en iNaturalist. Basta con una cuenta y subir fotos con ubicación GPS tomadas dentro de la reserva: se añaden al proyecto automáticamente. Las especies sin ficha propia proceden de observaciones de iNaturalist hechas a menos de 750 m de la reserva.",
       inatBoton: "Abrir el proyecto en iNaturalist",
       invitaTitulo: "¿Conocen otro uso o un nombre tradicional?",
       invitaTexto: "Si en su familia o en su centro conocen otro nombre canario o un uso tradicional de alguna de estas especies, escríbannos a <a href=\"mailto:tenerife.ambiental-res@barcelo.com\">tenerife.ambiental-res@barcelo.com</a> y lo añadiremos citando la fuente.",
@@ -37,9 +37,9 @@
       vacio: "No species found with that name.",
       descripcion: "What it is like", usos: "Uses and culture",
       sinFicha: "Species observed in or around the reserve and recorded on iNaturalist. Its profile is being prepared.",
-      verInat: "View on iNaturalist", obs: n => `${n} ${n === 1 ? "observation" : "observations"} in and around San Blas`,
+      verInat: "View on iNaturalist", mapaCanarias: "Map across the Canary Islands", obs: n => `${n} ${n === 1 ? "observation" : "observations"} in and around San Blas`,
       foto: "Image", cerrar: "Close",
-      nivel: "Student level", sinClasificar: "Unclassified",
+      nivel: "Student level", sinClasificar: "Unclassified", islasEt: "Islands", islasTodas: "all the Canary Islands", islasN: { H: "El Hierro", P: "La Palma", G: "La Gomera", T: "Tenerife", C: "Gran Canaria", F: "Fuerteventura", L: "Lanzarote" }, litoralTit: "Around the reserve", litoralTxt: "Species recorded on iNaturalist within 750 m of San Blas but outside the reserve: at sea, on the coast and nearby. They are neighbouring species, not part of the reserve.",
       vistaTarjetas: "Cards", vistaArbol: "Tree", desplegar: "Expand all", plegar: "Collapse all", grupoEt: "Group",
       rangos: { reino: "Kingdom", clase: "Class", orden: "Order", familia: "Family" },
       niveles: [
@@ -49,7 +49,7 @@
         { curso: "Upper secondary", nombre: "Families", ayuda: "Species are grouped by family, the step before genus and species. Each profile shows the full classification." }
       ],
       inatAnte: "Living catalogue", inatTitulo: "Join us on iNaturalist",
-      inatTexto: "This catalogue grows with the observations of the San Blas Reserva Ambiental project on iNaturalist. All you need is an account: upload GPS-tagged photos taken inside the reserve and they are added to the project automatically. Species without a full profile come from iNaturalist observations made within 1.5 km of the reserve.",
+      inatTexto: "This catalogue grows with the observations of the San Blas Reserva Ambiental project on iNaturalist. All you need is an account: upload GPS-tagged photos taken inside the reserve and they are added to the project automatically. Species without a full profile come from iNaturalist observations made within 750 m of the reserve.",
       inatBoton: "Open the project on iNaturalist",
       invitaTitulo: "Do you know another use or a traditional name?",
       invitaTexto: "If you know another Canarian name or a traditional use for any of these species, write to us at <a href=\"mailto:tenerife.ambiental-res@barcelo.com\">tenerife.ambiental-res@barcelo.com</a> and we will add it, citing the source.",
@@ -65,9 +65,9 @@
       vacio: "Keine Art mit diesem Namen gefunden.",
       descripcion: "Merkmale", usos: "Nutzung und Kultur",
       sinFicha: "Im Reservat oder in seiner Umgebung beobachtete und auf iNaturalist erfasste Art. Das Porträt ist in Vorbereitung.",
-      verInat: "Auf iNaturalist ansehen", obs: n => `${n} ${n === 1 ? "Beobachtung" : "Beobachtungen"} in und um San Blas`,
+      verInat: "Auf iNaturalist ansehen", mapaCanarias: "Karte der Kanaren", obs: n => `${n} ${n === 1 ? "Beobachtung" : "Beobachtungen"} in und um San Blas`,
       foto: "Bild", cerrar: "Schließen",
-      nivel: "Lernstufe", sinClasificar: "Nicht zugeordnet",
+      nivel: "Lernstufe", sinClasificar: "Nicht zugeordnet", islasEt: "Inseln", islasTodas: "alle Kanarischen Inseln", islasN: { H: "El Hierro", P: "La Palma", G: "La Gomera", T: "Teneriffa", C: "Gran Canaria", F: "Fuerteventura", L: "Lanzarote" }, litoralTit: "Rund um das Reservat", litoralTxt: "Auf iNaturalist im Umkreis von 750 m um San Blas, aber außerhalb des Reservats beobachtete Arten: im Meer, an der Küste und in der Umgebung. Es sind Nachbararten, nicht Arten des Reservats.",
       vistaTarjetas: "Karten", vistaArbol: "Baum", desplegar: "Alle aufklappen", plegar: "Alle zuklappen", grupoEt: "Gruppe",
       rangos: { reino: "Reich", clase: "Klasse", orden: "Ordnung", familia: "Familie" },
       niveles: [
@@ -77,7 +77,7 @@
         { curso: "Sekundarstufe II", nombre: "Familien", ayuda: "Die Arten sind nach Familie gruppiert, der Stufe vor Gattung und Art. Im Porträt steht die vollständige Systematik." }
       ],
       inatAnte: "Lebendiger Katalog", inatTitulo: "Machen Sie mit bei iNaturalist",
-      inatTexto: "Dieser Katalog wächst mit den Beobachtungen des Projekts San Blas Reserva Ambiental auf iNaturalist. Sie brauchen nur ein Konto: Laden Sie Fotos mit GPS-Daten aus dem Reservat hoch, und sie werden automatisch dem Projekt zugeordnet. Arten ohne eigenes Porträt stammen aus iNaturalist-Beobachtungen im Umkreis von 1,5 km um das Reservat.",
+      inatTexto: "Dieser Katalog wächst mit den Beobachtungen des Projekts San Blas Reserva Ambiental auf iNaturalist. Sie brauchen nur ein Konto: Laden Sie Fotos mit GPS-Daten aus dem Reservat hoch, und sie werden automatisch dem Projekt zugeordnet. Arten ohne eigenes Porträt stammen aus iNaturalist-Beobachtungen im Umkreis von 750 m um das Reservat.",
       inatBoton: "Projekt auf iNaturalist öffnen",
       invitaTitulo: "Kennen Sie eine andere Nutzung oder einen traditionellen Namen?",
       invitaTexto: "Wenn Sie einen weiteren kanarischen Namen oder eine traditionelle Nutzung einer dieser Arten kennen, schreiben Sie uns an <a href=\"mailto:tenerife.ambiental-res@barcelo.com\">tenerife.ambiental-res@barcelo.com</a> – wir ergänzen sie mit Quellenangabe.",
@@ -108,6 +108,23 @@
     if (e) { e.inat = i; if (!e.foto && i.foto) e.foto = i.foto; }
     else especies.push({ id: "inat-" + i.taxon_id, grupo: i.grupo, cientifico: i.cientifico, nombre: i.nombre, estatus: i.estatus || [], foto: i.foto, inat: i });
   }
+
+  /* Especies de la reserva: las del proyecto de iNaturalist (observadas dentro de sus límites),
+     las de las guías de la reserva (fichas propias) y las vistas por el equipo. El resto de
+     observaciones de la zona (radio de 750 m) son especies del entorno, limítrofes. */
+  /* Estado de conservación → etiquetas (ver CONSERVACION en datos.js) */
+  especies.forEach(e => {
+    const c = (window.CONSERVACION || {})[clave(e.cientifico)];
+    let est = (e.estatus || []).filter(k => k !== "protegida");
+    if (c) {
+      if (c.uicn) est.push("uicn-" + c.uicn);
+      if (c.ceea) est.push("ceea-" + c.ceea);
+      if (c.protegida) est.push("protegida");
+    }
+    e.estatus = est;
+  });
+  const enReserva = e => !e.id.startsWith("inat-") || (e.inat && e.inat.proyecto > 0) || (e.estatus || []).includes("vista-reserva");
+  especies.forEach(e => { if (!enReserva(e)) { e.estatus = (e.estatus || []).filter(k => k !== "entorno").concat("entorno"); e.entorno = true; } });
 
   const $ = s => document.querySelector(s);
   let lang = "es", grupo = "todas", texto = "", nivel = 2, vista = "tarjetas";
@@ -228,7 +245,7 @@
     const r = x[k] || ["—", ""];
     return { id: r[0], et: T[lang].rangos[k], nom: r[0], sci: true, es: comun(r), c: COLOR[e.grupo] };
   }
-  function pintarArbol(lista, abierto) {
+  function pintarArbol(lista, abierto, ul) {
     const ramas = RAMAS[nivel], raiz = { hijos: new Map(), es: [] };
     lista.forEach(e => {
       let nodo = raiz;
@@ -240,7 +257,6 @@
       });
       nodo.es.push(e);
     });
-    const ul = $("#arbol"); ul.innerHTML = "";
     const hacer = (nodo, cont, prof) => {
       [...nodo.hijos.values()].sort((a, b) => b.n - a.n || a.r.nom.localeCompare(b.r.nom)).forEach(h => {
         const li = document.createElement("li"), d = document.createElement("details");
@@ -278,11 +294,28 @@
     document.querySelectorAll("#vista button").forEach(b => b.setAttribute("aria-pressed", b.dataset.vista === vista));
     $("#rejilla").hidden = vista === "arbol"; $("#arbol-cont").hidden = vista !== "arbol";
     $("#vacio").hidden = lista.length > 0;
-    if (vista === "arbol") { pintarArbol(lista, !!t || grupo !== "todas"); return; }
+    const tierra = lista.filter(e => !e.entorno), mar = lista.filter(e => e.entorno);
+    const cabeceraMar = (etiqueta) => {
+      const h = document.createElement(etiqueta); h.className = "seccion litoral";
+      h.innerHTML = "<span></span><small></small>";
+      h.firstChild.textContent = T[lang].litoralTit;
+      h.lastChild.textContent = T[lang].litoralTxt;
+      return h;
+    };
+    if (vista === "arbol") {
+      const ul = $("#arbol"); ul.innerHTML = "";
+      pintarArbol(tierra, !!t || grupo !== "todas", ul);
+      if (mar.length) {
+        const li = document.createElement("li"); li.className = "arbol-litoral"; li.appendChild(cabeceraMar("h3"));
+        const sub = document.createElement("ul"); sub.className = "arbol"; li.appendChild(sub); ul.appendChild(li);
+        pintarArbol(mar, !!t || grupo !== "todas", sub);
+      }
+      return;
+    }
     const rej = $("#rejilla"); rej.innerHTML = "";
     if (nivel >= 3) {
       const grupos = new Map();
-      lista.forEach(e => { const a = apartado(e) || { id: "~", titulo: T[lang].sinClasificar, nombre: null }; if (!grupos.has(a.id)) grupos.set(a.id, { a, es: [] }); grupos.get(a.id).es.push(e); });
+      tierra.forEach(e => { const a = apartado(e) || { id: "~", titulo: T[lang].sinClasificar, nombre: null }; if (!grupos.has(a.id)) grupos.set(a.id, { a, es: [] }); grupos.get(a.id).es.push(e); });
       [...grupos.values()].sort((x, y) => (x.a.id === "~") - (y.a.id === "~") || y.es.length - x.es.length || x.a.id.localeCompare(y.a.id)).forEach(({ a, es }) => {
         const h = document.createElement("h3"); h.className = "seccion";
         h.innerHTML = a.titulo + (a.sub ? "<small></small>" : "");
@@ -292,8 +325,9 @@
         es.forEach(e => rej.appendChild(tarjeta(e)));
       });
     } else {
-      lista.forEach(e => rej.appendChild(tarjeta(e)));
+      tierra.forEach(e => rej.appendChild(tarjeta(e)));
     }
+    if (mar.length) { rej.appendChild(cabeceraMar("h2")); mar.forEach(e => rej.appendChild(tarjeta(e))); }
     $("#vacio").hidden = lista.length > 0;
   }
 
@@ -303,7 +337,7 @@
     const foto = $(".ficha-foto");
     foto.className = "ficha-foto" + (e.foto && e.foto.tipo === "lamina" ? " lamina" : "");
     const im = $("#ficha-img");
-    if (e.foto && e.foto.src) { im.src = e.foto.src; im.alt = nombre(e); im.hidden = false; } else { im.hidden = true; }
+    if (e.foto && e.foto.src) { im.src = e.foto.src; im.alt = nombre(e); im.hidden = false; } else { im.removeAttribute("src"); im.alt = ""; im.hidden = true; }
     $("#ficha-grupo").textContent = tr(GRUPOS[e.grupo]);
     $("#ficha-nombre").textContent = nombre(e);
     $("#ficha-cientifico").textContent = e.cientifico;
@@ -311,6 +345,11 @@
       .map(l => `${l.toUpperCase()}: ${e.nombre[l]}`);
     $("#ficha-otros").textContent = otros.join(" · ");
     $("#ficha-estatus").innerHTML = chips(e);
+    const isl = (window.ISLAS || {})[clave(e.cientifico)], pi = $("#ficha-islas");
+    pi.hidden = !isl;
+    if (isl) pi.textContent = `${T[lang].islasEt}: ${isl.length === 7 ? T[lang].islasTodas : [...isl].map(c => T[lang].islasN[c]).join(", ")}`;
+    const nota = (window.NOTAS || {})[clave(e.cientifico)], pn = $("#ficha-nota");
+    pn.hidden = !nota; pn.textContent = nota ? tr(nota) : "";
     const x = taxo(e), tx = $("#ficha-taxonomia");
     const pasos = ["reino", "clase", "orden", "familia"].filter(k => x[k]).map(k => `${T[lang].rangos[k]} <b></b>`);
     tx.innerHTML = pasos.join(" › "); tx.hidden = !pasos.length || nivel < 3;
@@ -332,9 +371,19 @@
       const a = document.createElement("a");
       a.className = "boton"; a.target = "_blank"; a.rel = "noopener";
       const z = (window.INAT && window.INAT.zona) || { lat: 28.0385, lng: -16.6035, radio_km: 1.5 };
-      a.href = `https://www.inaturalist.org/observations?taxon_id=${e.inat.taxon_id}&lat=${z.lat}&lng=${z.lng}&radius=${z.radio_km}`;
-      a.textContent = `${T[lang].verInat} · ${T[lang].obs(e.inat.observaciones || 0)}`;
+      if (e.inat.observaciones) {
+        a.href = `https://www.inaturalist.org/observations?taxon_id=${e.inat.taxon_id}&lat=${z.lat}&lng=${z.lng}&radius=${z.radio_km}&subview=map`;
+        a.textContent = `${T[lang].verInat} · ${T[lang].obs(e.inat.observaciones)}`;
+      } else {
+        a.href = `https://www.inaturalist.org/taxa/${e.inat.taxon_id}`;
+        a.textContent = T[lang].verInat;
+      }
       en.appendChild(a);
+      const m = document.createElement("a");
+      m.className = "boton sec"; m.target = "_blank"; m.rel = "noopener";
+      m.href = `https://www.inaturalist.org/observations?taxon_id=${e.inat.taxon_id}&swlat=27.6&swlng=-18.2&nelat=29.5&nelng=-13.3&subview=map`;
+      m.textContent = T[lang].mapaCanarias;
+      en.appendChild(m);
     }
     history.replaceState(null, "", "#" + e.id);
     if (!d.open) d.showModal();

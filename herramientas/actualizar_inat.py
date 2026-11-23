@@ -36,6 +36,9 @@ RANGOS = {"species", "subspecies", "variety", "form", "hybrid"}
 RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CACHE = os.path.join(RAIZ, "herramientas", "inat-cache.tsv")
 CACHE_TAX = os.path.join(RAIZ, "herramientas", "taxonomia-cache.tsv")
+CACHE_EXTRA = os.path.join(RAIZ, "herramientas", "extra-cache.tsv")
+CACHE_PROY = os.path.join(RAIZ, "herramientas", "proyecto-cache.tsv")
+PROYECTO = "san-blas-reserva-ambiental"
 AJUSTES = os.path.join(RAIZ, "herramientas", "ajustes-inat.json")
 AGENTE = "SanBlasCatalogo/1.0 (catalogo educativo)"
 COLUMNAS = ["taxon_id", "cientifico", "subtaxones", "grupo_inat", "nombre_es", "nombre_en", "nombre_de",
@@ -159,9 +162,62 @@ def generar_taxonomia(aj):
     print(f"{len(datos)} especies en taxonomia.js")
 
 
-def leer_cache():
-    with open(CACHE, encoding="utf-8") as f:
-        return list(csv.DictReader(f, delimiter="\t"))
+def consultar_proyecto():
+    """Especies del proyecto de la reserva en iNaturalist (observaciones dentro de sus límites).
+    Son las «especies de la reserva»; el resto de la zona se muestra como entorno."""
+    d = pedir("/observations/species_counts", project_id=PROYECTO, per_page=500)
+    with open(CACHE_PROY, "w", encoding="utf-8", newline="") as f:
+        w = csv.writer(f, delimiter="\t")
+        w.writerow(["taxon_id", "cientifico", "observaciones"])
+        for r in d.get("results", []):
+            if r["taxon"].get("rank") in RANGOS:
+                w.writerow([r["taxon"]["id"], r["taxon"]["name"], r["count"]])
+    print(f"{len(d.get('results', []))} taxones en el proyecto {PROYECTO}")
+
+
+def leer_proyecto():
+    if not os.path.exists(CACHE_PROY):
+        return {}
+    with open(CACHE_PROY, encoding="utf-8") as f:
+        return {r["taxon_id"]: int(r["observaciones"]) for r in csv.DictReader(f, delimiter="\t")}
+
+
+def leer_cache(extra=True):
+    """Especies de la zona y, además, las de «anadir» (vistas por el equipo)."""
+    filas = []
+    for ruta in (CACHE, CACHE_EXTRA) if extra else (CACHE,):
+        if os.path.exists(ruta):
+            with open(ruta, encoding="utf-8") as f:
+                filas += list(csv.DictReader(f, delimiter="\t"))
+    vistos, unicas = set(), []
+    for f in filas:
+        if f["taxon_id"] not in vistos:
+            vistos.add(f["taxon_id"]); unicas.append(f)
+    return unicas
+
+
+def consultar_extra(aj):
+    """Ficha básica de las especies de «anadir» que no salen en la zona."""
+    zona = {f["taxon_id"] for f in leer_cache(extra=False)}
+    filas = []
+    for tid in [k for k in aj.get("anadir", {}) if k.isdigit() and k not in zona]:
+        cn = {}
+        for loc in ("es", "en", "de"):
+            t = pedir(f"/taxa/{tid}", locale=loc)["results"][0]
+            cn[loc] = t.get("preferred_common_name") or ""
+        p = t.get("default_photo") or {}
+        lic = p.get("license_code") or ""
+        filas.append({"taxon_id": tid, "cientifico": t["name"], "subtaxones": "", "grupo_inat": t.get("iconic_taxon_name") or "",
+                      "nombre_es": cn["es"], "nombre_en": cn["en"], "nombre_de": cn["de"], "establecimiento": "",
+                      "observaciones": 0, "investigacion": 0, "observadores": 0, "primera": "", "ultima": "",
+                      "foto_id": p.get("id", "") if lic else "", "licencia": lic,
+                      "ext": (p.get("medium_url") or "").rsplit(".", 1)[-1] if lic else "",
+                      "credito": (p.get("attribution") or "").split(", uploaded by")[0] if lic else "",
+                      "ubicacion_aproximada": 0})
+    with open(CACHE_EXTRA, "w", encoding="utf-8", newline="") as f:
+        w = csv.DictWriter(f, COLUMNAS, delimiter="\t", lineterminator="\n")
+        w.writeheader()
+        w.writerows(filas)
 
 
 def descargar(url, destino):
@@ -185,6 +241,7 @@ def con_ficha():
 def generar(aj):
     os.makedirs(os.path.join(RAIZ, "img", "inat"), exist_ok=True)
     propias = con_ficha()
+    proyecto = leer_proyecto()
     salida, excluidas = [], []
     for f in leer_cache():
         cient = f["cientifico"]
@@ -199,6 +256,8 @@ def generar(aj):
             estatus.append("introducida")
         if f["ubicacion_aproximada"] == "1":
             estatus.append("aproximada")
+        if f["taxon_id"] in aj.get("anadir", {}):
+            estatus.append("vista-reserva")
         foto = None
         nombre_final = aj.get("alias", {}).get(cient, cient)
         if f["licencia"] in LICENCIAS and f["foto_id"] and " ".join(nombre_final.lower().split()[:2]) not in propias:
@@ -219,6 +278,7 @@ def generar(aj):
                        "nombre": nombre, "grupo": GRUPO.get(f["grupo_inat"], "otros"),
                        "observaciones": int(f["observaciones"]), "investigacion": int(f["investigacion"]),
                        "observadores": int(f["observadores"]), "ultima": f["ultima"],
+                       "proyecto": proyecto.get(f["taxon_id"], 0),
                        "estatus": estatus, "foto": foto})
     salida.sort(key=lambda x: (-x["observaciones"], x["cientifico"]))
     datos = {"actualizado": time.strftime("%Y-%m-%d"), "zona": aj["zona"], "especies": salida}
@@ -236,6 +296,8 @@ def main():
         aj = json.load(f)
     if "--sin-red" not in sys.argv:
         consultar(aj["zona"])
+        consultar_proyecto()
+        consultar_extra(aj)
         consultar_taxonomia(aj)
     generar(aj)
     generar_taxonomia(aj)

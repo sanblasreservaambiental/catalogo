@@ -24,7 +24,7 @@ python herramientas/actualizar_inat.py            # consulta iNaturalist
 python herramientas/actualizar_inat.py --sin-red  # regenera desde la copia guardada
 ```
 
-El script recoge **todas las observaciones de iNaturalist en un radio de 1,5 km alrededor de la reserva**
+El script recoge **todas las observaciones de iNaturalist en un radio de 750 m alrededor de la reserva**
 (no solo las del proyecto [San Blas Reserva Ambiental](https://www.inaturalist.org/projects/san-blas-reserva-ambiental),
 que todavía tiene pocas), las agrupa por especie y guarda el resultado en `herramientas/inat-cache.tsv`.
 Después genera `datos-inat.js` y descarga la foto representativa de cada especie nueva **solo si tiene licencia

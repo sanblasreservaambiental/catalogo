@@ -1,13 +1,29 @@
 /* Generado por herramientas/actualizar_inat.py — no editar a mano.
- * Observaciones de iNaturalist en un radio de 1.5 km alrededor de San Blas Reserva Ambiental. */
+ * Observaciones de iNaturalist en un radio de 0.75 km alrededor de San Blas Reserva Ambiental. */
 window.INAT = {
- "actualizado": "2026-11-22",
+ "actualizado": "2026-11-23",
  "zona": {
   "lat": 28.0385,
   "lng": -16.6035,
-  "radio_km": 1.5
+  "radio_km": 0.75
  },
  "especies": [
+  {
+   "taxon_id": 627397,
+   "cientifico": "Plocama pendula",
+   "nombre": {
+    "es": "Balo",
+    "de": "Pendelstroh"
+   },
+   "grupo": "plantas",
+   "observaciones": 8,
+   "investigacion": 8,
+   "observadores": 5,
+   "ultima": "2026-03-01",
+   "proyecto": 7,
+   "estatus": [],
+   "foto": null
+  },
   {
    "taxon_id": 35995,
    "cientifico": "Gallotia galloti",
@@ -17,12 +33,13 @@ window.INAT = {
     "de": "Kanareneidechse"
    },
    "grupo": "reptiles",
-   "observaciones": 11,
+   "observaciones": 7,
    "investigacion": 7,
    "observadores": 5,
    "ultima": "2026-09-08",
+   "proyecto": 4,
    "estatus": [
-    "endemica-canaria"
+    "endemica-tenerife"
    ],
    "foto": {
     "src": "img/inat/35995.jpeg",
@@ -33,21 +50,6 @@ window.INAT = {
    }
   },
   {
-   "taxon_id": 627397,
-   "cientifico": "Plocama pendula",
-   "nombre": {
-    "es": "Balo",
-    "de": "Pendelstroh"
-   },
-   "grupo": "plantas",
-   "observaciones": 11,
-   "investigacion": 11,
-   "observadores": 5,
-   "ultima": "2026-03-01",
-   "estatus": [],
-   "foto": null
-  },
-  {
    "taxon_id": 467314,
    "cientifico": "Euphorbia balsamifera",
    "nombre": {
@@ -56,26 +58,11 @@ window.INAT = {
     "de": "Balsam-Wolfsmilch"
    },
    "grupo": "plantas",
-   "observaciones": 8,
-   "investigacion": 8,
+   "observaciones": 5,
+   "investigacion": 5,
    "observadores": 5,
    "ultima": "2026-02-11",
-   "estatus": [],
-   "foto": null
-  },
-  {
-   "taxon_id": 336806,
-   "cientifico": "Kleinia neriifolia",
-   "nombre": {
-    "es": "Verode",
-    "en": "Canary Islands Candle-Plant",
-    "de": "Oleanderblättrige Kleinie"
-   },
-   "grupo": "plantas",
-   "observaciones": 8,
-   "investigacion": 8,
-   "observadores": 6,
-   "ultima": "2026-03-01",
+   "proyecto": 5,
    "estatus": [],
    "foto": null
   },
@@ -88,10 +75,11 @@ window.INAT = {
     "de": "Senegal-Pechlibelle"
    },
    "grupo": "insectos",
-   "observaciones": 6,
-   "investigacion": 6,
+   "observaciones": 5,
+   "investigacion": 5,
    "observadores": 1,
    "ultima": "2026-03-01",
+   "proyecto": 1,
    "estatus": [
     "nativa"
    ],
@@ -104,18 +92,19 @@ window.INAT = {
    }
   },
   {
-   "taxon_id": 633975,
-   "cientifico": "Schizogyne sericea",
+   "taxon_id": 336806,
+   "cientifico": "Kleinia neriifolia",
    "nombre": {
-    "es": "Salado Blanco",
-    "en": "Salado",
-    "de": "Seidenhaarige Schlitznarbe"
+    "es": "Verode",
+    "en": "Canary Islands Candle-Plant",
+    "de": "Oleanderblättrige Kleinie"
    },
    "grupo": "plantas",
-   "observaciones": 6,
-   "investigacion": 6,
-   "observadores": 4,
-   "ultima": "2026-07-09",
+   "observaciones": 5,
+   "investigacion": 5,
+   "observadores": 5,
+   "ultima": "2026-03-01",
+   "proyecto": 4,
    "estatus": [],
    "foto": null
   },
@@ -127,94 +116,12 @@ window.INAT = {
     "de": "Lamarck-Wolfsmilch"
    },
    "grupo": "plantas",
-   "observaciones": 5,
-   "investigacion": 4,
-   "observadores": 5,
-   "ultima": "2026-03-01",
-   "estatus": [],
-   "foto": null
-  },
-  {
-   "taxon_id": 130672,
-   "cientifico": "Aizoon canariense",
-   "nombre": {
-    "es": "Pata de gallo",
-    "en": "African Baconfig",
-    "de": "Kanaren-Eiskraut"
-   },
-   "grupo": "plantas",
-   "observaciones": 4,
-   "investigacion": 4,
-   "observadores": 3,
-   "ultima": "2026-04-28",
-   "estatus": [
-    "nativa"
-   ],
-   "foto": {
-    "src": "img/inat/130672.jpeg",
-    "tipo": "foto",
-    "credito": "(c) Daniel Cahen, some rights reserved (CC BY)",
-    "licencia": "cc-by",
-    "url": "https://www.inaturalist.org/photos/14392424"
-   }
-  },
-  {
-   "taxon_id": 336807,
-   "cientifico": "Euphorbia canariensis",
-   "nombre": {
-    "es": "Cardón",
-    "en": "Canary Island Spurge",
-    "de": "Kanarenwolfsmilch"
-   },
-   "grupo": "plantas",
    "observaciones": 4,
    "investigacion": 4,
    "observadores": 4,
    "ultima": "2026-03-01",
+   "proyecto": 3,
    "estatus": [],
-   "foto": null
-  },
-  {
-   "taxon_id": 71191,
-   "cientifico": "Mesembryanthemum nodiflorum",
-   "nombre": {
-    "es": "Cosco",
-    "en": "Slender Iceplant",
-    "de": "Knotenblütige Mittagsblume"
-   },
-   "grupo": "plantas",
-   "observaciones": 4,
-   "investigacion": 4,
-   "observadores": 3,
-   "ultima": "2025-07-12",
-   "estatus": [
-    "nativa"
-   ],
-   "foto": {
-    "src": "img/inat/71191.jpg",
-    "tipo": "foto",
-    "credito": "(c) randomtruth, some rights reserved (CC BY-NC-SA)",
-    "licencia": "cc-by-nc-sa",
-    "url": "https://www.inaturalist.org/photos/31465"
-   }
-  },
-  {
-   "taxon_id": 47898,
-   "cientifico": "Opuntia stricta",
-   "nombre": {
-    "es": "Tunera india",
-    "en": "Shell mound pricklypear",
-    "de": "Steifer Feigenkaktus"
-   },
-   "grupo": "plantas",
-   "observaciones": 4,
-   "investigacion": 4,
-   "observadores": 3,
-   "ultima": "2026-03-01",
-   "estatus": [
-    "introducida",
-    "invasora"
-   ],
    "foto": null
   },
   {
@@ -229,6 +136,7 @@ window.INAT = {
    "investigacion": 2,
    "observadores": 3,
    "ultima": "2026-03-01",
+   "proyecto": 3,
    "estatus": [
     "endemica-canaria"
    ],
@@ -241,6 +149,307 @@ window.INAT = {
    }
   },
   {
+   "taxon_id": 871,
+   "cientifico": "Alectoris barbara",
+   "nombre": {
+    "es": "Perdiz Moruna",
+    "en": "Barbary Partridge",
+    "de": "Felsenhuhn"
+   },
+   "grupo": "aves",
+   "observaciones": 3,
+   "investigacion": 3,
+   "observadores": 2,
+   "ultima": "2026-06-05",
+   "proyecto": 3,
+   "estatus": [
+    "introducida"
+   ],
+   "foto": null
+  },
+  {
+   "taxon_id": 13738,
+   "cientifico": "Anthus berthelotii",
+   "nombre": {
+    "es": "Bisbita Caminero",
+    "en": "Berthelot's Pipit",
+    "de": "Kanarenpieper"
+   },
+   "grupo": "aves",
+   "observaciones": 3,
+   "investigacion": 3,
+   "observadores": 3,
+   "ultima": "2026-05-06",
+   "proyecto": 1,
+   "estatus": [],
+   "foto": null
+  },
+  {
+   "taxon_id": 71191,
+   "cientifico": "Mesembryanthemum nodiflorum",
+   "nombre": {
+    "es": "Cosco",
+    "en": "Slender Iceplant",
+    "de": "Knotenblütige Mittagsblume"
+   },
+   "grupo": "plantas",
+   "observaciones": 3,
+   "investigacion": 3,
+   "observadores": 3,
+   "ultima": "2025-07-12",
+   "proyecto": 1,
+   "estatus": [
+    "nativa"
+   ],
+   "foto": {
+    "src": "img/inat/71191.jpg",
+    "tipo": "foto",
+    "credito": "(c) randomtruth, some rights reserved (CC BY-NC-SA)",
+    "licencia": "cc-by-nc-sa",
+    "url": "https://www.inaturalist.org/photos/31465"
+   }
+  },
+  {
+   "taxon_id": 633975,
+   "cientifico": "Schizogyne sericea",
+   "nombre": {
+    "es": "Salado Blanco",
+    "en": "Salado",
+    "de": "Seidenhaarige Schlitznarbe"
+   },
+   "grupo": "plantas",
+   "observaciones": 3,
+   "investigacion": 3,
+   "observadores": 3,
+   "ultima": "2026-07-09",
+   "proyecto": 3,
+   "estatus": [],
+   "foto": null
+  },
+  {
+   "taxon_id": 130672,
+   "cientifico": "Aizoon canariense",
+   "nombre": {
+    "es": "Pata de gallo",
+    "en": "African Baconfig",
+    "de": "Kanaren-Eiskraut"
+   },
+   "grupo": "plantas",
+   "observaciones": 2,
+   "investigacion": 2,
+   "observadores": 2,
+   "ultima": "2026-04-28",
+   "proyecto": 1,
+   "estatus": [
+    "nativa"
+   ],
+   "foto": {
+    "src": "img/inat/130672.jpeg",
+    "tipo": "foto",
+    "credito": "(c) Daniel Cahen, some rights reserved (CC BY)",
+    "licencia": "cc-by",
+    "url": "https://www.inaturalist.org/photos/14392424"
+   }
+  },
+  {
+   "taxon_id": 430581,
+   "cientifico": "Cenchrus setaceus",
+   "nombre": {
+    "es": "Rabo de gato",
+    "en": "Fountain Grass",
+    "de": "Afrikanisches Lampenputzergras"
+   },
+   "grupo": "plantas",
+   "observaciones": 2,
+   "investigacion": 2,
+   "observadores": 2,
+   "ultima": "2024-05-14",
+   "proyecto": 1,
+   "estatus": [
+    "introducida",
+    "invasora"
+   ],
+   "foto": {
+    "src": "img/inat/430581.jpg",
+    "tipo": "foto",
+    "credito": "(c) btburke, some rights reserved (CC BY-NC)",
+    "licencia": "cc-by-nc",
+    "url": "https://www.inaturalist.org/photos/6748173"
+   }
+  },
+  {
+   "taxon_id": 85030,
+   "cientifico": "Crocothemis erythraea",
+   "nombre": {
+    "es": "Vigilante escarlata",
+    "en": "Broad Scarlet",
+    "de": "Feuerlibelle"
+   },
+   "grupo": "insectos",
+   "observaciones": 2,
+   "investigacion": 2,
+   "observadores": 2,
+   "ultima": "2026-03-01",
+   "proyecto": 2,
+   "estatus": [
+    "nativa"
+   ],
+   "foto": {
+    "src": "img/inat/85030.jpg",
+    "tipo": "foto",
+    "credito": "(c) Erland Refling Nielsen, some rights reserved (CC BY-NC)",
+    "licencia": "cc-by-nc",
+    "url": "https://www.inaturalist.org/photos/539212346"
+   }
+  },
+  {
+   "taxon_id": 199614,
+   "cientifico": "Fagonia cretica",
+   "nombre": {
+    "es": "Abrojo",
+    "en": "Virgin's Mantle",
+    "de": "Kretische Fagonie"
+   },
+   "grupo": "plantas",
+   "observaciones": 2,
+   "investigacion": 1,
+   "observadores": 1,
+   "ultima": "2026-04-22",
+   "proyecto": 1,
+   "estatus": [
+    "nativa"
+   ],
+   "foto": {
+    "src": "img/inat/199614.jpeg",
+    "tipo": "foto",
+    "credito": "(c) faluke, some rights reserved (CC BY-NC)",
+    "licencia": "cc-by-nc",
+    "url": "https://www.inaturalist.org/photos/473437104"
+   }
+  },
+  {
+   "taxon_id": 490494,
+   "cientifico": "Limonium pectinatum",
+   "nombre": {
+    "es": "Siempreviva",
+    "de": "Kammförmige Strandflieder"
+   },
+   "grupo": "plantas",
+   "observaciones": 2,
+   "investigacion": 2,
+   "observadores": 2,
+   "ultima": "2024-05-14",
+   "proyecto": 1,
+   "estatus": [
+    "endemica-macaro"
+   ],
+   "foto": {
+    "src": "img/inat/490494.jpg",
+    "tipo": "foto",
+    "credito": "(c) Paul Cools, some rights reserved (CC BY-NC)",
+    "licencia": "cc-by-nc",
+    "url": "https://www.inaturalist.org/photos/3182020"
+   }
+  },
+  {
+   "taxon_id": 47898,
+   "cientifico": "Opuntia stricta",
+   "nombre": {
+    "es": "Tunera india",
+    "en": "Shell mound pricklypear",
+    "de": "Steifer Feigenkaktus"
+   },
+   "grupo": "plantas",
+   "observaciones": 2,
+   "investigacion": 2,
+   "observadores": 2,
+   "ultima": "2026-03-01",
+   "proyecto": 3,
+   "estatus": [
+    "introducida",
+    "invasora"
+   ],
+   "foto": {
+    "src": "img/inat/47898.jpg",
+    "tipo": "foto",
+    "credito": "(c) Tony Rodd, some rights reserved (CC BY-NC-SA)",
+    "licencia": "cc-by-nc-sa",
+    "url": "https://www.inaturalist.org/photos/60632"
+   }
+  },
+  {
+   "taxon_id": 1167469,
+   "cientifico": "Pimelia canariensis",
+   "nombre": {
+    "es": "Pimelia tinerfeña costera"
+   },
+   "grupo": "insectos",
+   "observaciones": 2,
+   "investigacion": 1,
+   "observadores": 1,
+   "ultima": "2026-09-15",
+   "proyecto": 2,
+   "estatus": [
+    "endemica-tenerife"
+   ],
+   "foto": {
+    "src": "img/inat/1167469.jpeg",
+    "tipo": "foto",
+    "credito": "(c) xeraaach, some rights reserved (CC BY-NC)",
+    "licencia": "cc-by-nc",
+    "url": "https://www.inaturalist.org/photos/201855861"
+   }
+  },
+  {
+   "taxon_id": 123810,
+   "cientifico": "Pontia daplidice",
+   "nombre": {
+    "es": "Blanquiverdosa",
+    "en": "Bath White",
+    "de": "Westlicher Resedafalter"
+   },
+   "grupo": "insectos",
+   "observaciones": 2,
+   "investigacion": 2,
+   "observadores": 2,
+   "ultima": "2026-03-01",
+   "proyecto": 2,
+   "estatus": [
+    "nativa"
+   ],
+   "foto": {
+    "src": "img/inat/123810.jpeg",
+    "tipo": "foto",
+    "credito": "(c) Andrea Battisti, some rights reserved (CC BY)",
+    "licencia": "cc-by",
+    "url": "https://www.inaturalist.org/photos/24300050"
+   }
+  },
+  {
+   "taxon_id": 124590,
+   "cientifico": "Sphingonotus rubescens",
+   "nombre": {
+    "en": "Desert Sand Grasshopper",
+    "de": "Wüsten-Sandschrecke"
+   },
+   "grupo": "insectos",
+   "observaciones": 2,
+   "investigacion": 2,
+   "observadores": 1,
+   "ultima": "2026-03-01",
+   "proyecto": 2,
+   "estatus": [
+    "nativa"
+   ],
+   "foto": {
+    "src": "img/inat/124590.jpg",
+    "tipo": "foto",
+    "credito": "(c) Paul Cools, some rights reserved (CC BY-NC)",
+    "licencia": "cc-by-nc",
+    "url": "https://www.inaturalist.org/photos/3160727"
+   }
+  },
+  {
    "taxon_id": 113507,
    "cientifico": "Sympetrum fonscolombii",
    "nombre": {
@@ -249,10 +458,11 @@ window.INAT = {
     "de": "Frühe Heidelibelle"
    },
    "grupo": "insectos",
-   "observaciones": 4,
-   "investigacion": 4,
+   "observaciones": 2,
+   "investigacion": 2,
    "observadores": 2,
    "ultima": "2026-03-01",
+   "proyecto": 2,
    "estatus": [
     "nativa"
    ],
@@ -273,314 +483,15 @@ window.INAT = {
     "de": "Rostgans"
    },
    "grupo": "aves",
-   "observaciones": 4,
-   "investigacion": 4,
-   "observadores": 3,
+   "observaciones": 2,
+   "investigacion": 2,
+   "observadores": 2,
    "ultima": "2026-05-06",
+   "proyecto": 0,
    "estatus": [
     "introducida"
    ],
    "foto": null
-  },
-  {
-   "taxon_id": 871,
-   "cientifico": "Alectoris barbara",
-   "nombre": {
-    "es": "Perdiz Moruna",
-    "en": "Barbary Partridge",
-    "de": "Felsenhuhn"
-   },
-   "grupo": "aves",
-   "observaciones": 3,
-   "investigacion": 3,
-   "observadores": 2,
-   "ultima": "2026-06-05",
-   "estatus": [
-    "introducida"
-   ],
-   "foto": null
-  },
-  {
-   "taxon_id": 13738,
-   "cientifico": "Anthus berthelotii",
-   "nombre": {
-    "es": "Bisbita Caminero",
-    "en": "Berthelot's Pipit",
-    "de": "Kanarenpieper"
-   },
-   "grupo": "aves",
-   "observaciones": 3,
-   "investigacion": 3,
-   "observadores": 3,
-   "ultima": "2026-05-06",
-   "estatus": [],
-   "foto": null
-  },
-  {
-   "taxon_id": 430581,
-   "cientifico": "Cenchrus setaceus",
-   "nombre": {
-    "es": "Rabo de gato",
-    "en": "Fountain Grass",
-    "de": "Afrikanisches Lampenputzergras"
-   },
-   "grupo": "plantas",
-   "observaciones": 3,
-   "investigacion": 3,
-   "observadores": 3,
-   "ultima": "2024-05-14",
-   "estatus": [
-    "introducida",
-    "invasora"
-   ],
-   "foto": {
-    "src": "img/inat/430581.jpg",
-    "tipo": "foto",
-    "credito": "(c) btburke, some rights reserved (CC BY-NC)",
-    "licencia": "cc-by-nc",
-    "url": "https://www.inaturalist.org/photos/6748173"
-   }
-  },
-  {
-   "taxon_id": 525558,
-   "cientifico": "Ceropegia fusca",
-   "nombre": {
-    "de": "Rotbraune Leuchterblume"
-   },
-   "grupo": "plantas",
-   "observaciones": 3,
-   "investigacion": 3,
-   "observadores": 2,
-   "ultima": "2026-02-11",
-   "estatus": [],
-   "foto": null
-  },
-  {
-   "taxon_id": 85030,
-   "cientifico": "Crocothemis erythraea",
-   "nombre": {
-    "es": "Vigilante escarlata",
-    "en": "Broad Scarlet",
-    "de": "Feuerlibelle"
-   },
-   "grupo": "insectos",
-   "observaciones": 3,
-   "investigacion": 3,
-   "observadores": 2,
-   "ultima": "2026-03-01",
-   "estatus": [
-    "nativa"
-   ],
-   "foto": {
-    "src": "img/inat/85030.jpg",
-    "tipo": "foto",
-    "credito": "(c) Erland Refling Nielsen, some rights reserved (CC BY-NC)",
-    "licencia": "cc-by-nc",
-    "url": "https://www.inaturalist.org/photos/539212346"
-   }
-  },
-  {
-   "taxon_id": 490494,
-   "cientifico": "Limonium pectinatum",
-   "nombre": {
-    "es": "Siempreviva",
-    "de": "Kammförmige Strandflieder"
-   },
-   "grupo": "plantas",
-   "observaciones": 3,
-   "investigacion": 3,
-   "observadores": 3,
-   "ultima": "2024-05-14",
-   "estatus": [
-    "endemica-macaro"
-   ],
-   "foto": {
-    "src": "img/inat/490494.jpg",
-    "tipo": "foto",
-    "credito": "(c) Paul Cools, some rights reserved (CC BY-NC)",
-    "licencia": "cc-by-nc",
-    "url": "https://www.inaturalist.org/photos/3182020"
-   }
-  },
-  {
-   "taxon_id": 49319,
-   "cientifico": "Mesembryanthemum crystallinum",
-   "nombre": {
-    "es": "Barrilla",
-    "en": "Crystalline ice plant",
-    "de": "Kristall-Mittagsblume"
-   },
-   "grupo": "plantas",
-   "observaciones": 3,
-   "investigacion": 3,
-   "observadores": 3,
-   "ultima": "2016-03-01",
-   "estatus": [],
-   "foto": null
-  },
-  {
-   "taxon_id": 123810,
-   "cientifico": "Pontia daplidice",
-   "nombre": {
-    "es": "Blanquiverdosa",
-    "en": "Bath White",
-    "de": "Westlicher Resedafalter"
-   },
-   "grupo": "insectos",
-   "observaciones": 3,
-   "investigacion": 3,
-   "observadores": 2,
-   "ultima": "2026-03-01",
-   "estatus": [
-    "nativa"
-   ],
-   "foto": {
-    "src": "img/inat/123810.jpeg",
-    "tipo": "foto",
-    "credito": "(c) Andrea Battisti, some rights reserved (CC BY)",
-    "licencia": "cc-by",
-    "url": "https://www.inaturalist.org/photos/24300050"
-   }
-  },
-  {
-   "taxon_id": 20969,
-   "cientifico": "Upupa epops",
-   "nombre": {
-    "es": "Abubilla común",
-    "en": "Common Hoopoe",
-    "de": "Wiedehopf"
-   },
-   "grupo": "aves",
-   "observaciones": 3,
-   "investigacion": 3,
-   "observadores": 3,
-   "ultima": "2014-07-27",
-   "estatus": [],
-   "foto": null
-  },
-  {
-   "taxon_id": 4943,
-   "cientifico": "Egretta garzetta",
-   "nombre": {
-    "es": "Garceta común",
-    "en": "Little Egret",
-    "de": "Seidenreiher"
-   },
-   "grupo": "aves",
-   "observaciones": 2,
-   "investigacion": 2,
-   "observadores": 2,
-   "ultima": "2026-03-01",
-   "estatus": [],
-   "foto": null
-  },
-  {
-   "taxon_id": 199614,
-   "cientifico": "Fagonia cretica",
-   "nombre": {
-    "es": "Abrojo",
-    "en": "Virgin's Mantle",
-    "de": "Kretische Fagonie"
-   },
-   "grupo": "plantas",
-   "observaciones": 2,
-   "investigacion": 1,
-   "observadores": 1,
-   "ultima": "2026-04-22",
-   "estatus": [
-    "nativa"
-   ],
-   "foto": {
-    "src": "img/inat/199614.jpeg",
-    "tipo": "foto",
-    "credito": "(c) faluke, some rights reserved (CC BY-NC)",
-    "licencia": "cc-by-nc",
-    "url": "https://www.inaturalist.org/photos/473437104"
-   }
-  },
-  {
-   "taxon_id": 77159,
-   "cientifico": "Frankenia pulverulenta",
-   "nombre": {
-    "en": "Annual Sea-heath",
-    "de": "Staubige Frankenie"
-   },
-   "grupo": "plantas",
-   "observaciones": 2,
-   "investigacion": 1,
-   "observadores": 2,
-   "ultima": "2023-04-25",
-   "estatus": [
-    "nativa"
-   ],
-   "foto": {
-    "src": "img/inat/77159.jpg",
-    "tipo": "foto",
-    "credito": "(c) Jonathan Coffin, some rights reserved (CC BY-NC-SA)",
-    "licencia": "cc-by-nc-sa",
-    "url": "https://www.inaturalist.org/photos/192512825"
-   }
-  },
-  {
-   "taxon_id": 559070,
-   "cientifico": "Lanius meridionalis koenigi",
-   "nombre": {
-    "es": "Alcaudón real",
-    "en": "Great Gray Shrike",
-    "de": "Raubwürger"
-   },
-   "grupo": "aves",
-   "observaciones": 2,
-   "investigacion": 2,
-   "observadores": 2,
-   "ultima": "2022-10-28",
-   "estatus": [],
-   "foto": null
-  },
-  {
-   "taxon_id": 525546,
-   "cientifico": "Lavandula canariensis",
-   "nombre": {
-    "es": "Matorrisco",
-    "en": "Canary Island Lavender",
-    "de": "Kanaren-Lavendel"
-   },
-   "grupo": "plantas",
-   "observaciones": 2,
-   "investigacion": 2,
-   "observadores": 2,
-   "ultima": "2026-03-01",
-   "estatus": [
-    "endemica-canaria"
-   ],
-   "foto": {
-    "src": "img/inat/525546.jpeg",
-    "tipo": "foto",
-    "credito": "(c) jltasset, some rights reserved (CC BY-NC)",
-    "licencia": "cc-by-nc",
-    "url": "https://www.inaturalist.org/photos/342521446"
-   }
-  },
-  {
-   "taxon_id": 124590,
-   "cientifico": "Sphingonotus rubescens",
-   "nombre": {
-    "en": "Desert Sand Grasshopper",
-    "de": "Wüsten-Sandschrecke"
-   },
-   "grupo": "insectos",
-   "observaciones": 2,
-   "investigacion": 2,
-   "observadores": 1,
-   "ultima": "2026-03-01",
-   "estatus": [],
-   "foto": {
-    "src": "img/inat/124590.jpg",
-    "tipo": "foto",
-    "credito": "(c) Paul Cools, some rights reserved (CC BY-NC)",
-    "licencia": "cc-by-nc",
-    "url": "https://www.inaturalist.org/photos/3160727"
-   }
   },
   {
    "taxon_id": 58392,
@@ -594,6 +505,7 @@ window.INAT = {
    "investigacion": 1,
    "observadores": 2,
    "ultima": "2026-03-01",
+   "proyecto": 2,
    "estatus": [
     "nativa"
    ],
@@ -609,6 +521,7 @@ window.INAT = {
    "taxon_id": 793735,
    "cientifico": "Allagopappus canariensis",
    "nombre": {
+    "es": "Madama de risco",
     "de": "Gabelästiger Glattpappus"
    },
    "grupo": "plantas",
@@ -616,6 +529,7 @@ window.INAT = {
    "investigacion": 1,
    "observadores": 1,
    "ultima": "2008-01-26",
+   "proyecto": 0,
    "estatus": [
     "endemica-canaria"
    ],
@@ -640,10 +554,17 @@ window.INAT = {
    "investigacion": 1,
    "observadores": 1,
    "ultima": "2024-12-30",
+   "proyecto": 0,
    "estatus": [
     "nativa"
    ],
-   "foto": null
+   "foto": {
+    "src": "img/inat/94041.jpg",
+    "tipo": "foto",
+    "credito": "(c) rmfelix, some rights reserved (CC BY-NC-ND)",
+    "licencia": "cc-by-nc-nd",
+    "url": "https://www.inaturalist.org/photos/1874657"
+   }
   },
   {
    "taxon_id": 94048,
@@ -658,6 +579,7 @@ window.INAT = {
    "investigacion": 1,
    "observadores": 1,
    "ultima": "2026-03-01",
+   "proyecto": 1,
    "estatus": [
     "nativa"
    ],
@@ -670,48 +592,10 @@ window.INAT = {
    }
   },
   {
-   "taxon_id": 67708,
-   "cientifico": "Argiope trifasciata",
-   "nombre": {
-    "es": "Araña de jardín bandeada",
-    "en": "Banded Garden Spider"
-   },
-   "grupo": "aracnidos",
-   "observaciones": 1,
-   "investigacion": 1,
-   "observadores": 1,
-   "ultima": "2024-03-19",
-   "estatus": [
-    "introducida"
-   ],
-   "foto": {
-    "src": "img/inat/67708.jpg",
-    "tipo": "foto",
-    "credito": "(c) Katja Schulz, some rights reserved (CC BY)",
-    "licencia": "cc-by",
-    "url": "https://www.inaturalist.org/photos/1520881"
-   }
-  },
-  {
-   "taxon_id": 181635,
-   "cientifico": "Argyranthemum frutescens",
-   "nombre": {
-    "es": "Margarita de las Islas Canarias",
-    "en": "Marguerite daisy",
-    "de": "Strauchmargerite"
-   },
-   "grupo": "plantas",
-   "observaciones": 1,
-   "investigacion": 1,
-   "observadores": 1,
-   "ultima": "2026-03-01",
-   "estatus": [],
-   "foto": null
-  },
-  {
    "taxon_id": 712365,
    "cientifico": "Argyranthemum gracile",
    "nombre": {
+    "es": "Magarza grácil",
     "de": "Zierliche Kanarenmargerite"
    },
    "grupo": "plantas",
@@ -719,8 +603,9 @@ window.INAT = {
    "investigacion": 1,
    "observadores": 1,
    "ultima": "2008-01-26",
+   "proyecto": 0,
    "estatus": [
-    "endemica-canaria"
+    "endemica-tenerife"
    ],
    "foto": {
     "src": "img/inat/712365.jpg",
@@ -729,24 +614,6 @@ window.INAT = {
     "licencia": "cc-by-nc",
     "url": "https://www.inaturalist.org/photos/254098855"
    }
-  },
-  {
-   "taxon_id": 558336,
-   "cientifico": "Astydamia latifolia",
-   "nombre": {
-    "es": "Lechuga de mar",
-    "en": "Canary Samphire",
-    "de": "Nymphendolde"
-   },
-   "grupo": "plantas",
-   "observaciones": 1,
-   "investigacion": 1,
-   "observadores": 1,
-   "ultima": "2006-04-28",
-   "estatus": [
-    "nativa"
-   ],
-   "foto": null
   },
   {
    "taxon_id": 1584273,
@@ -760,10 +627,17 @@ window.INAT = {
    "investigacion": 1,
    "observadores": 1,
    "ultima": "2008-01-26",
+   "proyecto": 0,
    "estatus": [
     "endemica-canaria"
    ],
-   "foto": null
+   "foto": {
+    "src": "img/inat/1584273.jpeg",
+    "tipo": "foto",
+    "credito": "(c) Sébastien SANT, some rights reserved (CC BY-NC)",
+    "licencia": "cc-by-nc",
+    "url": "https://www.inaturalist.org/photos/76685170"
+   }
   },
   {
    "taxon_id": 75771,
@@ -778,6 +652,7 @@ window.INAT = {
    "investigacion": 1,
    "observadores": 1,
    "ultima": "2023-03-04",
+   "proyecto": 0,
    "estatus": [
     "nativa"
    ],
@@ -800,6 +675,7 @@ window.INAT = {
    "investigacion": 1,
    "observadores": 1,
    "ultima": "2024-06-06",
+   "proyecto": 1,
    "estatus": [
     "endemica-canaria"
    ],
@@ -823,10 +699,17 @@ window.INAT = {
    "investigacion": 1,
    "observadores": 1,
    "ultima": "2008-01-26",
+   "proyecto": 0,
    "estatus": [
     "endemica-canaria"
    ],
-   "foto": null
+   "foto": {
+    "src": "img/inat/700986.jpg",
+    "tipo": "foto",
+    "credito": "(c) Jorge Calvo Yuste, some rights reserved (CC BY-NC)",
+    "licencia": "cc-by-nc",
+    "url": "https://www.inaturalist.org/photos/541652380"
+   }
   },
   {
    "taxon_id": 199408,
@@ -841,7 +724,10 @@ window.INAT = {
    "investigacion": 0,
    "observadores": 1,
    "ultima": "2026-03-01",
-   "estatus": [],
+   "proyecto": 1,
+   "estatus": [
+    "nativa"
+   ],
    "foto": {
     "src": "img/inat/199408.jpeg",
     "tipo": "foto",
@@ -849,6 +735,21 @@ window.INAT = {
     "licencia": "cc0",
     "url": "https://www.inaturalist.org/photos/138257865"
    }
+  },
+  {
+   "taxon_id": 525558,
+   "cientifico": "Ceropegia fusca",
+   "nombre": {
+    "de": "Rotbraune Leuchterblume"
+   },
+   "grupo": "plantas",
+   "observaciones": 1,
+   "investigacion": 1,
+   "observadores": 1,
+   "ultima": "2026-02-11",
+   "proyecto": 1,
+   "estatus": [],
+   "foto": null
   },
   {
    "taxon_id": 39659,
@@ -863,7 +764,9 @@ window.INAT = {
    "investigacion": 1,
    "observadores": 1,
    "ultima": "2014-09-21",
+   "proyecto": 0,
    "estatus": [
+    "nativa",
     "protegida",
     "aproximada"
    ],
@@ -873,28 +776,6 @@ window.INAT = {
     "credito": "(c) MARC MARTIN SOLA, some rights reserved (CC BY-NC)",
     "licencia": "cc-by-nc",
     "url": "https://www.inaturalist.org/photos/197457958"
-   }
-  },
-  {
-   "taxon_id": 117308,
-   "cientifico": "Chlorophyllum molybdites",
-   "nombre": {
-    "es": "Parasol verde",
-    "en": "Green-spored Parasol",
-    "de": "Grünblättriger Schirmpilz"
-   },
-   "grupo": "hongos",
-   "observaciones": 1,
-   "investigacion": 0,
-   "observadores": 1,
-   "ultima": "2022-10-25",
-   "estatus": [],
-   "foto": {
-    "src": "img/inat/117308.jpeg",
-    "tipo": "foto",
-    "credito": "(c) Douglas Goldman, some rights reserved (CC BY-SA)",
-    "licencia": "cc-by-sa",
-    "url": "https://www.inaturalist.org/photos/55300800"
    }
   },
   {
@@ -909,8 +790,9 @@ window.INAT = {
    "investigacion": 1,
    "observadores": 1,
    "ultima": "2024-05-14",
+   "proyecto": 1,
    "estatus": [
-    "nativa"
+    "endemica-canaria"
    ],
    "foto": {
     "src": "img/inat/701053.jpeg",
@@ -918,29 +800,6 @@ window.INAT = {
     "credito": "(c) Daniel Cahen, some rights reserved (CC BY)",
     "licencia": "cc-by",
     "url": "https://www.inaturalist.org/photos/14392550"
-   }
-  },
-  {
-   "taxon_id": 433478,
-   "cientifico": "Colletes dimidiatus",
-   "nombre": {
-    "en": "Canary Islands Cellophane Bee"
-   },
-   "grupo": "insectos",
-   "observaciones": 1,
-   "investigacion": 1,
-   "observadores": 1,
-   "ultima": "2024-01-02",
-   "estatus": [
-    "endemica-canaria",
-    "aproximada"
-   ],
-   "foto": {
-    "src": "img/inat/433478.jpg",
-    "tipo": "foto",
-    "credito": "(c) Gustavo Peña, some rights reserved (CC BY-NC)",
-    "licencia": "cc-by-nc",
-    "url": "https://www.inaturalist.org/photos/246120169"
    }
   },
   {
@@ -954,7 +813,9 @@ window.INAT = {
    "investigacion": 1,
    "observadores": 1,
    "ultima": "2023-03-29",
+   "proyecto": 0,
    "estatus": [
+    "endemica-canaria",
     "aproximada"
    ],
    "foto": {
@@ -978,6 +839,7 @@ window.INAT = {
    "investigacion": 1,
    "observadores": 1,
    "ultima": "2026-03-01",
+   "proyecto": 1,
    "estatus": [],
    "foto": null
   },
@@ -993,6 +855,7 @@ window.INAT = {
    "investigacion": 1,
    "observadores": 1,
    "ultima": "2008-01-26",
+   "proyecto": 0,
    "estatus": [
     "nativa"
    ],
@@ -1017,8 +880,9 @@ window.INAT = {
    "investigacion": 1,
    "observadores": 1,
    "ultima": "2022-10-28",
+   "proyecto": 0,
    "estatus": [
-    "subespecie-endemica"
+    "nativa"
    ],
    "foto": {
     "src": "img/inat/1289469.jpg",
@@ -1039,31 +903,16 @@ window.INAT = {
    "investigacion": 0,
    "observadores": 1,
    "ultima": "2026-02-11",
+   "proyecto": 0,
    "estatus": [
     "nativa"
    ],
-   "foto": null
-  },
-  {
-   "taxon_id": 130082,
-   "cientifico": "Cyrtophora citricola",
-   "nombre": {
-    "es": "Araña de Tela Carpa Tropical",
-    "en": "Tropical Tent-web Spider",
-    "de": "Opuntienspinne"
-   },
-   "grupo": "aracnidos",
-   "observaciones": 1,
-   "investigacion": 1,
-   "observadores": 1,
-   "ultima": "2026-09-09",
-   "estatus": [],
    "foto": {
-    "src": "img/inat/130082.jpg",
+    "src": "img/inat/76590.jpg",
     "tipo": "foto",
-    "credito": "(c) Andrés E. Ríos Saldaña, some rights reserved (CC BY-NC)",
+    "credito": "(c) FOSTER, some rights reserved (CC BY-NC)",
     "licencia": "cc-by-nc",
-    "url": "https://www.inaturalist.org/photos/573167"
+    "url": "https://www.inaturalist.org/photos/24357266"
    }
   },
   {
@@ -1077,6 +926,7 @@ window.INAT = {
    "investigacion": 1,
    "observadores": 1,
    "ultima": "2008-01-26",
+   "proyecto": 0,
    "estatus": [
     "nativa"
    ],
@@ -1089,28 +939,38 @@ window.INAT = {
    }
   },
   {
-   "taxon_id": 100119,
-   "cientifico": "Epinephelus marginatus",
+   "taxon_id": 4943,
+   "cientifico": "Egretta garzetta",
    "nombre": {
-    "es": "Mero",
-    "en": "Dusky Grouper",
-    "de": "Brauner Zackenbarsch"
+    "es": "Garceta común",
+    "en": "Little Egret",
+    "de": "Seidenreiher"
    },
-   "grupo": "peces",
+   "grupo": "aves",
    "observaciones": 1,
    "investigacion": 1,
    "observadores": 1,
-   "ultima": "2024-07-28",
-   "estatus": [
-    "aproximada"
-   ],
-   "foto": {
-    "src": "img/inat/100119.jpg",
-    "tipo": "foto",
-    "credito": "(c) Billy Bensted-Smith, some rights reserved (CC BY-NC)",
-    "licencia": "cc-by-nc",
-    "url": "https://www.inaturalist.org/photos/576952820"
-   }
+   "ultima": "2026-03-01",
+   "proyecto": 1,
+   "estatus": [],
+   "foto": null
+  },
+  {
+   "taxon_id": 336807,
+   "cientifico": "Euphorbia canariensis",
+   "nombre": {
+    "es": "Cardón",
+    "en": "Canary Island Spurge",
+    "de": "Kanarenwolfsmilch"
+   },
+   "grupo": "plantas",
+   "observaciones": 1,
+   "investigacion": 1,
+   "observadores": 1,
+   "ultima": "2026-03-01",
+   "proyecto": 2,
+   "estatus": [],
+   "foto": null
   },
   {
    "taxon_id": 700606,
@@ -1124,8 +984,9 @@ window.INAT = {
    "investigacion": 1,
    "observadores": 1,
    "ultima": "2008-01-26",
+   "proyecto": 0,
    "estatus": [
-    "nativa"
+    "endemica-canaria"
    ],
    "foto": {
     "src": "img/inat/700606.jpeg",
@@ -1139,6 +1000,7 @@ window.INAT = {
    "taxon_id": 853278,
    "cientifico": "Frankenia capitata",
    "nombre": {
+    "es": "Tomillo marino pardo",
     "de": "Kopfige Frankenie"
    },
    "grupo": "plantas",
@@ -1146,6 +1008,7 @@ window.INAT = {
    "investigacion": 1,
    "observadores": 1,
    "ultima": "2026-03-01",
+   "proyecto": 1,
    "estatus": [
     "nativa"
    ],
@@ -1155,6 +1018,31 @@ window.INAT = {
     "credito": "(c) Jan Baeteman, some rights reserved (CC BY-NC)",
     "licencia": "cc-by-nc",
     "url": "https://www.inaturalist.org/photos/473140441"
+   }
+  },
+  {
+   "taxon_id": 77159,
+   "cientifico": "Frankenia pulverulenta",
+   "nombre": {
+    "es": "Tomillo marino herbáceo",
+    "en": "Annual Sea-heath",
+    "de": "Staubige Frankenie"
+   },
+   "grupo": "plantas",
+   "observaciones": 1,
+   "investigacion": 1,
+   "observadores": 1,
+   "ultima": "2023-04-25",
+   "proyecto": 0,
+   "estatus": [
+    "nativa"
+   ],
+   "foto": {
+    "src": "img/inat/77159.jpg",
+    "tipo": "foto",
+    "credito": "(c) Jonathan Coffin, some rights reserved (CC BY-NC-SA)",
+    "licencia": "cc-by-nc-sa",
+    "url": "https://www.inaturalist.org/photos/192512825"
    }
   },
   {
@@ -1168,6 +1056,32 @@ window.INAT = {
    "investigacion": 1,
    "observadores": 1,
    "ultima": "2026-03-01",
+   "proyecto": 1,
+   "estatus": [
+    "nativa"
+   ],
+   "foto": {
+    "src": "img/inat/564198.jpeg",
+    "tipo": "foto",
+    "credito": "(c) Jacobo Krauel, some rights reserved (CC BY-NC)",
+    "licencia": "cc-by-nc",
+    "url": "https://www.inaturalist.org/photos/324219431"
+   }
+  },
+  {
+   "taxon_id": 559070,
+   "cientifico": "Lanius meridionalis koenigi",
+   "nombre": {
+    "es": "Alcaudón real",
+    "en": "Great Gray Shrike",
+    "de": "Raubwürger"
+   },
+   "grupo": "aves",
+   "observaciones": 1,
+   "investigacion": 1,
+   "observadores": 1,
+   "ultima": "2022-10-28",
+   "proyecto": 0,
    "estatus": [],
    "foto": null
   },
@@ -1184,6 +1098,7 @@ window.INAT = {
    "investigacion": 1,
    "observadores": 1,
    "ultima": "2022-09-10",
+   "proyecto": 0,
    "estatus": [],
    "foto": null
   },
@@ -1200,8 +1115,34 @@ window.INAT = {
    "investigacion": 1,
    "observadores": 1,
    "ultima": "2008-01-26",
+   "proyecto": 0,
    "estatus": [],
    "foto": null
+  },
+  {
+   "taxon_id": 525546,
+   "cientifico": "Lavandula canariensis subsp. canariensis",
+   "nombre": {
+    "es": "Matorrisco",
+    "en": "Canary Island Lavender",
+    "de": "Kanaren-Lavendel"
+   },
+   "grupo": "plantas",
+   "observaciones": 1,
+   "investigacion": 1,
+   "observadores": 1,
+   "ultima": "2026-03-01",
+   "proyecto": 2,
+   "estatus": [
+    "endemica-tenerife"
+   ],
+   "foto": {
+    "src": "img/inat/525546.jpeg",
+    "tipo": "foto",
+    "credito": "(c) jltasset, some rights reserved (CC BY-NC)",
+    "licencia": "cc-by-nc",
+    "url": "https://www.inaturalist.org/photos/342521446"
+   }
   },
   {
    "taxon_id": 700604,
@@ -1212,38 +1153,16 @@ window.INAT = {
    "investigacion": 1,
    "observadores": 1,
    "ultima": "2026-03-01",
-   "estatus": [],
+   "proyecto": 1,
+   "estatus": [
+    "endemica-canaria"
+   ],
    "foto": {
     "src": "img/inat/700604.jpg",
     "tipo": "foto",
     "credito": "(c) Juan Emilio, some rights reserved (CC BY-SA)",
     "licencia": "cc-by-sa",
     "url": "https://www.inaturalist.org/photos/14313219"
-   }
-  },
-  {
-   "taxon_id": 47447,
-   "cientifico": "Leucaena leucocephala",
-   "nombre": {
-    "es": "Leucaena",
-    "en": "White leadtree",
-    "de": "Weißkopfmimose"
-   },
-   "grupo": "plantas",
-   "observaciones": 1,
-   "investigacion": 1,
-   "observadores": 1,
-   "ultima": "2022-10-25",
-   "estatus": [
-    "introducida",
-    "invasora"
-   ],
-   "foto": {
-    "src": "img/inat/47447.jpeg",
-    "tipo": "foto",
-    "credito": "no rights reserved",
-    "licencia": "cc0",
-    "url": "https://www.inaturalist.org/photos/173810094"
    }
   },
   {
@@ -1258,6 +1177,7 @@ window.INAT = {
    "investigacion": 0,
    "observadores": 1,
    "ultima": "2026-03-01",
+   "proyecto": 1,
    "estatus": [
     "endemica-canaria"
    ],
@@ -1281,6 +1201,7 @@ window.INAT = {
    "investigacion": 1,
    "observadores": 1,
    "ultima": "2024-05-14",
+   "proyecto": 1,
    "estatus": [],
    "foto": null
   },
@@ -1296,6 +1217,7 @@ window.INAT = {
    "investigacion": 1,
    "observadores": 1,
    "ultima": "2024-03-08",
+   "proyecto": 0,
    "estatus": [
     "endemica-canaria",
     "aproximada"
@@ -1311,37 +1233,24 @@ window.INAT = {
   {
    "taxon_id": 830771,
    "cientifico": "Monanthes pallens",
-   "nombre": {},
+   "nombre": {
+    "es": "Pelotilla pálida"
+   },
    "grupo": "plantas",
    "observaciones": 1,
    "investigacion": 1,
    "observadores": 1,
    "ultima": "2008-01-26",
+   "proyecto": 0,
    "estatus": [
     "endemica-canaria"
    ],
-   "foto": null
-  },
-  {
-   "taxon_id": 331380,
-   "cientifico": "Monoplex nicobaricus",
-   "nombre": {
-    "en": "Gold-Mouthed Triton Snail"
-   },
-   "grupo": "moluscos",
-   "observaciones": 1,
-   "investigacion": 1,
-   "observadores": 1,
-   "ultima": "2024-07-25",
-   "estatus": [
-    "aproximada"
-   ],
    "foto": {
-    "src": "img/inat/331380.jpg",
+    "src": "img/inat/830771.jpg",
     "tipo": "foto",
-    "credito": "(c) uwkwaj, some rights reserved (CC BY-NC)",
+    "credito": "(c) Stefan Neuwirth, some rights reserved (CC BY-NC)",
     "licencia": "cc-by-nc",
-    "url": "https://www.inaturalist.org/photos/184160982"
+    "url": "https://www.inaturalist.org/photos/38793292"
    }
   },
   {
@@ -1357,6 +1266,7 @@ window.INAT = {
    "investigacion": 1,
    "observadores": 1,
    "ultima": "2022-10-28",
+   "proyecto": 0,
    "estatus": [],
    "foto": null
   },
@@ -1373,6 +1283,7 @@ window.INAT = {
    "investigacion": 1,
    "observadores": 1,
    "ultima": "2021-12-12",
+   "proyecto": 0,
    "estatus": [],
    "foto": null
   },
@@ -1389,7 +1300,9 @@ window.INAT = {
    "investigacion": 1,
    "observadores": 1,
    "ultima": "2024-07-25",
+   "proyecto": 0,
    "estatus": [
+    "nativa",
     "aproximada"
    ],
    "foto": {
@@ -1413,6 +1326,7 @@ window.INAT = {
    "investigacion": 1,
    "observadores": 1,
    "ultima": "2026-03-01",
+   "proyecto": 1,
    "estatus": [
     "nativa"
    ],
@@ -1428,7 +1342,7 @@ window.INAT = {
    "taxon_id": 13854,
    "cientifico": "Passer hispaniolensis",
    "nombre": {
-    "es": "Gorrión Moruno",
+    "es": "Gorrión moruno",
     "en": "Spanish Sparrow",
     "de": "Weidensperling"
    },
@@ -1437,15 +1351,23 @@ window.INAT = {
    "investigacion": 1,
    "observadores": 1,
    "ultima": "2022-09-10",
+   "proyecto": 0,
    "estatus": [
     "nativa"
    ],
-   "foto": null
+   "foto": {
+    "src": "img/inat/13854.jpg",
+    "tipo": "foto",
+    "credito": "(c) Agustín Povedano, some rights reserved (CC BY-NC-SA)",
+    "licencia": "cc-by-nc-sa",
+    "url": "https://www.inaturalist.org/photos/620387040"
+   }
   },
   {
    "taxon_id": 557604,
    "cientifico": "Patellifolia procumbens",
    "nombre": {
+    "es": "Marmojaya",
     "de": "Niederliegende Rübe"
    },
    "grupo": "plantas",
@@ -1453,8 +1375,9 @@ window.INAT = {
    "investigacion": 1,
    "observadores": 1,
    "ultima": "2025-09-23",
+   "proyecto": 1,
    "estatus": [
-    "nativa"
+    "endemica-macaro"
    ],
    "foto": {
     "src": "img/inat/557604.jpg",
@@ -1477,6 +1400,7 @@ window.INAT = {
    "investigacion": 1,
    "observadores": 1,
    "ultima": "2008-01-26",
+   "proyecto": 0,
    "estatus": [],
    "foto": null
   },
@@ -1493,7 +1417,10 @@ window.INAT = {
    "investigacion": 1,
    "observadores": 1,
    "ultima": "2024-12-29",
-   "estatus": [],
+   "proyecto": 0,
+   "estatus": [
+    "nativa"
+   ],
    "foto": {
     "src": "img/inat/143529.jpeg",
     "tipo": "foto",
@@ -1503,29 +1430,10 @@ window.INAT = {
    }
   },
   {
-   "taxon_id": 1167469,
-   "cientifico": "Pimelia canariensis",
-   "nombre": {},
-   "grupo": "insectos",
-   "observaciones": 1,
-   "investigacion": 1,
-   "observadores": 1,
-   "ultima": "2026-09-15",
-   "estatus": [
-    "endemica-canaria"
-   ],
-   "foto": {
-    "src": "img/inat/1167469.jpeg",
-    "tipo": "foto",
-    "credito": "(c) xeraaach, some rights reserved (CC BY-NC)",
-    "licencia": "cc-by-nc",
-    "url": "https://www.inaturalist.org/photos/201855861"
-   }
-  },
-  {
    "taxon_id": 623587,
    "cientifico": "Polycarpaea nivea",
    "nombre": {
+    "es": "Saladillo blanco",
     "de": "Schneeweiße Vielfrucht"
    },
    "grupo": "plantas",
@@ -1533,10 +1441,17 @@ window.INAT = {
    "investigacion": 0,
    "observadores": 1,
    "ultima": "2026-03-01",
+   "proyecto": 1,
    "estatus": [
     "nativa"
    ],
-   "foto": null
+   "foto": {
+    "src": "img/inat/623587.jpeg",
+    "tipo": "foto",
+    "credito": "(c) W. Larry Sward, some rights reserved (CC BY-NC)",
+    "licencia": "cc-by-nc",
+    "url": "https://www.inaturalist.org/photos/226872274"
+   }
   },
   {
    "taxon_id": 467538,
@@ -1550,6 +1465,7 @@ window.INAT = {
    "investigacion": 1,
    "observadores": 1,
    "ultima": "2008-01-26",
+   "proyecto": 0,
    "estatus": [
     "nativa"
    ],
@@ -1559,54 +1475,6 @@ window.INAT = {
     "credito": "(c) Paige Duvenage, some rights reserved (CC BY-NC)",
     "licencia": "cc-by-nc",
     "url": "https://www.inaturalist.org/photos/64692523"
-   }
-  },
-  {
-   "taxon_id": 57354,
-   "cientifico": "Schinus molle",
-   "nombre": {
-    "es": "Falso pimentero",
-    "en": "Peruvian Pepper Tree",
-    "de": "Peruanischer Pfefferbaum"
-   },
-   "grupo": "plantas",
-   "observaciones": 1,
-   "investigacion": 1,
-   "observadores": 1,
-   "ultima": "2024-03-19",
-   "estatus": [
-    "introducida"
-   ],
-   "foto": {
-    "src": "img/inat/57354.jpeg",
-    "tipo": "foto",
-    "credito": "(c) altagray, some rights reserved (CC BY-NC)",
-    "licencia": "cc-by-nc",
-    "url": "https://www.inaturalist.org/photos/382465760"
-   }
-  },
-  {
-   "taxon_id": 118631,
-   "cientifico": "Scorpaena porcus",
-   "nombre": {
-    "es": "Rascacio",
-    "en": "Black Scorpionfish",
-    "de": "Brauner Drachenkopf"
-   },
-   "grupo": "peces",
-   "observaciones": 1,
-   "investigacion": 1,
-   "observadores": 1,
-   "ultima": "2024-11-25",
-   "estatus": [
-    "aproximada"
-   ],
-   "foto": {
-    "src": "img/inat/118631.jpg",
-    "tipo": "foto",
-    "credito": "(c) josepvilanova, some rights reserved (CC BY-NC)",
-    "licencia": "cc-by-nc",
-    "url": "https://www.inaturalist.org/photos/61740418"
    }
   },
   {
@@ -1620,6 +1488,7 @@ window.INAT = {
    "investigacion": 0,
    "observadores": 1,
    "ultima": "2008-01-26",
+   "proyecto": 0,
    "estatus": [
     "endemica-canaria"
    ],
@@ -1644,7 +1513,9 @@ window.INAT = {
    "investigacion": 1,
    "observadores": 1,
    "ultima": "2024-10-28",
+   "proyecto": 0,
    "estatus": [
+    "nativa",
     "aproximada"
    ],
    "foto": {
@@ -1668,31 +1539,56 @@ window.INAT = {
    "investigacion": 1,
    "observadores": 1,
    "ultima": "2022-09-10",
+   "proyecto": 0,
    "estatus": [],
    "foto": null
   },
   {
-   "taxon_id": 118652,
-   "cientifico": "Trachinus draco",
+   "taxon_id": 1364040,
+   "cientifico": "Camponotus feae",
    "nombre": {
-    "es": "Escorpión",
-    "en": "Greater Weever",
-    "de": "Großes Petermännchen"
+    "es": "Hormiga carpintera"
    },
-   "grupo": "peces",
-   "observaciones": 1,
-   "investigacion": 1,
-   "observadores": 1,
-   "ultima": "2024-10-09",
+   "grupo": "insectos",
+   "observaciones": 0,
+   "investigacion": 0,
+   "observadores": 0,
+   "ultima": "",
+   "proyecto": 0,
    "estatus": [
-    "aproximada"
+    "endemica-canaria",
+    "vista-reserva"
    ],
    "foto": {
-    "src": "img/inat/118652.jpeg",
+    "src": "img/inat/1364040.jpeg",
     "tipo": "foto",
-    "credito": "(c) Sylvain Le Bris, some rights reserved (CC BY-NC)",
+    "credito": "(c) Mónica Pérez-Gil, some rights reserved (CC BY-NC)",
     "licencia": "cc-by-nc",
-    "url": "https://www.inaturalist.org/photos/108403403"
+    "url": "https://www.inaturalist.org/photos/286315998"
+   }
+  },
+  {
+   "taxon_id": 557175,
+   "cientifico": "Hogna ferox",
+   "nombre": {
+    "es": "Tarántula"
+   },
+   "grupo": "aracnidos",
+   "observaciones": 0,
+   "investigacion": 0,
+   "observadores": 0,
+   "ultima": "",
+   "proyecto": 0,
+   "estatus": [
+    "nativa",
+    "vista-reserva"
+   ],
+   "foto": {
+    "src": "img/inat/557175.jpg",
+    "tipo": "foto",
+    "credito": "(c) Óscar Mendez, some rights reserved (CC BY-NC)",
+    "licencia": "cc-by-nc",
+    "url": "https://www.inaturalist.org/photos/166004187"
    }
   }
  ]
