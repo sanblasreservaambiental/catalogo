@@ -380,7 +380,9 @@ window.INAT = {
   {
    "taxon_id": 1167469,
    "cientifico": "Pimelia canariensis",
-   "nombre": {},
+   "nombre": {
+    "es": "Pimelia tinerfeña costera"
+   },
    "grupo": "insectos",
    "observaciones": 2,
    "investigacion": 1,
@@ -519,6 +521,7 @@ window.INAT = {
    "taxon_id": 793735,
    "cientifico": "Allagopappus canariensis",
    "nombre": {
+    "es": "Madama de risco",
     "de": "Gabelästiger Glattpappus"
    },
    "grupo": "plantas",
@@ -592,6 +595,7 @@ window.INAT = {
    "taxon_id": 712365,
    "cientifico": "Argyranthemum gracile",
    "nombre": {
+    "es": "Magarza grácil",
     "de": "Zierliche Kanarenmargerite"
    },
    "grupo": "plantas",
@@ -762,6 +766,7 @@ window.INAT = {
    "ultima": "2014-09-21",
    "proyecto": 0,
    "estatus": [
+    "nativa",
     "protegida",
     "aproximada"
    ],
@@ -995,6 +1000,7 @@ window.INAT = {
    "taxon_id": 853278,
    "cientifico": "Frankenia capitata",
    "nombre": {
+    "es": "Tomillo marino pardo",
     "de": "Kopfige Frankenie"
    },
    "grupo": "plantas",
@@ -1018,6 +1024,7 @@ window.INAT = {
    "taxon_id": 77159,
    "cientifico": "Frankenia pulverulenta",
    "nombre": {
+    "es": "Tomillo marino herbáceo",
     "en": "Annual Sea-heath",
     "de": "Staubige Frankenie"
    },
@@ -1226,7 +1233,9 @@ window.INAT = {
   {
    "taxon_id": 830771,
    "cientifico": "Monanthes pallens",
-   "nombre": {},
+   "nombre": {
+    "es": "Pelotilla pálida"
+   },
    "grupo": "plantas",
    "observaciones": 1,
    "investigacion": 1,
@@ -1293,6 +1302,7 @@ window.INAT = {
    "ultima": "2024-07-25",
    "proyecto": 0,
    "estatus": [
+    "nativa",
     "aproximada"
    ],
    "foto": {
@@ -1332,7 +1342,7 @@ window.INAT = {
    "taxon_id": 13854,
    "cientifico": "Passer hispaniolensis",
    "nombre": {
-    "es": "Gorrión Moruno",
+    "es": "Gorrión moruno",
     "en": "Spanish Sparrow",
     "de": "Weidensperling"
    },
@@ -1357,6 +1367,7 @@ window.INAT = {
    "taxon_id": 557604,
    "cientifico": "Patellifolia procumbens",
    "nombre": {
+    "es": "Marmojaya",
     "de": "Niederliegende Rübe"
    },
    "grupo": "plantas",
@@ -1422,6 +1433,7 @@ window.INAT = {
    "taxon_id": 623587,
    "cientifico": "Polycarpaea nivea",
    "nombre": {
+    "es": "Saladillo blanco",
     "de": "Schneeweiße Vielfrucht"
    },
    "grupo": "plantas",
@@ -1503,6 +1515,7 @@ window.INAT = {
    "ultima": "2024-10-28",
    "proyecto": 0,
    "estatus": [
+    "nativa",
     "aproximada"
    ],
    "foto": {

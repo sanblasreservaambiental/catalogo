@@ -46,13 +46,23 @@
     "Chelonia mydas": "Tortuga verde",
     "Camponotus feae": "Hormiga carpintera",
     "Hogna ferox": "Tarántula",
-    "Trachinus draco": "Pez araña"
+    "Trachinus draco": "Pez araña",
+    "Pimelia canariensis": "Pimelia tinerfeña costera",
+    "Allagopappus canariensis": "Madama de risco",
+    "Argyranthemum gracile": "Magarza grácil",
+    "Frankenia capitata": "Tomillo marino pardo",
+    "Frankenia pulverulenta": "Tomillo marino herbáceo",
+    "Monanthes pallens": "Pelotilla pálida",
+    "Patellifolia procumbens": "Marmojaya",
+    "Polycarpaea nivea": "Saladillo blanco",
+    "Passer hispaniolensis": "Gorrión moruno"
   },
   "estatus": {
     "Gallotia galloti": [
       "endemica-canaria"
     ],
     "Chelonia mydas": [
+      "nativa",
       "protegida"
     ],
     "Passer hispaniolensis": [
@@ -210,6 +220,12 @@
     ],
     "Philanthus triangulum": [
       "nativa"
+    ],
+    "Octopus vulgaris": [
+      "nativa"
+    ],
+    "Sparisoma cretense": [
+      "nativa"
     ]
   },
   "nombres_rangos": {
@@ -342,5 +358,5 @@
     "1364040": "Camponotus feae",
     "557175": "Hogna ferox"
   },
-  "_fuente_estatus": "Endemicidad y origen revisados el 23 nov 2026 con el Banco de Datos de Biodiversidad de Canarias (biodiversidadcanarias.es)."
+  "_fuente_estatus": "Endemicidad, origen y nombres comunes revisados el 23 nov 2026 con el Banco de Datos de Biodiversidad de Canarias (biodiversidadcanarias.es); copia de su exportación en herramientas/bdbc-especies.csv (UTF-8, separada por «;»)."
 }
