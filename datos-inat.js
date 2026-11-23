@@ -436,7 +436,9 @@ window.INAT = {
    "observadores": 1,
    "ultima": "2026-03-01",
    "proyecto": 2,
-   "estatus": [],
+   "estatus": [
+    "nativa"
+   ],
    "foto": {
     "src": "img/inat/124590.jpg",
     "tipo": "foto",
@@ -719,7 +721,9 @@ window.INAT = {
    "observadores": 1,
    "ultima": "2026-03-01",
    "proyecto": 1,
-   "estatus": [],
+   "estatus": [
+    "nativa"
+   ],
    "foto": {
     "src": "img/inat/199408.jpeg",
     "tipo": "foto",
@@ -783,7 +787,7 @@ window.INAT = {
    "ultima": "2024-05-14",
    "proyecto": 1,
    "estatus": [
-    "nativa"
+    "endemica-canaria"
    ],
    "foto": {
     "src": "img/inat/701053.jpeg",
@@ -806,6 +810,7 @@ window.INAT = {
    "ultima": "2023-03-29",
    "proyecto": 0,
    "estatus": [
+    "endemica-canaria",
     "aproximada"
    ],
    "foto": {
@@ -872,7 +877,7 @@ window.INAT = {
    "ultima": "2022-10-28",
    "proyecto": 0,
    "estatus": [
-    "subespecie-endemica"
+    "nativa"
    ],
    "foto": {
     "src": "img/inat/1289469.jpg",
@@ -976,7 +981,7 @@ window.INAT = {
    "ultima": "2008-01-26",
    "proyecto": 0,
    "estatus": [
-    "endemica-macaro"
+    "endemica-canaria"
    ],
    "foto": {
     "src": "img/inat/700606.jpeg",
@@ -1045,7 +1050,9 @@ window.INAT = {
    "observadores": 1,
    "ultima": "2026-03-01",
    "proyecto": 1,
-   "estatus": [],
+   "estatus": [
+    "nativa"
+   ],
    "foto": {
     "src": "img/inat/564198.jpeg",
     "tipo": "foto",
@@ -1140,7 +1147,9 @@ window.INAT = {
    "observadores": 1,
    "ultima": "2026-03-01",
    "proyecto": 1,
-   "estatus": [],
+   "estatus": [
+    "endemica-canaria"
+   ],
    "foto": {
     "src": "img/inat/700604.jpg",
     "tipo": "foto",
@@ -1357,7 +1366,7 @@ window.INAT = {
    "ultima": "2025-09-23",
    "proyecto": 1,
    "estatus": [
-    "nativa"
+    "endemica-macaro"
    ],
    "foto": {
     "src": "img/inat/557604.jpg",
@@ -1398,7 +1407,9 @@ window.INAT = {
    "observadores": 1,
    "ultima": "2024-12-29",
    "proyecto": 0,
-   "estatus": [],
+   "estatus": [
+    "nativa"
+   ],
    "foto": {
     "src": "img/inat/143529.jpeg",
     "tipo": "foto",
@@ -1532,6 +1543,7 @@ window.INAT = {
    "ultima": "",
    "proyecto": 0,
    "estatus": [
+    "endemica-canaria",
     "vista-reserva"
    ],
    "foto": {

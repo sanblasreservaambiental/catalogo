@@ -59,7 +59,7 @@
       "nativa"
     ],
     "Curruca conspicillata": [
-      "subespecie-endemica"
+      "nativa"
     ],
     "Leucaena leucocephala": [
       "introducida",
@@ -101,13 +101,13 @@
       "nativa"
     ],
     "Patellifolia procumbens": [
-      "nativa"
+      "endemica-macaro"
     ],
     "Astydamia latifolia": [
       "nativa"
     ],
     "Cneorum pulverulentum": [
-      "nativa"
+      "endemica-canaria"
     ],
     "Polycarpaea nivea": [
       "nativa"
@@ -158,7 +158,7 @@
       "endemica-canaria"
     ],
     "Forsskaolea angustifolia": [
-      "endemica-macaro"
+      "endemica-canaria"
     ],
     "Colletes dimidiatus": [
       "endemica-canaria"
@@ -188,6 +188,27 @@
       "nativa"
     ],
     "Hogna ferox": [
+      "nativa"
+    ],
+    "Leptochilus cruentatus": [
+      "endemica-canaria"
+    ],
+    "Colletes moricei": [
+      "endemica-canaria"
+    ],
+    "Camponotus feae": [
+      "endemica-canaria"
+    ],
+    "Sphingonotus rubescens": [
+      "nativa"
+    ],
+    "Cenchrus ciliaris": [
+      "nativa"
+    ],
+    "Ischiodon aegyptius": [
+      "nativa"
+    ],
+    "Philanthus triangulum": [
       "nativa"
     ]
   },
@@ -320,5 +341,6 @@
     "_nota": "Especies vistas en San Blas por el equipo de la reserva aunque no tengan observaciones en iNaturalist dentro de la zona (taxon_id de iNaturalist).",
     "1364040": "Camponotus feae",
     "557175": "Hogna ferox"
-  }
+  },
+  "_fuente_estatus": "Endemicidad y origen revisados el 23 nov 2026 con el Banco de Datos de Biodiversidad de Canarias (biodiversidadcanarias.es)."
 }

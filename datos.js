@@ -197,7 +197,7 @@ window.ESPECIES = [
 {
   id: "cornical", grupo: "plantas", cientifico: "Periploca laevigata",
   nombre: { es: "Cornical", en: "Cornical (silkvine)", de: "Glatte Baumschlinge (Cornical)" },
-  estatus: ["endemica-macaro"],
+  estatus: ["nativa"],
   foto: { src: "img/cornical.jpg", tipo: "foto", credito: CRED_PLANTAS },
   descripcion: {
     es: "Arbusto de ramas flexibles que se enredan entre sí y sobre otras plantas, con hojas verdes y brillantes. Sus flores tienen forma de estrella y color pardo violáceo. Los frutos son dos vainas alargadas unidas por la base, como un par de cuernos, y de ahí viene su nombre. Las semillas llevan un penacho sedoso para volar.",
