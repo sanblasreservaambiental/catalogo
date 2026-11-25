@@ -46,7 +46,6 @@
     "Gallotia galloti": "Lagarto tizón",
     "Chelonia mydas": "Tortuga verde",
     "Camponotus feae": "Hormiga carpintera",
-    "Hogna ferox": "Tarántula",
     "Trachinus draco": "Pez araña",
     "Pimelia canariensis": "Pimelia tinerfeña costera",
     "Allagopappus canariensis": "Madama de risco",
@@ -197,9 +196,6 @@
       "nativa"
     ],
     "Pontia daplidice": [
-      "nativa"
-    ],
-    "Hogna ferox": [
       "nativa"
     ],
     "Leptochilus cruentatus": [
@@ -362,7 +358,6 @@
   "anadir": {
     "_nota": "Especies vistas en San Blas por el equipo de la reserva aunque no tengan observaciones en iNaturalist dentro de la zona (taxon_id de iNaturalist).",
     "1364040": "Camponotus feae",
-    "557175": "Hogna ferox",
     "73966": "Tarentola delalandii"
   },
   "_fuente_estatus": "Endemicidad, origen y nombres comunes revisados el 23 nov 2026 con el Banco de Datos de Biodiversidad de Canarias (biodiversidadcanarias.es); copia de su exportación en herramientas/bdbc-especies.csv (UTF-8, separada por «;»).",
