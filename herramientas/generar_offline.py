@@ -12,7 +12,7 @@ import os
 
 RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 FIJOS = ["./", "index.html", "estilo.css", "datos.js", "datos-inat.js",
-         "taxonomia.js", "catalogo.js", "manifest.webmanifest"]
+         "taxonomia.js", "catalogo.js", "offline.js", "manifest.webmanifest"]
 CARPETAS = ["img", "iconos"]
 
 
@@ -27,7 +27,9 @@ def main():
     h = hashlib.sha256()
     total = 0
     for a in archivos:
-        if a == "./":
+        # offline.js se guarda también (sin él la página no sabe, sin conexión,
+        # que está descargada), pero no entra en la huella: lleva la versión.
+        if a in ("./", "offline.js"):
             continue
         ruta = os.path.join(RAIZ, a)
         with open(ruta, "rb") as f:
