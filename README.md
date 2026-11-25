@@ -50,13 +50,24 @@ pulsa, para no gastar datos a quien no lo quiere. En Android aparece además
 «Añadir a la pantalla de inicio». En iPhone se explica cómo hacerlo desde Compartir.
 
 - `sw.js`: service worker. Sirve desde el móvil lo descargado y, cuando la web
-  cambia, renueva la copia sola.
+  cambia, renueva la copia sola. La página comprueba si hay versión nueva al
+  abrirse, al volver a la app y cada 30 minutos; cuando la copia nueva está
+  guardada entera aparece el aviso «Hay una versión nueva del catálogo ·
+  Actualizar».
 - `offline.js`: lista de archivos y versión. **Se genera**: al final de
   `actualizar_inat.py`, o a mano con `python3 herramientas/generar_offline.py`
   después de tocar `index.html`, `estilo.css`, un `.js` o `img/`.
 - `manifest.webmanifest` e `iconos/`: nombre e icono al instalarlo.
 
 Necesita HTTPS (o `localhost`). En la vista previa de Claude puede no funcionar.
+
+## Marcas de «visto»
+
+En cada ficha, el botón «¿Lo han visto? Márquenlo» señala las especies vistas
+durante la visita. El botón «Vistos» de la barra filtra solo esas, y desde ahí
+se pueden borrar todas para la siguiente visita. Se guardan en el propio
+dispositivo (`localStorage`, clave `catalogo-vistos`), sin cuentas ni servidor,
+así que funcionan sin conexión.
 
 ## Nivel del alumnado
 
